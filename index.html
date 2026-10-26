@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Threat map</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Ccircle cx='8' cy='8' r='6' fill='%239f2d20'/%3E%3C/svg%3E">
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+    crossorigin=""
+  >
+  <style>
+    :root {
+      --bg: #f3efe6;
+      --ink: #1c1915;
+      --muted: #5e584f;
+      --line: #ddd4c6;
+      --card: #fffdf8;
+      --header: #1c1915;
+      --strike: #9f2d20;
+      --shipping: #1d4e89;
+      --military_movement: #8a5a12;
+      --closure: #5c3d8a;
+      --protest: #1f6b45;
+      --infrastructure: #b45309;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--ink);
+      font: 16px/1.45 "Segoe UI", Helvetica, Arial, sans-serif;
+    }
+
+    header, main { padding: 20px 24px; }
+
+    header {
+      background: var(--header);
+      color: #f6f1e7;
+    }
+
+    header h1 {
+      margin: 0 0 6px;
+      font-size: 1.6rem;
+      font-weight: 650;
+      letter-spacing: 0.04em;
+    }
+
+    header p { margin: 0; max-width: 70rem; color: #e4dccf; }
+
+    main { max-width: 1100px; }
+
+    .legend {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px 16px;
+      margin: 0 0 12px;
+      padding: 0;
+      list-style: none;
+    }
+
+    .legend li { display: flex; align-items: center; gap: 8px; color: var(--muted); }
+
+    .swatch {
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      border: 1px solid rgba(0, 0, 0, 0.25);
+    }
+
+    #map {
+      height: min(70vh, 640px);
+      min-height: 320px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #d9e2dc;
+    }
+
+    .feeds, .note { color: var(--muted); }
+
+    .feeds a, table a, .popup a { color: #1d4e89; }
+
+    .feeds { display: flex; flex-wrap: wrap; gap: 8px 18px; margin: 14px 0; }
+
+    .status-line { min-height: 1.4em; margin: 8px 0 14px; }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background: var(--card);
+      border: 1px solid var(--line);
+    }
+
+    th, td {
+      text-align: left;
+      vertical-align: top;
+      padding: 8px 10px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    th {
+      font-size: 0.78rem;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      color: var(--muted);
+      background: #f7f3eb;
+    }
+
+    tr[data-id] { cursor: pointer; }
+    tr[data-id]:hover { background: #f7f1e4; }
+    tr.active { background: #efe4cf; }
+
+    .cat {
+      display: inline-block;
+      padding: 1px 7px;
+      border-radius: 999px;
+      color: #fff;
+      font-size: 0.78rem;
+      white-space: nowrap;
+    }
+
+    .popup { font-size: 14px; line-height: 1.4; }
+    .popup h2 { margin: 0 0 6px; font-size: 1rem; }
+    .popup p { margin: 0 0 6px; }
+    .popup .meta { color: #5e584f; }
+
+    .error { color: #9f2d20; }
+
+    @media (max-width: 700px) {
+      header, main { padding: 16px; }
+      #map { height: 55vh; }
+      .table-wrap { overflow-x: auto; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Threat map</h1>
+    <p>
+      Sourced events plotted from place names. A marker is the OpenStreetMap
+      Nominatim result for that place, not a surveyed impact point. Approximate
+      places stay labeled approximate. Events the geocoder could not place have
+      no marker.
+    </p>
+  </header>
+  <main>
+    <ul class="legend" id="legend"></ul>
+    <div id="map" role="region" aria-label="Event map"></div>
+    <p class="status-line" id="status">Loading events…</p>
+    <div class="feeds">
+      <a href="events.geojson" download>Download events.geojson</a>
+      <a href="events.csv" download>Download events.csv</a>
+      <a href="https://simpleadoptionregistry.github.io/threat-map/events.geojson">Pages GeoJSON</a>
+      <a href="https://simpleadoptionregistry.github.io/threat-map/events.csv">Pages CSV</a>
+    </div>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>When (UTC)</th>
+            <th>Category</th>
+            <th>Place</th>
+            <th>What</th>
+            <th>Status</th>
+            <th>Source</th>
+            <th>Location</th>
+          </tr>
+        </thead>
+        <tbody id="rows"></tbody>
+      </table>
+    </div>
+    <p class="note">
+      Feed files live next to this page:
+      <code>events.geojson</code> and <code>events.csv</code>.
+    </p>
+  </main>
+
+  <script
+    src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+    crossorigin=""
+  ></script>
+  <script>
+    const CATEGORIES = [
+      ["strike", "Strike", "#9f2d20"],
+      ["shipping", "Shipping", "#1d4e89"],
+      ["military_movement", "Military movement", "#8a5a12"],
+      ["closure", "Closure", "#5c3d8a"],
+      ["protest", "Protest", "#1f6b45"],
+      ["infrastructure", "Infrastructure", "#b45309"]
+    ];
+    const COLOR = Object.fromEntries(CATEGORIES.map(([id, , color]) => [id, color]));
+    const LABEL = Object.fromEntries(CATEGORIES.map(([id, label]) => [id, label]));
+
+    const legend = document.getElementById("legend");
+    CATEGORIES.forEach(([, label, color]) => {
+      const item = document.createElement("li");
+      item.innerHTML = '<span class="swatch" style="background:' + color + '"></span>' + escapeHtml(label);
+      legend.appendChild(item);
+    });
+
+    const map = L.map("map", { scrollWheelZoom: true }).setView([25, 40], 3);
+    L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
+      maxZoom: 18,
+      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+    }).addTo(map);
+
+    const markers = new Map();
+
+    function escapeHtml(value) {
+      return String(value ?? "").replace(/[&<>"']/g, (ch) => ({
+        "&": "&amp;",
+        "<": "&lt;",
+        ">": "&gt;",
+        '"': "&quot;",
+        "'": "&#39;"
+      }[ch]));
+    }
+
+    function sourceLink(url) {
+      const text = escapeHtml(url || "");
+      if (!/^https?:\/\//i.test(url || "")) return text;
+      let host = text;
+      try { host = escapeHtml(new URL(url).host); } catch (err) { /* keep full text */ }
+      return '<a href="' + text + '" target="_blank" rel="noopener noreferrer">' + host + "</a>";
+    }
+
+    function pointOf(feature) {
+      const geometry = feature.geometry;
+      if (!geometry || geometry.type !== "Point" || !Array.isArray(geometry.coordinates)) return null;
+      const lon = Number(geometry.coordinates[0]);
+      const lat = Number(geometry.coordinates[1]);
+      if (!Number.isFinite(lat) || !Number.isFinite(lon)) return null;
+      return [lat, lon];
+    }
+
+    function popupHtml(props) {
+      const precision = props.coord_precision && props.coord_precision !== "exact"
+        ? '<p class="meta">' + escapeHtml(props.coord_precision) + "</p>"
+        : "";
+      const target = props.target_type
+        ? '<p class="meta">Target: ' + escapeHtml(props.target_type) + "</p>"
+        : "";
+      return '<div class="popup">'
+        + "<h2>" + escapeHtml(props.place) + "</h2>"
+        + "<p>" + escapeHtml(props.what) + "</p>"
+        + "<p><strong>When (UTC):</strong> " + escapeHtml(props.when_utc) + "</p>"
+        + "<p><strong>Status:</strong> " + escapeHtml(props.status) + "</p>"
+        + "<p><strong>Source:</strong> " + sourceLink(props.source) + "</p>"
+        + precision
+        + target
+        + "</div>";
+    }
+
+    function render(collection) {
+      const features = Array.isArray(collection.features) ? collection.features : [];
+      const bounds = [];
+      const body = document.getElementById("rows");
+      body.replaceChildren();
+
+      features.forEach((feature) => {
+        const props = feature.properties || {};
+        const id = props.id || "";
+        const color = COLOR[props.category] || "#44403c";
+        const point = pointOf(feature);
+        if (point) {
+          const approximate = String(props.coord_precision || "").indexOf("approximate") === 0;
+          const marker = L.circleMarker(point, {
+            radius: 8,
+            color: "#1c1915",
+            weight: 1,
+            fillColor: color,
+            fillOpacity: approximate ? 0.55 : 0.92,
+            dashArray: approximate ? "3 3" : null
+          }).addTo(map);
+          marker.bindPopup(popupHtml(props), {
+            maxWidth: 280,
+            autoPan: true,
+            autoPanPadding: [28, 28]
+          });
+          markers.set(id, { marker, point });
+          bounds.push(point);
+        }
+
+        const row = document.createElement("tr");
+        if (id) row.dataset.id = id;
+        let location = point
+          ? point[0].toFixed(4) + ", " + point[1].toFixed(4)
+          : "Not geocoded";
+        if (props.coord_precision && props.coord_precision !== "exact") {
+          location += " (" + props.coord_precision + ")";
+        }
+        row.innerHTML = [
+          escapeHtml(props.when_utc),
+          '<span class="cat" style="background:' + color + '">' + escapeHtml(LABEL[props.category] || props.category || "") + "</span>",
+          escapeHtml(props.place),
+          escapeHtml(props.what),
+          escapeHtml(props.status),
+          sourceLink(props.source),
+          escapeHtml(location)
+        ].map((cell) => "<td>" + cell + "</td>").join("");
+        row.addEventListener("click", () => focusEvent(id, row));
+        body.appendChild(row);
+      });
+
+      if (bounds.length === 1) {
+        map.setView(bounds[0], 5);
+      } else if (bounds.length > 1) {
+        map.fitBounds(bounds, { padding: [28, 28], maxZoom: 5 });
+      }
+
+      const mapped = bounds.length;
+      document.getElementById("status").textContent =
+        features.length + " events, " + mapped + " on the map"
+        + (features.length - mapped ? ", " + (features.length - mapped) + " without coordinates." : ".");
+    }
+
+    function focusEvent(id, row) {
+      document.querySelectorAll("tr.active").forEach((el) => el.classList.remove("active"));
+      if (row) row.classList.add("active");
+      const entry = markers.get(id);
+      if (!entry) return;
+      document.getElementById("map").scrollIntoView({ block: "nearest" });
+      const targetZoom = Math.max(map.getZoom(), 6);
+      const open = () => entry.marker.openPopup();
+      map.once("moveend", open);
+      map.setView(entry.point, targetZoom);
+      const center = map.getCenter();
+      if (center.equals(L.latLng(entry.point)) && map.getZoom() === targetZoom) {
+        map.off("moveend", open);
+        open();
+      }
+    }
+
+    fetch("events.geojson")
+      .then((response) => {
+        if (!response.ok) throw new Error("Could not load events.geojson (" + response.status + ")");
+        return response.json();
+      })
+      .then(render)
+      .catch((error) => {
+        const status = document.getElementById("status");
+        status.textContent = error.message;
+        status.classList.add("error");
+      });
+  </script>
+</body>
+</html>

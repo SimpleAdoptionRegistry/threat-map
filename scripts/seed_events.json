@@ -1,0 +1,155 @@
+[
+  {
+    "category": "strike",
+    "place": "Izium, Kharkiv Oblast, Ukraine",
+    "what": "Russian guided aerial bombs hit two districts; 3 hurt, 10+ houses damaged",
+    "when_utc": "2026-10-26T00:40Z",
+    "source": "https://euromaidanpress.com/2026/10/26/guided-bombs-on-izium-strikes-on-zaporizhzhia-russian-overnight-attacks-wound-six-later-strikes-kill-three/",
+    "status": "confirmed",
+    "target_type": "city"
+  },
+  {
+    "category": "strike",
+    "place": "Zaporizhzhia, Ukraine",
+    "what": "Russia launched 140 drones and 4 missiles overnight, hitting 15 locations nationwide",
+    "when_utc": "overnight Oct 25-26",
+    "source": "https://euromaidanpress.com/2026/10/26/guided-bombs-on-izium-strikes-on-zaporizhzhia-russian-overnight-attacks-wound-six-later-strikes-kill-three/",
+    "status": "confirmed",
+    "target_type": "city"
+  },
+  {
+    "category": "strike",
+    "place": "Yasnohirka, Kramatorsk, Donetsk Oblast, Ukraine",
+    "what": "Russian aircraft dropped 4 guided bombs on homes and shops; 1 killed, 10 wounded",
+    "when_utc": "2026-10-26",
+    "source": "https://euromaidanpress.com/2026/10/26/guided-bombs-on-izium-strikes-on-zaporizhzhia-russian-overnight-attacks-wound-six-later-strikes-kill-three/",
+    "status": "confirmed",
+    "target_type": "city"
+  },
+  {
+    "category": "strike",
+    "place": "Sloviansk, Ukraine",
+    "what": "Russian airstrike destroyed a house, killing its owner",
+    "when_utc": "2026-10-26",
+    "source": "https://euromaidanpress.com/2026/10/26/guided-bombs-on-izium-strikes-on-zaporizhzhia-russian-overnight-attacks-wound-six-later-strikes-kill-three/",
+    "status": "confirmed",
+    "target_type": "city"
+  },
+  {
+    "category": "strike",
+    "place": "Pavlohrad, Ukraine",
+    "what": "Russian drone strike killed 1, injured 7",
+    "when_utc": "2026-10-26",
+    "source": "https://euromaidanpress.com/2026/10/26/guided-bombs-on-izium-strikes-on-zaporizhzhia-russian-overnight-attacks-wound-six-later-strikes-kill-three/",
+    "status": "confirmed",
+    "target_type": "city"
+  },
+  {
+    "category": "strike",
+    "place": "Voronezh, Russia",
+    "what": "Ukrainian drone attack hit a petrochemical plant; at least 2 killed, 17 injured",
+    "when_utc": "2026-10-26 by ~17:19Z",
+    "source": "https://www.euronews.com/2026/10/26",
+    "status": "confirmed",
+    "target_type": "infrastructure"
+  },
+  {
+    "category": "strike",
+    "place": "Saada, Yemen (approximate: Houthi-held Yemen)",
+    "what": "Saudi-led coalition says it destroyed 5 missile tunnels, 4 launchers, a storage site",
+    "when_utc": "2026-10-26",
+    "source": "https://apnews.com/article/mideast-news-october-26-2026-7d1bcf08210539085ea0b5ed56ef4d4c",
+    "status": "claim",
+    "target_type": "base"
+  },
+  {
+    "category": "strike",
+    "place": "Khamis Mushait, Saudi Arabia",
+    "what": "Debris from intercepted Houthi ballistic missiles injured 2, damaged buildings and vehicles",
+    "when_utc": "Oct 25-26",
+    "source": "https://www.aa.com.tr/en/world/morning-briefing-oct-26-2026/4100631",
+    "status": "confirmed",
+    "target_type": "city"
+  },
+  {
+    "category": "strike",
+    "place": "King Khalid International Airport, Riyadh",
+    "what": "Houthis say they fired dozens of ballistic missiles at the airport and two bases",
+    "when_utc": "Oct 25-26",
+    "source": "https://www.aa.com.tr/en/world/morning-briefing-oct-26-2026/4100631",
+    "status": "claim",
+    "target_type": "airfield"
+  },
+  {
+    "category": "strike",
+    "place": "Aden, Yemen",
+    "what": "Suspected Houthi ballistic missile landed near a government military HQ",
+    "when_utc": "Oct 25-26",
+    "source": "https://www.aa.com.tr/en/world/morning-briefing-oct-26-2026/4100631",
+    "status": "claim",
+    "target_type": "base"
+  },
+  {
+    "category": "strike",
+    "place": "Bandar Abbas, Iran",
+    "what": "Iran says its air defenses shot down a US LUCAS drone",
+    "when_utc": "2026-10-25",
+    "source": "https://www.fdd.org/overnight-brief/october-26-2026/",
+    "status": "claim",
+    "target_type": null
+  },
+  {
+    "category": "shipping",
+    "place": "Strait of Hormuz",
+    "what": "Outbound tanker struck and disabled by unknown projectile, crew safe (UKMTO late report)",
+    "when_utc": "2026-10-23T08:39Z",
+    "source": "https://www.ukmto.org/-/media/ukmto/products/20261026-ukmto_warning-182-26.pdf?rev=95f39111e3a9423ab7f2787ef85ce04c",
+    "status": "confirmed",
+    "target_type": "ship"
+  },
+  {
+    "category": "shipping",
+    "place": "Northern Arabian Gulf, 63nm SE of Al-Faw, Iraq (approximate)",
+    "what": "Vessel on fire; Orbital Risk says it was attacked",
+    "when_utc": "2026-10-26 morning",
+    "source": "https://www.ukmto.org/-/media/ukmto/products/20261026-uktmo_warning-183-26.pdf?rev=2aaaddd6b34c46d1a42b0c04d20e889e",
+    "status": "claim",
+    "target_type": "ship"
+  },
+  {
+    "category": "military_movement",
+    "place": "Taiwan Strait",
+    "what": "Taiwan tracked Chinese aircraft, 6 navy ships, 9 official ships; one aircraft crossed the median line",
+    "when_utc": "Oct 25-26",
+    "source": "https://www.mnd.gov.tw/en/news/plaact/88069",
+    "status": "confirmed",
+    "target_type": null
+  },
+  {
+    "category": "military_movement",
+    "place": "Kunsan Air Base, Gunsan, South Korea",
+    "what": "South Korea and US began two-week Freedom Flag air exercise",
+    "when_utc": "2026-10-26",
+    "source": "https://www.koreatimes.co.kr/southkorea/defense/20261026/korea-us-kick-off-combined-air-drills-this-week",
+    "status": "confirmed",
+    "target_type": null
+  },
+  {
+    "category": "strike",
+    "place": "Gaza Strip",
+    "what": "Israeli strikes killed three Hamas and Islamic Jihad members; Gaza Civil Defense says 13 killed in 24h",
+    "when_utc": "Oct 25-26",
+    "source": "https://www.timesofisrael.com/liveblog-october-26-2026/",
+    "status": "confirmed (toll is claim)",
+    "target_type": null
+  },
+  {
+    "category": "military_movement",
+    "place": "Northern Israel (approximate)",
+    "what": "IDF two-day exercise simulating multi-front attack",
+    "when_utc": "started 2026-10-25",
+    "source": "https://jinsa.org/wp-content/uploads/2026/10/Iran-War-Update-10.26.26.pdf",
+    "status": "confirmed",
+    "target_type": null
+  }
+]
