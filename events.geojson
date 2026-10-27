@@ -6,6 +6,72 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          32.614392,
+          46.64013
+        ]
+      },
+      "properties": {
+        "id": "tm-caed590f60",
+        "category": "strike",
+        "place": "Kherson, Ukraine",
+        "what": "Kherson regional military administration says a Russian Molniya drone struck a health facility, injuring a 62-year-old nurse; the hospital director earlier said two drones hit around 11:30 local with no injuries, so it is unclear if this is the same strike",
+        "when_utc": "2026-10-26 ~09:30Z",
+        "source": "https://suspilne.media/kherson/1437673-u-hersoni-cerez-ataku-bezpilotnika-po-medzakladu-poranena-medicna-sestra/",
+        "status": "confirmed",
+        "target_type": "infrastructure",
+        "coord_precision": "exact",
+        "added_utc": "2026-10-27T11:10:16Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.268001,
+          51.729773
+        ]
+      },
+      "properties": {
+        "id": "tm-22231e6b00",
+        "category": "strike",
+        "place": "Koriukivka Raion, Chernihiv Oblast, Ukraine",
+        "what": "Ukraine's State Emergency Service says Russian strikes set homes and outbuildings on fire and injured 4 including a 12-year-old; 2 more were injured in Novhorod-Siverskyi Raion",
+        "when_utc": "overnight Oct 26-27, 2026",
+        "source": "https://www.pravda.com.ua/eng/news/2026/10/27/8059887/",
+        "status": "confirmed",
+        "target_type": "city",
+        "coord_precision": "exact",
+        "added_utc": "2026-10-27T11:10:16Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          56.20277,
+          26.449406
+        ]
+      },
+      "properties": {
+        "id": "tm-37536d4783",
+        "category": "shipping",
+        "place": "Strait of Hormuz",
+        "what": "Iran's Persian Gulf Strait Authority says it will take legal action against all Sinokor Shipping vessels from Nov 1 over alleged transit violations, saying at least seven have already faced enforcement; the US has sanctioned the authority; no Sinokor comment reported",
+        "when_utc": "2026-10-27 ~09:00Z (announced)",
+        "source": "https://www.iranintl.com/en/202610274926 https://en.mehrnews.com/news/248962/PGSA-to-lodge-complaint-against-Sinokor-Shipping-Co-vessels",
+        "status": "confirmed (announcement); not yet enforced",
+        "target_type": "ship",
+        "coord_precision": "exact",
+        "added_utc": "2026-10-27T11:10:16Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           30.654927,
           46.301342
         ]

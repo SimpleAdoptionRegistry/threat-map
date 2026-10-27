@@ -504,6 +504,11 @@ def area_followup(query: str, hits: list[dict]) -> str | None:
     return None
 
 
+def query_names_admin_area(query: str) -> bool:
+    tokens = set(re.findall(r"[a-z0-9']+", query.casefold()))
+    return bool(tokens & (set(AREA_WORDS) | {"region"}))
+
+
 def hit_is_usable(query: str, hit: dict) -> bool:
     """True when this Nominatim hit is a coordinate for the queried place.
 
@@ -517,6 +522,13 @@ def hit_is_usable(query: str, hit: dict) -> bool:
     category = str(hit.get("category") or "").casefold()
     query_cf = query.casefold()
     if category == "highway" and not any(hint in query_cf for hint in ROAD_HINTS):
+        return False
+    # "Kherson, Ukraine" must not keep the oblast boundary when the city is listed.
+    if (
+        category == "boundary"
+        and str(hit.get("type") or "").casefold() == "administrative"
+        and not query_names_admin_area(query)
+    ):
         return False
     clause = last_clause(query)
     if clause and clause.casefold() not in str(hit.get("display_name") or "").casefold():
