@@ -6,6 +6,72 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          44.395732,
+          33.307508
+        ]
+      },
+      "properties": {
+        "id": "tm-bdb71f1a8c",
+        "category": "strike",
+        "place": "Green Zone, Baghdad, Iraq",
+        "what": "Iraq's Security Media Cell says at least two unidentified drones were intercepted near the Green Zone, with a security official saying US Embassy air defences shot them down; no damage or casualties reported and no claim of responsibility",
+        "when_utc": "2026-10-27 (time not given)",
+        "source": "https://www.thenationalnews.com/news/mena/2026/10/27/loud-bang-as-drone-is-intercepted-in-baghdad/",
+        "status": "claim",
+        "target_type": "city",
+        "coord_precision": "exact",
+        "added_utc": "2026-10-27T15:04:24Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          37.606392,
+          55.625578
+        ]
+      },
+      "properties": {
+        "id": "tm-2ffb1cb27f",
+        "category": "strike",
+        "place": "Moscow, Russia",
+        "what": "Mayor Sergei Sobyanin says air defences shot down six Ukrainian drones flying toward Moscow; emergency crews at debris sites",
+        "when_utc": "2026-10-27 ~13:41Z (reported)",
+        "source": "https://www.kommersant.ru/doc/9061954",
+        "status": "claim",
+        "target_type": "city",
+        "coord_precision": "exact",
+        "added_utc": "2026-10-27T15:04:24Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          37.273575,
+          55.599528
+        ]
+      },
+      "properties": {
+        "id": "tm-ed5e7569a5",
+        "category": "closure",
+        "place": "Vnukovo International Airport, Moscow, Russia",
+        "what": "Rosaviatsia imposed temporary airspace restrictions; Domodedovo and Zhukovsky handle flights only by coordination, and Kommersant reports Vnukovo temporarily not operating",
+        "when_utc": "2026-10-27 ~12:07Z-13:41Z",
+        "source": "https://ria.ru/20261027/aeroporty-2127284351.html https://www.kommersant.ru/doc/9061954",
+        "status": "confirmed",
+        "target_type": "airfield",
+        "coord_precision": "exact",
+        "added_utc": "2026-10-27T15:04:24Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           36.12058,
           50.107057
         ]
