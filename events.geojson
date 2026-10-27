@@ -6,6 +6,88 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          34.261094,
+          31.355066
+        ]
+      },
+      "properties": {
+        "id": "tm-8451cd48d7",
+        "category": "strike",
+        "place": "Al-Mawasi, Rafah, Gaza Strip",
+        "what": "Gaza News Live, citing local sources, says an Israeli drone strike near the Yellow Line killed one Palestinian; a separate Israeli strike on Al-Bahr Street west of Rafah and shelling near Al-Rashid Street each injured one; PIC separately reports a drone-strike death in al-Mawasi, Khan Younis, possibly the same strike; no Israeli comment",
+        "when_utc": "2026-10-27 ~08:49Z (10:49 local)",
+        "source": "https://gazanews.live/en/news/774",
+        "status": "claim",
+        "target_type": null,
+        "coord_precision": "approximate: Al-Mawasi",
+        "added_utc": "2026-10-27T16:09:54Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "tm-6544337354",
+        "category": "strike",
+        "place": "Khan Younis, Gaza Strip (approximate: Fash Frash area, southwest of Khan Younis)",
+        "what": "Gaza News Live says an Israeli artillery shell hit a police point in the Fash Frash area southwest of Khan Younis, causing injuries; no Israeli comment",
+        "when_utc": "2026-10-27 ~10:50Z (12:50 local)",
+        "source": "https://gazanews.live/en/news/789",
+        "status": "claim",
+        "target_type": null,
+        "coord_precision": "approximate: Fash Frash area, southwest of Khan Younis",
+        "added_utc": "2026-10-27T16:09:54Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.458136,
+          31.512868
+        ]
+      },
+      "properties": {
+        "id": "tm-26e6886ba5",
+        "category": "strike",
+        "place": "Gaza City, Gaza Strip (approximate: beachfront)",
+        "what": "The Palestinian Information Center says Israeli gunboats fired machine guns and projectiles at Gaza City's beachfront, causing multiple injuries; no Israeli comment",
+        "when_utc": "2026-10-27 (time not given)",
+        "source": "https://english.palinfo.com/news/2026/10/27/372673/",
+        "status": "claim",
+        "target_type": "city",
+        "coord_precision": "approximate: beachfront",
+        "added_utc": "2026-10-27T16:09:54Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.007336,
+          22.615431
+        ]
+      },
+      "properties": {
+        "id": "tm-2e01beaca3",
+        "category": "closure",
+        "place": "Taimali, Taitung, Taiwan",
+        "what": "Taiwan's Maritime and Port Bureau, at the request of the Army Headquarters of the defence ministry, prohibits all vessels from Taimali waters for a military exercise",
+        "when_utc": "2026-10-27 to 2026-10-30",
+        "source": "https://www.sealagom.com/coastal/181/message/49126/",
+        "status": "confirmed",
+        "target_type": null,
+        "coord_precision": "exact",
+        "added_utc": "2026-10-27T16:09:54Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           44.395732,
           33.307508
         ]
@@ -168,9 +250,9 @@
         "id": "tm-eba36a3c24",
         "category": "strike",
         "place": "Riyadh, Saudi Arabia",
-        "what": "Saudi-led coalition says its air defenses intercepted and destroyed two Houthi ballistic missiles fired toward Riyadh; no casualty or damage details and no immediate Houthi comment",
+        "what": "Saudi-led coalition says its air defenses intercepted and destroyed two Houthi ballistic missiles fired toward Riyadh; no casualty or damage details and no immediate Houthi comment. Update: Saudi Civil Defence says debris damaged a building, a construction project and a vehicle; no injuries reported.",
         "when_utc": "2026-10-27 ~11:54Z (reported)",
-        "source": "https://www.aa.com.tr/en/middle-east/saudi-led-coalition-intercepts-2-houthi-ballistic-missiles-targeting-riyadh/4102483",
+        "source": "https://www.aa.com.tr/en/middle-east/saudi-led-coalition-intercepts-2-houthi-ballistic-missiles-targeting-riyadh/4102483 https://www.dawn.com/news/2040244",
         "status": "claim",
         "target_type": "city",
         "coord_precision": "exact",

@@ -106,6 +106,7 @@ UNDISCLOSED_RE = re.compile(
     re.IGNORECASE,
 )
 ROAD_HINTS = ("road", "street", "highway", "avenue", "lane", "bridge")
+FACILITY_HINTS = ("port", "marina", "pier", "hotel", "office", "harbour", "harbor")
 AREA_WORDS = ("district", "county", "raion", "oblast", "governorate", "province", "prefecture", "municipality")
 AREA_PLACE_TYPES = {
     "city",
@@ -281,6 +282,14 @@ def shorter_queries(place: str) -> list[str]:
     tail = " ".join(tail_words).strip()
     if tail and tail.casefold() != parts[-1].casefold():
         add(f"{parts[0]}, {tail}")
+    # "Gaza, Gaza Strip" can be a marina. The city is still queried on its own.
+    if (
+        original_words
+        and original_words[-1].casefold().strip(".") in LOCALITY_TYPE_WORDS
+        and locality
+        and not compass_only
+    ):
+        add(locality)
     return queries
 
 
@@ -555,6 +564,13 @@ def hit_is_usable(query: str, hit: dict) -> bool:
     category = str(hit.get("category") or "").casefold()
     query_cf = query.casefold()
     if category == "highway" and not any(hint in query_cf for hint in ROAD_HINTS):
+        return False
+    # "Gaza, Gaza Strip" returns Port of Gaza, a marina, ahead of the city.
+    kind = str(hit.get("type") or "").casefold()
+    facility = category in {"tourism", "office"} or (
+        (category, kind) in {("leisure", "marina"), ("man_made", "pier")}
+    )
+    if facility and not any(hint in query_cf for hint in FACILITY_HINTS):
         return False
     # "Kherson, Ukraine" must not keep Kherson Oblast. A city that Nominatim
     # stores as a boundary, such as Gaza, still matches when the name is the city.
