@@ -219,8 +219,9 @@ def shorter_queries(place: str) -> list[str]:
     """Locality plus country, for when the full place string returns nothing.
 
     "Kaepung County, North Korea" becomes "Kaepung, North Korea".
-    "Nasib border crossing, Daraa, Syria" becomes "Nasib, Syria". The result
-    is not used until the full string has no Nominatim hits.
+    "Nasib border crossing, Daraa, Syria" becomes "Nasib, Syria".
+    "Al-Mawasi, Khan Yunis, Gaza Strip" becomes "Al-Mawasi, Gaza Strip".
+    The result is not used until the full string has no Nominatim hits.
     """
     full = " ".join(QUALIFIER_RE.sub(" ", NOTE_PAREN_RE.sub(" ", geocode_query(place))).split())
     parts = [part.strip() for part in full.split(",") if part.strip()]
@@ -230,7 +231,9 @@ def shorter_queries(place: str) -> list[str]:
     while words and words[-1].casefold().strip(".") in LOCALITY_TYPE_WORDS:
         words.pop()
     locality = " ".join(words).strip()
-    if not locality or locality.casefold() == parts[0].casefold():
+    if not locality:
+        return []
+    if locality.casefold() == parts[0].casefold() and len(parts) < 3:
         return []
     query = f"{locality}, {parts[-1]}"
     if query.casefold() == full.casefold():

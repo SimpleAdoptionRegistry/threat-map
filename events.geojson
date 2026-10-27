@@ -6,6 +6,50 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          30.428765,
+          50.489508
+        ]
+      },
+      "properties": {
+        "id": "tm-b8dd6898bd",
+        "category": "strike",
+        "place": "Podilskyi district, Kyiv, Ukraine",
+        "what": "In a second overnight wave of Russian ballistic missiles, Mayor Klitschko said one hit an administrative building in Podilskyi district and two others hit non-residential buildings; casualties not yet known",
+        "when_utc": "2026-10-27 ~01:25-01:45Z",
+        "source": "https://kyivindependent.com/paramedics-caught-under-fire-as-russian-ballistic-missiles-slam-kyiv/",
+        "status": "confirmed",
+        "target_type": "city",
+        "coord_precision": "exact",
+        "added_utc": "2026-10-27T03:09:46Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.261094,
+          31.355066
+        ]
+      },
+      "properties": {
+        "id": "tm-5eaa5d8334",
+        "category": "strike",
+        "place": "Al-Mawasi, Khan Yunis, Gaza Strip",
+        "what": "Gaza Civil Defense says an Israeli airstrike on a displaced-persons camp killed 3 including a child; Israel's military told AFP it was not aware of military activity in the area",
+        "when_utc": "2026-10-26 (time not given)",
+        "source": "https://www.thedailystar.net/news/world/news/israeli-strikes-gaza-kill-5-4308301",
+        "status": "claim",
+        "target_type": null,
+        "coord_precision": "approximate: Al-Mawasi",
+        "added_utc": "2026-10-27T03:09:46Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           50.12588,
           23.303608
         ]
@@ -14,7 +58,7 @@
         "id": "tm-94df329841",
         "category": "strike",
         "place": "Eastern Province, Saudi Arabia",
-        "what": "Saudi-led coalition says its air defenses intercepted and destroyed three Houthi ballistic missiles fired toward the Eastern Province; no casualties reported",
+        "what": "Saudi-led coalition says its air defenses intercepted and destroyed three Houthi ballistic missiles fired toward the Eastern Province; no casualties reported; coalition also says it intercepted four Houthi drones toward the Southern Region (Reuters via Straits Times: https://www.straitstimes.com/world/middle-east/saudi-led-coalition-says-it-intercepted-houthi-missiles-drones-attacking-kingdom)",
         "when_utc": "2026-10-27 ~00:39Z (reported)",
         "source": "https://www.spa.gov.sa/en/N2711193",
         "status": "claim",
