@@ -3,6 +3,66 @@
   "features": [
     {
       "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "tm-a2e33b0d5c",
+        "category": "strike",
+        "place": "Mae Nue Tha, Karen State, Myanmar",
+        "what": "A Thai local official says a Myanmar military airstrike hit the village across the Salween River from Mae Sariang, injuring a father and his 3-year-old child, who died while being taken to Thailand for treatment",
+        "when_utc": "2026-10-24 ~18:00Z (01:00 local Oct 25)",
+        "source": "https://www.khaosodenglish.com/news/2026/10/26/myanmar-airstrike-kills-3-year-old-child-in-karen-state-near-thai-border/",
+        "status": "claim",
+        "target_type": "city",
+        "coord_precision": "exact",
+        "added_utc": "2026-10-27T04:07:32Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          29.956719,
+          46.114723
+        ]
+      },
+      "properties": {
+        "id": "tm-b14e2ce5ac",
+        "category": "strike",
+        "place": "Odesa Oblast, Ukraine",
+        "what": "Odesa regional governor Oleh Kiper says Russian forces attacked a private industrial facility and a garage cooperative several times overnight, causing large fires and no casualties",
+        "when_utc": "overnight Oct 25-26",
+        "source": "https://ukranews.com/en/news/1183393-overnight-russia-attacked-an-industrial-facility-and-a-garage-cooperative-in-the-odesa-region",
+        "status": "confirmed",
+        "target_type": "infrastructure",
+        "coord_precision": "exact",
+        "added_utc": "2026-10-27T04:07:32Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          30.654927,
+          46.301342
+        ]
+      },
+      "properties": {
+        "id": "tm-77326e5323",
+        "category": "shipping",
+        "place": "Chornomorsk, Odesa Oblast, Ukraine",
+        "what": "Russia's Defence Ministry says its drones struck a cargo ship heading for Chornomorsk overnight and another heading for Odesa later that day, saying both were supplying Ukraine's military; Reuters could not verify this, and the ships' names, damage and crew status were not given",
+        "when_utc": "2026-10-25",
+        "source": "https://www.worldports.org/russia-claims-fresh-strikes-on-ships-bound-for-odesa-and-chornomorsk/",
+        "status": "claim",
+        "target_type": "ship",
+        "coord_precision": "exact",
+        "added_utc": "2026-10-27T04:07:32Z"
+      }
+    },
+    {
+      "type": "Feature",
       "geometry": {
         "type": "Point",
         "coordinates": [
