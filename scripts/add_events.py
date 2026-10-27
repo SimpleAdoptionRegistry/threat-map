@@ -27,9 +27,11 @@ rewritten newest added_utc first.
 Nominatim is called at most once per second with a custom User-Agent.
 Only coordinates returned by Nominatim are stored. An empty result, a
 distance/bearing offset (a gazetteer cannot resolve "63nm SE of" a port),
-or a hit that is only a road name is written with null geometry and empty
-lat/lon. The script never invents a coordinate and does not substitute a
-nearby city. A transport or HTTP failure aborts before the feed is written.
+a place noted as "location not disclosed", or a hit that is only a road
+name is written with null geometry and empty lat/lon. The undisclosed
+case is not queried: a country centroid would be a different location.
+The script never invents a coordinate and does not substitute a nearby
+city. A transport or HTTP failure aborts before the feed is written.
 """
 
 from __future__ import annotations
@@ -97,6 +99,10 @@ CATEGORY_ALIASES = {
 }
 OFFSET_RE = re.compile(
     r"\b\d+(?:\.\d+)?\s*(?:nm|nmi|km|kilometers|nautical miles)\b",
+    re.IGNORECASE,
+)
+UNDISCLOSED_RE = re.compile(
+    r"\(\s*approximate\s*:\s*location not disclosed\s*\)",
     re.IGNORECASE,
 )
 ROAD_HINTS = ("road", "street", "highway", "avenue", "lane", "bridge")
@@ -432,12 +438,40 @@ def is_area_hit(hit: dict) -> bool:
     return category == "place" and kind in AREA_PLACE_TYPES
 
 
+def _admin_name_matches_query(query: str, candidate: str) -> bool:
+    """True when a parent region is the area named in the query.
+
+    A village called Zaporizhzhia in Kherson Oblast must not supply
+    Kherson as the follow-up for a Zaporizhzhia Oblast query.
+    """
+    skip = set(LOCALITY_TYPE_WORDS) | set(COMPASS_WORDS) | {"the", "of", "and"}
+    first = query.split(",")[0]
+    query_tokens = [
+        word
+        for word in re.findall(r"[a-z0-9']+", first.casefold())
+        if word not in skip and len(word) > 2
+    ]
+    candidate_tokens = [
+        word
+        for word in re.findall(r"[a-z0-9']+", candidate.casefold())
+        if word not in skip and len(word) > 2
+    ]
+    if not query_tokens:
+        return True
+    return any(
+        left == right or left in right or right in left
+        for left in query_tokens
+        for right in candidate_tokens
+    )
+
+
 def area_followup(query: str, hits: list[dict]) -> str | None:
     """One extra query for the admin area named on a building hit.
 
     The name comes from Nominatim's address for that hit. A district query
-    uses city_district; a county query uses county. The result is kept only
-    when it is itself an area.
+    uses city_district; a county query uses county. A state or region is
+    used only when it is the area named in the query. The result is kept
+    only when it is itself an area.
     """
     folded = query.casefold()
     if "county" in folded:
@@ -447,11 +481,19 @@ def area_followup(query: str, hits: list[dict]) -> str | None:
     else:
         keys = ("state", "county", "region", "city_district")
     tail = ", ".join(part.strip() for part in query.split(",")[1:] if part.strip())
+    asks_for_region = any(word in folded for word in ("oblast", "governorate", "province", "prefecture"))
     for hit in hits:
         address = hit.get("address") if isinstance(hit.get("address"), dict) else {}
+        # A same-named village in another oblast must not donate that oblast's county.
+        if asks_for_region:
+            parent = str(address.get("state") or address.get("region") or "").strip()
+            if parent and not _admin_name_matches_query(query, parent):
+                continue
         for key in keys:
             name = str(address.get(key) or "").strip()
             if not name:
+                continue
+            if key in {"state", "region"} and not _admin_name_matches_query(query, name):
                 continue
             follow = f"{name}, {tail}" if tail else name
             follow = " ".join(follow.split())
@@ -483,10 +525,15 @@ def hit_is_usable(query: str, hit: dict) -> bool:
 def geocode_place(place: str) -> tuple[tuple[float, float] | None, str, str | None]:
     """Return ((lat, lon) or None, reason, approximate note).
 
-    reason is "ok", "short", "no_result", or "offset". "short" means the
-    full place string returned no hits and a locality-plus-country query
-    matched. Transport failures raise.
+    reason is "ok", "short", "no_result", "offset", or "undisclosed".
+    "short" means the full place string returned no hits and a
+    locality-plus-country query matched. "undisclosed" means the place
+    note says the location was not disclosed, so Nominatim is not called.
+    Transport failures raise.
     """
+    if UNDISCLOSED_RE.search(place):
+        print(f"UNLOCATED\t{place}\tundisclosed\tskipped", file=sys.stderr)
+        return None, "undisclosed", None
     candidates = query_candidates(place)
     if not candidates:
         print(f"UNLOCATED\t{place}\tno_result\tquery=", file=sys.stderr)

@@ -6,6 +6,126 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          34.365911,
+          53.278898
+        ]
+      },
+      "properties": {
+        "id": "tm-28cc9142a1",
+        "category": "strike",
+        "place": "Bryansk, Russia",
+        "what": "Governor Yegor Kovalchuk says an explosive dropped from a Ukrainian drone killed a man in Bezhitsky district, six people were injured and three apartment blocks and 11 cars damaged in Sovetsky district, and a drone hit a bus depot in Novozybkov, injuring a driver and damaging four buses",
+        "when_utc": "overnight Oct 26-27, 2026",
+        "source": "https://ura.news/articles/1053139287",
+        "status": "claim",
+        "target_type": "city",
+        "coord_precision": "exact",
+        "added_utc": "2026-10-27T07:09:44Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          36.060547,
+          48.239536
+        ]
+      },
+      "properties": {
+        "id": "tm-5aaba342d0",
+        "category": "strike",
+        "place": "Synelnykove Raion, Dnipropetrovsk Oblast, Ukraine",
+        "what": "Governor Oleksandr Hanzha says Russian forces made 40+ drone and glide-bomb attacks on Dnipro and the region, damaging homes in the Shakhtarske, Vasylkivka and Petropavlivka communities and injuring three women; infrastructure in Dnipro was also damaged",
+        "when_utc": "evening Oct 26 to overnight Oct 27, 2026",
+        "source": "https://www.ukrinform.ua/rubric-regions/4178466-rosiani-z-vecora-ponad-40-raziv-atakuvali-dnipro-ta-oblast-e-postrazdali.html",
+        "status": "claim",
+        "target_type": "city",
+        "coord_precision": "exact",
+        "added_utc": "2026-10-27T07:09:44Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "tm-8a4a8aa314",
+        "category": "strike",
+        "place": "Zaporizhzhia Oblast, Ukraine",
+        "what": "Governor Ivan Fedorov says Russian attacks injured five people including a 17-year-old, and counts 908 strikes on 59 settlements over the past day",
+        "when_utc": "24h to morning Oct 27, 2026",
+        "source": "https://unn.ua/en/news/overnight-russia-attacked-kyiv-kharkiv-zaporizhzhia-and-dnipropetrovsk-region-there-are-fatalities-injuries-and-extensive-destruction",
+        "status": "claim",
+        "target_type": "city",
+        "coord_precision": "exact",
+        "added_utc": "2026-10-27T07:09:44Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          25.937653,
+          48.28647
+        ]
+      },
+      "properties": {
+        "id": "tm-c048303da6",
+        "category": "strike",
+        "place": "Chernivtsi, Ukraine",
+        "what": "Regional head Ruslan Osypenko says debris from a Russian jet-powered drone damaged a power facility, blacking out much of Chernivtsi Oblast and parts of the city for more than two hours; no casualties; power is being restored",
+        "when_utc": "2026-10-26 ~18:00Z",
+        "source": "https://suspilne.media/chernivtsi/1437587-u-cerniveckij-oblasti-postupovo-vidnovluut-elektropostacanna/",
+        "status": "confirmed (outage); attribution is a claim",
+        "target_type": "infrastructure",
+        "coord_precision": "exact",
+        "added_utc": "2026-10-27T07:09:44Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.391567,
+          33.164976
+        ]
+      },
+      "properties": {
+        "id": "tm-850501d102",
+        "category": "strike",
+        "place": "Hadatha, Bint Jbeil, Lebanon",
+        "what": "Lebanese sources say Israeli artillery shelled targets between Hadatha and Aita al-Jabal",
+        "when_utc": "2026-10-26 ~22:00Z",
+        "source": "https://www.newsru.co.il/israel/27oct2026/d1117.html",
+        "status": "claim",
+        "target_type": null,
+        "coord_precision": "exact",
+        "added_utc": "2026-10-27T07:09:44Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "tm-2bf52d7d42",
+        "category": "military_movement",
+        "place": "China (approximate: location not disclosed)",
+        "what": "State broadcaster CCTV released footage of a People's Liberation Army Rocket Force missile launch drill in mountainous terrain, with units ordered to launch without advance notice; no strike",
+        "when_utc": "footage released 2026-10-26; drill date not given",
+        "source": "https://www.chosun.com/english/world-en/2026/10/27/K73JRZAZKFEC5P7BC3R533SCPQ/",
+        "status": "confirmed",
+        "target_type": null,
+        "coord_precision": "approximate: location not disclosed",
+        "added_utc": "2026-10-27T07:09:44Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           36.347215,
           46.734315
         ]

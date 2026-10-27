@@ -45,12 +45,13 @@ The script uses only the Python standard library. It:
 3. Appends new features to `events.geojson`.
 4. Regenerates `events.csv` from the GeoJSON.
 
-Coordinates are copied only from a Nominatim hit for that place string. If Nominatim returns nothing usable, the event is still appended, with null geometry and empty `lat`/`lon`. Three cases count as unusable, and the script does not fill in a nearby city or a coordinate of its own:
+Coordinates are copied only from a Nominatim hit for that place string. If Nominatim returns nothing usable, the event is still appended, with null geometry and empty `lat`/`lon`. These cases count as unusable, and the script does not fill in a nearby city or a coordinate of its own:
 
 - No result.
+- The place says the location was not disclosed, as in `China (approximate: location not disclosed)`. That row is not sent to Nominatim. A country centroid would be a different location.
 - The place is a distance and bearing from somewhere else (for example `63nm SE of Al-Faw`). A hit on the reference port would be a different location.
 - The hit is only a road, unless the place text itself names a road. A comma-separated place also has to mention its last clause (usually the country or city) in the result label.
-- The place names a district, county, or similar area, and the hit is a building or office. If that hit's address names the surrounding area, the script looks the area up once and keeps the point only when Nominatim returns the area itself.
+- The place names a district, county, or similar area, and the hit is a building or office. If that hit's address names the surrounding area, the script looks the area up once and keeps the point only when Nominatim returns the area itself. A state or region on that address is used only when it is the area named in the query, so a same-named village in another oblast does not move the point.
 - The full place string returns no hits. The script then tries the leading locality plus the country, with a trailing word such as County, District, or crossing removed (`Kaepung County, North Korea` becomes `Kaepung, North Korea`; `Nasib border crossing, Daraa, Syria` becomes `Nasib, Syria`; `Al-Mawasi, Khan Yunis, Gaza Strip` becomes `Al-Mawasi, Gaza Strip`). A hit from that shorter query is stored as `approximate: <matched place>`, the same form as `approximate: Houthi-held Yemen`. A shortened hit has to still name the place, including an old or alternate name Nominatim still returns. A bare direction word is not queried on its own, so `Southern Bridge, Kyiv, Ukraine` is retried as `Southern Bridge, Ukraine` rather than `Southern, Ukraine`.
 
 If Nominatim cannot be reached, the script exits without rewriting the feed.
