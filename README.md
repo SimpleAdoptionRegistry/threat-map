@@ -51,7 +51,7 @@ Coordinates are copied only from a Nominatim hit for that place string. If Nomin
 - The place is a distance and bearing from somewhere else (for example `63nm SE of Al-Faw`). A hit on the reference port would be a different location.
 - The hit is only a road, unless the place text itself names a road. A comma-separated place also has to mention its last clause (usually the country or city) in the result label.
 - The place names a district, county, or similar area, and the hit is a building or office. If that hit's address names the surrounding area, the script looks the area up once and keeps the point only when Nominatim returns the area itself.
-- The full place string returns no hits. The script then tries the leading locality plus the country, with a trailing word such as County or District removed (`Kaepung County, North Korea` becomes `Kaepung, North Korea`). A hit from that shorter query is stored as `approximate: <matched place>`, the same form as `approximate: Houthi-held Yemen`.
+- The full place string returns no hits. The script then tries the leading locality plus the country, with a trailing word such as County, District, or crossing removed (`Kaepung County, North Korea` becomes `Kaepung, North Korea`; `Nasib border crossing, Daraa, Syria` becomes `Nasib, Syria`). A hit from that shorter query is stored as `approximate: <matched place>`, the same form as `approximate: Houthi-held Yemen`.
 
 If Nominatim cannot be reached, the script exits without rewriting the feed.
 

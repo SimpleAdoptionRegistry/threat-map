@@ -6,6 +6,116 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          50.12588,
+          23.303608
+        ]
+      },
+      "properties": {
+        "id": "tm-94df329841",
+        "category": "strike",
+        "place": "Eastern Province, Saudi Arabia",
+        "what": "Saudi-led coalition says its air defenses intercepted and destroyed three Houthi ballistic missiles fired toward the Eastern Province; no casualties reported",
+        "when_utc": "2026-10-27 ~00:39Z (reported)",
+        "source": "https://www.spa.gov.sa/en/N2711193",
+        "status": "claim",
+        "target_type": null,
+        "coord_precision": "exact",
+        "added_utc": "2026-10-27T02:12:42Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.474057,
+          33.345103
+        ]
+      },
+      "properties": {
+        "id": "tm-7411605a97",
+        "category": "strike",
+        "place": "Mayfadoun, Nabatieh, Lebanon",
+        "what": "NNA says an Israeli drone dropped two bombs on a house between Shoukin and Mayfadoun (no injuries), Israeli artillery shelled al-Sawwan and Mansouri (Tyre), and Israeli forces set off blasts in Zawtar al-Sharqiya",
+        "when_utc": "2026-10-26 evening (reported ~23:00Z)",
+        "source": "https://www.aa.com.tr/en/middle-east/israel-carries-out-strikes-in-southern-lebanon-in-fresh-ceasefire-violations/4101864",
+        "status": "claim",
+        "target_type": "city",
+        "coord_precision": "exact",
+        "added_utc": "2026-10-27T02:12:42Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.459096,
+          33.273534
+        ]
+      },
+      "properties": {
+        "id": "tm-c073b281bf",
+        "category": "strike",
+        "place": "Qantara, Marjayoun, Lebanon",
+        "what": "NNA says an Israeli airstrike hit the outskirts of Qantara in the Wadi al-Saluki area",
+        "when_utc": "2026-10-26 evening (reported ~23:00Z)",
+        "source": "https://www.aa.com.tr/en/middle-east/israel-carries-out-strikes-in-southern-lebanon-in-fresh-ceasefire-violations/4101864",
+        "status": "claim",
+        "target_type": null,
+        "coord_precision": "exact",
+        "added_utc": "2026-10-27T02:12:42Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          36.184405,
+          32.551721
+        ]
+      },
+      "properties": {
+        "id": "tm-7f2a1e06f5",
+        "category": "closure",
+        "place": "Nasib border crossing, Daraa, Syria",
+        "what": "Syria's border and customs authority closed the Nasib (Jaber) crossing with Jordan to all passenger and commercial traffic in both directions after Jordanian strikes in Daraa; no reopening date given",
+        "when_utc": "2026-10-27 (announced early Tuesday local)",
+        "source": "https://www.aa.com.tr/en/middle-east/syria-closes-border-crossing-with-jordan-to-passengers-trade/4101844",
+        "status": "confirmed",
+        "target_type": null,
+        "coord_precision": "approximate: Nasib, Dar'a Subdistrict, Dar'a District, Dar'a Governorate",
+        "added_utc": "2026-10-27T02:12:42Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.605402,
+          24.491739
+        ]
+      },
+      "properties": {
+        "id": "tm-b79269e064",
+        "category": "military_movement",
+        "place": "Taiwan Strait",
+        "what": "Taiwan's defense ministry tracked 8 Chinese navy ships, 4 official ships and 3 aircraft sorties around Taiwan; no fire reported",
+        "when_utc": "2026-10-25 22:00Z to 2026-10-26 22:00Z",
+        "source": "https://www.cna.com.tw/news/aipl/202610270025.aspx",
+        "status": "confirmed",
+        "target_type": null,
+        "coord_precision": "exact",
+        "added_utc": "2026-10-27T02:12:42Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           36.171339,
           49.95273
         ]
@@ -58,7 +168,7 @@
         "id": "tm-c87f34a62a",
         "category": "strike",
         "place": "Al-Muzayrib, Daraa, Syria",
-        "what": "Jordanian warplanes struck what Amman called terrorist hideouts in western and eastern Daraa (incl. near Nasib) in retaliation for the Karak church funeral attack; Syria says 8 civilians killed",
+        "what": "Jordanian warplanes struck what Amman called terrorist hideouts in Daraa in retaliation for the Karak church attack; Syrian tolls disputed: Daraa Health Directorate 6 killed incl. 3 children per Anadolu, health director says 10 per Ajel, earlier Syrian figure 8",
         "when_utc": "2026-10-26 ~20:30 UTC",
         "source": "https://www.arabnews.com/middle-east/jordan-strikes-southern-syria-after-church-funeral-attack-damascus-says-8-civilians-killed-3008415",
         "status": "confirmed (strikes); toll is a claim",

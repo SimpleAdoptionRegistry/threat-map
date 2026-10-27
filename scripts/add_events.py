@@ -200,13 +200,26 @@ LOCALITY_TYPE_WORDS = {
     "region",
     "subdistrict",
     "borough",
+    "crossing",
+    "border",
+    "checkpoint",
+    "terminal",
+    "station",
+    "port",
+    "bridge",
+    "camp",
+    "base",
+    "airport",
+    "airbase",
+    "airfield",
 }
 
 
 def shorter_queries(place: str) -> list[str]:
     """Locality plus country, for when the full place string returns nothing.
 
-    "Kaepung County, North Korea" becomes "Kaepung, North Korea". The result
+    "Kaepung County, North Korea" becomes "Kaepung, North Korea".
+    "Nasib border crossing, Daraa, Syria" becomes "Nasib, Syria". The result
     is not used until the full string has no Nominatim hits.
     """
     full = " ".join(QUALIFIER_RE.sub(" ", NOTE_PAREN_RE.sub(" ", geocode_query(place))).split())
