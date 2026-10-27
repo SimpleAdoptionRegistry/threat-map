@@ -226,10 +226,14 @@
     }
 
     function sourceLink(url) {
-      const text = escapeHtml(url || "");
-      if (!/^https?:\/\//i.test(url || "")) return text;
+      const raw = String(url || "").trim();
+      if (!raw) return "";
+      const parts = raw.split(/\s+/);
+      if (parts.length > 1) return parts.map(sourceLink).join(" ");
+      const text = escapeHtml(raw);
+      if (!/^https?:\/\//i.test(raw)) return text;
       let host = text;
-      try { host = escapeHtml(new URL(url).host); } catch (err) { /* keep full text */ }
+      try { host = escapeHtml(new URL(raw).host); } catch (err) { /* keep full text */ }
       return '<a href="' + text + '" target="_blank" rel="noopener noreferrer">' + host + "</a>";
     }
 

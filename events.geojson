@@ -6,6 +6,94 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          24.816412,
+          12.010667
+        ]
+      },
+      "properties": {
+        "id": "tm-f62673dc93",
+        "category": "strike",
+        "place": "Nyala, South Darfur, Sudan",
+        "what": "A medical source and witnesses told AFP a drone struck a market in north Nyala, killing 21 and wounding 40+; the attacker was not identified, and AFP notes Sudan's army regularly strikes Nyala, the RSF's de facto capital",
+        "when_utc": "2026-10-26 ~18:00Z",
+        "source": "https://www.arabnews.com/middle-east/drone-strike-on-sudans-nyala-kills-21-injures-40-medical-source-3008473",
+        "status": "claim",
+        "target_type": "city",
+        "coord_precision": "exact",
+        "added_utc": "2026-10-27T08:12:15Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          37.175311,
+          49.694973
+        ]
+      },
+      "properties": {
+        "id": "tm-cbb09a2795",
+        "category": "strike",
+        "place": "Shevchenkove, Kupiansk Raion, Kharkiv Oblast, Ukraine",
+        "what": "Governor Oleh Syniehubov says Russian shelling killed a 74-year-old woman and damaged a house and power lines",
+        "when_utc": "2026-10-26",
+        "source": "https://kharkivoda.gov.ua/news/137692",
+        "status": "confirmed",
+        "target_type": "city",
+        "coord_precision": "exact",
+        "added_utc": "2026-10-27T08:12:15Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          56.20277,
+          26.449406
+        ]
+      },
+      "properties": {
+        "id": "tm-bde4f1f0f2",
+        "category": "shipping",
+        "place": "Strait of Hormuz",
+        "what": "Iran's armed forces chief of staff Maj. Gen. Ali Abdollahi was quoted by Tasnim as saying the strait is 'completely closed' and vessels cannot transit unless they comply with Iranian regulations; no navy or UKMTO notice confirms a closure",
+        "when_utc": "2026-10-26 ~21:10Z (reported)",
+        "source": "https://gulfnews.com/world/mena/middle-east-war-saudi-arabia-intercepts-houthi-missiles-drones-as-iran-talks-continue-1.500724842",
+        "status": "claim",
+        "target_type": null,
+        "coord_precision": "exact",
+        "added_utc": "2026-10-27T08:12:15Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          135.0,
+          20.0
+        ]
+      },
+      "properties": {
+        "id": "tm-318e021616",
+        "category": "military_movement",
+        "place": "Philippine Sea (approximate)",
+        "what": "Yonhap reports China's Liaoning carrier group sailed around the Philippines and is heading north into the Philippine Sea, where the US-Japan Keen Sword exercise runs to Oct 29; China says it is routine training not aimed at any country; no fire reported",
+        "when_utc": "reported 2026-10-27",
+        "source": "https://www.yna.co.kr/view/AKR20261027100400704?section=international%2Fall",
+        "status": "confirmed",
+        "target_type": null,
+        "coord_precision": "approximate",
+        "added_utc": "2026-10-27T08:12:15Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           34.365911,
           53.278898
         ]
@@ -36,10 +124,10 @@
         "id": "tm-5aaba342d0",
         "category": "strike",
         "place": "Synelnykove Raion, Dnipropetrovsk Oblast, Ukraine",
-        "what": "Governor Oleksandr Hanzha says Russian forces made 40+ drone and glide-bomb attacks on Dnipro and the region, damaging homes in the Shakhtarske, Vasylkivka and Petropavlivka communities and injuring three women; infrastructure in Dnipro was also damaged",
+        "what": "Governor Oleksandr Hanzha says Russian forces made 40+ drone and glide-bomb attacks on Dnipro and the region, damaging homes in the Shakhtarske, Vasylkivka and Petropavlivka communities and injuring three women; infrastructure in Dnipro was also damaged. In Shakhtarske a drone injured two women and set two five-storey buildings on fire.",
         "when_utc": "evening Oct 26 to overnight Oct 27, 2026",
         "source": "https://www.ukrinform.ua/rubric-regions/4178466-rosiani-z-vecora-ponad-40-raziv-atakuvali-dnipro-ta-oblast-e-postrazdali.html",
-        "status": "claim",
+        "status": "confirmed",
         "target_type": "city",
         "coord_precision": "exact",
         "added_utc": "2026-10-27T07:09:44Z"
@@ -47,17 +135,23 @@
     },
     {
       "type": "Feature",
-      "geometry": null,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.118287,
+          47.850786
+        ]
+      },
       "properties": {
         "id": "tm-8a4a8aa314",
         "category": "strike",
         "place": "Zaporizhzhia Oblast, Ukraine",
-        "what": "Governor Ivan Fedorov says Russian attacks injured five people including a 17-year-old, and counts 908 strikes on 59 settlements over the past day",
+        "what": "Governor Ivan Fedorov says Russian attacks injured five people including a 17-year-old, and counts 908 strikes on 59 settlements over the past day; the five injured, including a 17-year-old, were in Zaporizhzhia city",
         "when_utc": "24h to morning Oct 27, 2026",
-        "source": "https://unn.ua/en/news/overnight-russia-attacked-kyiv-kharkiv-zaporizhzhia-and-dnipropetrovsk-region-there-are-fatalities-injuries-and-extensive-destruction",
-        "status": "claim",
+        "source": "https://unn.ua/en/news/overnight-russia-attacked-kyiv-kharkiv-zaporizhzhia-and-dnipropetrovsk-region-there-are-fatalities-injuries-and-extensive-destruction https://news.novyny.live/rosiia-zavdala-908-udariv-po-zaporizhzhiu-travmovano-piatokh-osib-351109.html",
+        "status": "confirmed",
         "target_type": "city",
-        "coord_precision": "exact",
+        "coord_precision": "approximate: city point for oblast-wide report",
         "added_utc": "2026-10-27T07:09:44Z"
       }
     },

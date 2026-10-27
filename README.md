@@ -27,7 +27,7 @@ Put new events in a JSON file. The file may be a list, or an object with an `eve
 | `place` | Geocoded as written. `(approximate)` or `(approximate: note)` sets `coord_precision` and is removed from the geocoder query only. |
 | `what` | What happened. |
 | `when_utc` | When it happened, kept as supplied (ISO UTC when the source has one). |
-| `source` | URL of the report. |
+| `source` | URL of the report. More than one URL is separated by spaces. |
 | `status` | `confirmed`, `claim`, or a short qualifier. |
 | `category` | One of the categories above. |
 | `target_type` | Short label, or `null`. |
