@@ -107,7 +107,7 @@
         "source": "https://english.palinfo.com/news/2026/10/27/372642/",
         "status": "claim",
         "target_type": null,
-        "coord_precision": "exact",
+        "coord_precision": "approximate: Deir al-Balah camp point; event in eastern Deir al-Balah",
         "added_utc": "2026-10-27T13:21:46Z"
       }
     },
