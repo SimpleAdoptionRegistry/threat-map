@@ -5,6 +5,44 @@
       "type": "Feature",
       "geometry": null,
       "properties": {
+        "id": "tm-6336132047",
+        "category": "strike",
+        "place": "Southern Bridge, Kyiv, Ukraine",
+        "what": "Kyiv Mayor Klitschko says a Russian ballistic missile in the second overnight wave hit the Southern Bridge over the Dnipro and damaged related metro infrastructure; bridge traffic restricted and green-line metro service reported suspended between Vydubychi and Osokorky",
+        "when_utc": "2026-10-27 ~01:30Z (second wave)",
+        "source": "https://kyivindependent.com/paramedics-caught-under-fire-as-russian-ballistic-missiles-slam-kyiv/",
+        "status": "confirmed",
+        "target_type": "infrastructure",
+        "coord_precision": "exact",
+        "added_utc": "2026-10-27T05:13:20Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          36.369773,
+          54.548871
+        ]
+      },
+      "properties": {
+        "id": "tm-2293fb702b",
+        "category": "closure",
+        "place": "Kaluga Grabtsevo Airport, Russia",
+        "what": "Rosaviatsia imposed temporary restrictions on all arrivals and departures at Kaluga airport, citing flight safety; still closed as of ~01:20Z (Sochi, Gelendzhik and Vnukovo restrictions imposed overnight were lifted)",
+        "when_utc": "2026-10-26 22:22Z (01:22 MSK Oct 27)",
+        "source": "https://ria.ru/20261027/ogranicheniya-2127177199.html",
+        "status": "confirmed",
+        "target_type": "airfield",
+        "coord_precision": "approximate: Kaluga International Airport, Kaluga",
+        "added_utc": "2026-10-27T05:13:20Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
         "id": "tm-a2e33b0d5c",
         "category": "strike",
         "place": "Mae Nue Tha, Karen State, Myanmar",
@@ -272,7 +310,7 @@
         "id": "tm-c87f34a62a",
         "category": "strike",
         "place": "Al-Muzayrib, Daraa, Syria",
-        "what": "Jordanian warplanes struck what Amman called terrorist hideouts in Daraa in retaliation for the Karak church attack; Syrian tolls disputed: Daraa Health Directorate 6 killed incl. 3 children per Anadolu, health director says 10 per Ajel, earlier Syrian figure 8",
+        "what": "Jordanian warplanes struck what Amman called militant hideouts at four sites in the Daraa and Sweida countryside in retaliation for the Karak church attack; Syrian tolls disputed: Syrian Civil Defense preliminary 7 killed incl. 3 children and a woman, 3 wounded; a Syrian health official later said 8 killed, 4 wounded (Reuters: https://www.gmanetwork.com/news/topstories/world/1007278/jordan-says-its-air-force-struck-militant-hideouts-in-syria-after-church-attack/story/); earlier figures 5, 6 and 10; Jordan says strikes were coordinated with Damascus, which denies prior coordination",
         "when_utc": "2026-10-26 ~20:30 UTC",
         "source": "https://www.arabnews.com/middle-east/jordan-strikes-southern-syria-after-church-funeral-attack-damascus-says-8-civilians-killed-3008415",
         "status": "confirmed (strikes); toll is a claim",

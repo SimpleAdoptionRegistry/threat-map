@@ -213,6 +213,19 @@ LOCALITY_TYPE_WORDS = {
     "airbase",
     "airfield",
 }
+COMPASS_WORDS = {
+    "southern",
+    "northern",
+    "eastern",
+    "western",
+    "north",
+    "south",
+    "east",
+    "west",
+    "upper",
+    "lower",
+    "central",
+}
 
 
 def shorter_queries(place: str) -> list[str]:
@@ -221,36 +234,79 @@ def shorter_queries(place: str) -> list[str]:
     "Kaepung County, North Korea" becomes "Kaepung, North Korea".
     "Nasib border crossing, Daraa, Syria" becomes "Nasib, Syria".
     "Al-Mawasi, Khan Yunis, Gaza Strip" becomes "Al-Mawasi, Gaza Strip".
+    A leftover direction word is not used on its own: "Southern Bridge,
+    Kyiv, Ukraine" becomes "Southern Bridge, Ukraine", not "Southern, Ukraine".
     The result is not used until the full string has no Nominatim hits.
     """
     full = " ".join(QUALIFIER_RE.sub(" ", NOTE_PAREN_RE.sub(" ", geocode_query(place))).split())
     parts = [part.strip() for part in full.split(",") if part.strip()]
     if len(parts) < 2:
         return []
-    words = parts[0].split()
+    original_words = parts[0].split()
+    words = list(original_words)
     while words and words[-1].casefold().strip(".") in LOCALITY_TYPE_WORDS:
         words.pop()
     locality = " ".join(words).strip()
-    if not locality:
-        return []
-    if locality.casefold() == parts[0].casefold() and len(parts) < 3:
-        return []
-    query = f"{locality}, {parts[-1]}"
-    if query.casefold() == full.casefold():
-        return []
-    return [query]
+    compass_only = bool(locality) and all(word.casefold() in COMPASS_WORDS for word in locality.split())
+    queries: list[str] = []
+
+    def add(query: str) -> None:
+        query = " ".join(query.split()).strip(" ,")
+        if not query or query.casefold() == full.casefold():
+            return
+        if query.casefold() in {item.casefold() for item in queries}:
+            return
+        queries.append(query)
+
+    if locality and locality.casefold() != parts[0].casefold() and not compass_only:
+        add(f"{locality}, {parts[-1]}")
+    if len(parts) >= 3:
+        add(f"{parts[0]}, {parts[-1]}")
+    if (
+        len(original_words) >= 3
+        and original_words[-1].casefold().strip(".") in LOCALITY_TYPE_WORDS
+    ):
+        add(f"{original_words[0]} {original_words[-1]}, {parts[-1]}")
+    return queries
+
+
+def distinctive_tokens(place: str) -> set[str]:
+    """Words a shortened hit must still mention, ignoring the country and type words."""
+    full = " ".join(QUALIFIER_RE.sub(" ", NOTE_PAREN_RE.sub(" ", geocode_query(place))).split())
+    country = last_clause(full) or ""
+    skip = set(COMPASS_WORDS) | set(LOCALITY_TYPE_WORDS) | set(re.findall(r"[a-z0-9']+", country.casefold()))
+    skip.update({"the", "of", "and"})
+    return {
+        word
+        for word in re.findall(r"[a-z0-9']+", full.casefold())
+        if word not in skip and len(word) > 2
+    }
 
 
 def match_label(hit: dict, query: str) -> str:
     """Short place label for an approximate note, without the searched country."""
+    name = str(hit.get("name") or "").strip()
+    address = hit.get("address") if isinstance(hit.get("address"), dict) else {}
     country = last_clause(query)
+    locality = ""
+    for key in ("city", "town", "municipality", "state", "county", "village"):
+        value = str(address.get(key) or "").strip()
+        if not value:
+            continue
+        if name and value.casefold() == name.casefold():
+            continue
+        if country and value.casefold() == country.casefold():
+            continue
+        locality = value
+        break
+    if name and locality:
+        return f"{name}, {locality}"
+    if name:
+        return name
     parts = [part.strip() for part in str(hit.get("display_name") or "").split(",") if part.strip()]
     if country and parts and parts[-1].casefold() == country.casefold():
         parts = parts[:-1]
-    label = ", ".join(parts)
-    if not label:
-        label = str(hit.get("name") or "").strip()
-    return label
+    return ", ".join(parts)
 
 
 def query_candidates(place: str) -> list[str]:
@@ -460,7 +516,12 @@ def geocode_place(place: str) -> tuple[tuple[float, float] | None, str, str | No
             return found, "ok", None
     if not full_string_had_hits:
         for query in shorter_queries(place):
-            found, _results, label = _geocode_query(place, query, seen_queries)
+            found, _results, label = _geocode_query(
+                place,
+                query,
+                seen_queries,
+                required_tokens=distinctive_tokens(place),
+            )
             if found is not None:
                 return found, "short", label or None
     tried = candidates + shorter_queries(place)
@@ -468,11 +529,19 @@ def geocode_place(place: str) -> tuple[tuple[float, float] | None, str, str | No
     return None, "no_result", None
 
 
+def _hit_mentions(hit: dict, tokens: set[str] | None) -> bool:
+    if not tokens:
+        return True
+    blob = f"{hit.get('name') or ''} {hit.get('display_name') or ''}".casefold()
+    return any(token in blob for token in tokens)
+
+
 def _geocode_query(
     place: str,
     query: str,
     seen_queries: set[str],
     area_only: bool | None = None,
+    required_tokens: set[str] | None = None,
 ) -> tuple[tuple[float, float] | None, list[dict], str]:
     if query.casefold() in seen_queries:
         return None, [], ""
@@ -490,6 +559,12 @@ def _geocode_query(
         if require_area and not is_area_hit(hit):
             print(
                 f"REJECT\t{place}\tnot_area\t{hit.get('category')}/{hit.get('type')}\t{display}",
+                file=sys.stderr,
+            )
+            continue
+        if required_tokens is not None and not _hit_mentions(hit, required_tokens):
+            print(
+                f"REJECT\t{place}\tshort_mismatch\t{hit.get('category')}/{hit.get('type')}\t{display}",
                 file=sys.stderr,
             )
             continue
