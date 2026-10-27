@@ -9,7 +9,11 @@ target_type. target_type may be null. Optional coord_precision is "exact"
 or "approximate"; optional coord_note is appended for approximate values.
 If coord_precision is omitted, a place ending in "(approximate)" or
 "(approximate: note)" is stored as approximate and that parenthesis is not
-sent to the geocoder.
+sent to the geocoder. A different parenthesis that names a locality, such
+as "(Desnianskyi district)", is searched first as a more specific query.
+A parenthesis that starts with "also", "including", "near", or "and" stays
+in the place text and is not geocoded as its own point. The words
+"closure order" are stored as the category "closure".
 
 Nominatim is called at most once per second with a custom User-Agent.
 Only coordinates returned by Nominatim are stored. An empty result, a
@@ -74,6 +78,14 @@ APPROX_RE = re.compile(
     r"\s*\(approximate(?::\s*([^)]*))?\)\s*",
     re.IGNORECASE,
 )
+NOTE_PAREN_RE = re.compile(
+    r"\s*\((?:also|including|incl\.?|near|and)\b[^)]*\)\s*",
+    re.IGNORECASE,
+)
+QUALIFIER_RE = re.compile(r"\(([^)]*)\)")
+CATEGORY_ALIASES = {
+    "closure order": "closure",
+}
 OFFSET_RE = re.compile(
     r"\b\d+(?:\.\d+)?\s*(?:nm|nmi|km|kilometers|nautical miles)\b",
     re.IGNORECASE,
@@ -141,6 +153,35 @@ def coord_precision_for(event: dict, place: str) -> str:
 def geocode_query(place: str) -> str:
     cleaned = APPROX_RE.sub(" ", place)
     return " ".join(cleaned.split())
+
+
+def canonical_category(category: str) -> str:
+    compact = " ".join(category.split()).casefold()
+    return CATEGORY_ALIASES.get(compact, category.strip())
+
+
+def query_candidates(place: str) -> list[str]:
+    """Nominatim queries for a place, most specific first.
+
+    Coordinates still come only from a hit on one of these queries.
+    """
+    without_approx = " ".join(APPROX_RE.sub(" ", place).split())
+    without_notes = " ".join(NOTE_PAREN_RE.sub(" ", without_approx).split())
+    qualifiers = [part.strip() for part in QUALIFIER_RE.findall(without_notes) if part.strip()]
+    base = " ".join(QUALIFIER_RE.sub(" ", without_notes).split())
+    candidates: list[str] = []
+
+    def add(query: str) -> None:
+        query = " ".join(query.split()).strip(" ,")
+        if query and query.casefold() not in {item.casefold() for item in candidates}:
+            candidates.append(query)
+
+    for qualifier in qualifiers:
+        if base:
+            add(f"{qualifier}, {base}")
+    add(base)
+    add(without_approx)
+    return candidates
 
 
 def make_id(source: str, place: str, what: str, used: set[str]) -> str:
@@ -249,11 +290,12 @@ def geocode_place(place: str) -> tuple[tuple[float, float] | None, str]:
 
     reason is "ok", "no_result", or "offset". Transport failures raise.
     """
-    query = geocode_query(place)
-    if not query:
+    candidates = query_candidates(place)
+    if not candidates:
+        print(f"UNLOCATED\t{place}\tno_result\tquery=", file=sys.stderr)
         return None, "no_result"
-    results = nominatim_search(query)
     if OFFSET_RE.search(place):
+        results = nominatim_search(candidates[0])
         display = results[0].get("display_name", "") if results else ""
         coords = usable_hit(results[0]) if results else None
         print(
@@ -261,18 +303,23 @@ def geocode_place(place: str) -> tuple[tuple[float, float] | None, str]:
             file=sys.stderr,
         )
         return None, "offset"
-    for hit in results:
-        display = hit.get("display_name", "")
-        if not hit_is_usable(query, hit):
+    for query in candidates:
+        results = nominatim_search(query)
+        for hit in results:
+            display = hit.get("display_name", "")
+            if not hit_is_usable(query, hit):
+                print(
+                    f"REJECT\t{place}\t{hit.get('category')}/{hit.get('type')}\t{display}",
+                    file=sys.stderr,
+                )
+                continue
+            lat, lon = usable_hit(hit)
             print(
-                f"REJECT\t{place}\t{hit.get('category')}/{hit.get('type')}\t{display}",
+                f"GEOCODED\t{place}\t{lat:.6f}\t{lon:.6f}\tquery={query}\t{display}",
                 file=sys.stderr,
             )
-            continue
-        lat, lon = usable_hit(hit)
-        print(f"GEOCODED\t{place}\t{lat:.6f}\t{lon:.6f}\t{display}", file=sys.stderr)
-        return (lat, lon), "ok"
-    print(f"UNLOCATED\t{place}\tno_result\tquery={query}", file=sys.stderr)
+            return (lat, lon), "ok"
+    print(f"UNLOCATED\t{place}\tno_result\tquery={' | '.join(candidates)}", file=sys.stderr)
     return None, "no_result"
 
 
@@ -285,7 +332,7 @@ def new_feature(event: dict, used_ids: set[str], added_utc: str) -> dict:
     source = str(event["source"]).strip()
     when_utc = str(event["when_utc"]).strip()
     status = str(event["status"]).strip()
-    category = str(event["category"]).strip()
+    category = canonical_category(str(event["category"]))
     if not place or not what or not source or not when_utc or not status:
         raise SystemExit(f"Event has an empty required string: {place!r}")
     if category not in CATEGORIES:

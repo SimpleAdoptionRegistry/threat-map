@@ -356,6 +356,94 @@
         "coord_precision": "approximate",
         "added_utc": "2026-10-26T20:59:28Z"
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          36.012669,
+          32.688297
+        ]
+      },
+      "properties": {
+        "id": "tm-c87f34a62a",
+        "category": "strike",
+        "place": "Al-Muzayrib, Daraa, Syria",
+        "what": "Jordanian warplanes struck what Amman called terrorist hideouts in western and eastern Daraa (incl. near Nasib) in retaliation for the Karak church funeral attack; Syria says 8 civilians killed",
+        "when_utc": "2026-10-26 ~20:30 UTC",
+        "source": "https://www.arabnews.com/middle-east/jordan-strikes-southern-syria-after-church-funeral-attack-damascus-says-8-civilians-killed-3008415",
+        "status": "confirmed (strikes); toll is a claim",
+        "target_type": null,
+        "coord_precision": "exact",
+        "added_utc": "2026-10-27T00:18:19Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          37.769071,
+          44.723958
+        ]
+      },
+      "properties": {
+        "id": "tm-b437f34549",
+        "category": "closure",
+        "place": "Novorossiysk, Russia",
+        "what": "Port waters closed for Russian naval exercises and live-fire drills",
+        "when_utc": "2026-10-26 08:00-10:00 and 17:00-20:59 UTC",
+        "source": "https://www.kommersant.ru/doc/9060380",
+        "status": "confirmed",
+        "target_type": null,
+        "coord_precision": "exact",
+        "added_utc": "2026-10-27T00:18:19Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.085085,
+          13.975836
+        ]
+      },
+      "properties": {
+        "id": "tm-0b15aa78b4",
+        "category": "strike",
+        "place": "Gedaref, Sudan (also Al-Jazira and White Nile states)",
+        "what": "RSF drone strikes hit five power stations, causing widespread blackouts",
+        "when_utc": "2026-10-26 early morning UTC",
+        "source": "https://www.theguardian.com/world/2026/oct/26/sudan-paramilitary-drone-strikes-rapid-support-forces-power-cuts-eastern-states",
+        "status": "claim",
+        "target_type": "infrastructure",
+        "coord_precision": "exact",
+        "added_utc": "2026-10-27T00:18:19Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          30.644687,
+          50.519069
+        ]
+      },
+      "properties": {
+        "id": "tm-c59b77f3fb",
+        "category": "strike",
+        "place": "Kyiv, Ukraine (Desnianskyi district)",
+        "what": "Russian ballistic missiles hit a university campus, dorms, homes and two medical facilities; 1 killed, 10 injured",
+        "when_utc": "2026-10-26 ~19:45 UTC",
+        "source": "https://kyivindependent.com/paramedics-caught-under-fire-as-russian-ballistic-missiles-slam-kyiv/",
+        "status": "confirmed",
+        "target_type": "city",
+        "coord_precision": "exact",
+        "added_utc": "2026-10-27T00:18:19Z"
+      }
     }
   ]
 }

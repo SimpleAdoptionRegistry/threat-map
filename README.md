@@ -39,7 +39,7 @@ python3 scripts/add_events.py path/to/new_events.json
 The script uses only the Python standard library. It:
 
 1. Skips any event whose `source` + `place` + `what` is already in the feed.
-2. Geocodes each new `place` with [OpenStreetMap Nominatim](https://nominatim.openstreetmap.org/) at one request per second, with a custom User-Agent identifying this repo.
+2. Geocodes each new `place` with [OpenStreetMap Nominatim](https://nominatim.openstreetmap.org/) at one request per second, with a custom User-Agent identifying this repo. A parenthesis that names a locality, such as `(Desnianskyi district)`, is tried first as a more specific query. A parenthesis that starts with `also`, `including`, `near`, or `and` stays in the place text and does not become a second point. `closure order` is stored as the category `closure`.
 3. Appends new features to `events.geojson`.
 4. Regenerates `events.csv` from the GeoJSON.
 
