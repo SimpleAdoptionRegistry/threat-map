@@ -12,8 +12,12 @@ If coord_precision is omitted, a place ending in "(approximate)" or
 sent to the geocoder. A different parenthesis that names a locality, such
 as "(Desnianskyi district)", is searched first as a more specific query.
 A parenthesis that starts with "also", "including", "near", or "and" stays
-in the place text and is not geocoded as its own point. The words
-"closure order" are stored as the category "closure".
+in the place text and is not geocoded as its own point. If the full place
+string returns no Nominatim hits, one shorter query is tried: the leading
+locality with a trailing word such as County or District removed, plus the
+country. A hit from that shorter query is stored as approximate, with a
+note naming the match, in the same form as "approximate: Houthi-held Yemen".
+The words "closure order" are stored as the category "closure".
 
 Nominatim is called at most once per second with a custom User-Agent.
 Only coordinates returned by Nominatim are stored. An empty result, a
@@ -172,6 +176,60 @@ def geocode_query(place: str) -> str:
 def canonical_category(category: str) -> str:
     compact = " ".join(category.split()).casefold()
     return CATEGORY_ALIASES.get(compact, category.strip())
+
+
+LOCALITY_TYPE_WORDS = {
+    "county",
+    "district",
+    "raion",
+    "oblast",
+    "governorate",
+    "province",
+    "prefecture",
+    "municipality",
+    "city",
+    "town",
+    "village",
+    "gun",
+    "guyok",
+    "region",
+    "subdistrict",
+    "borough",
+}
+
+
+def shorter_queries(place: str) -> list[str]:
+    """Locality plus country, for when the full place string returns nothing.
+
+    "Kaepung County, North Korea" becomes "Kaepung, North Korea". The result
+    is not used until the full string has no Nominatim hits.
+    """
+    full = " ".join(QUALIFIER_RE.sub(" ", NOTE_PAREN_RE.sub(" ", geocode_query(place))).split())
+    parts = [part.strip() for part in full.split(",") if part.strip()]
+    if len(parts) < 2:
+        return []
+    words = parts[0].split()
+    while words and words[-1].casefold().strip(".") in LOCALITY_TYPE_WORDS:
+        words.pop()
+    locality = " ".join(words).strip()
+    if not locality or locality.casefold() == parts[0].casefold():
+        return []
+    query = f"{locality}, {parts[-1]}"
+    if query.casefold() == full.casefold():
+        return []
+    return [query]
+
+
+def match_label(hit: dict, query: str) -> str:
+    """Short place label for an approximate note, without the searched country."""
+    country = last_clause(query)
+    parts = [part.strip() for part in str(hit.get("display_name") or "").split(",") if part.strip()]
+    if country and parts and parts[-1].casefold() == country.casefold():
+        parts = parts[:-1]
+    label = ", ".join(parts)
+    if not label:
+        label = str(hit.get("name") or "").strip()
+    return label
 
 
 def query_candidates(place: str) -> list[str]:
@@ -341,15 +399,17 @@ def hit_is_usable(query: str, hit: dict) -> bool:
     return True
 
 
-def geocode_place(place: str) -> tuple[tuple[float, float] | None, str]:
-    """Return ((lat, lon) or None, reason).
+def geocode_place(place: str) -> tuple[tuple[float, float] | None, str, str | None]:
+    """Return ((lat, lon) or None, reason, approximate note).
 
-    reason is "ok", "no_result", or "offset". Transport failures raise.
+    reason is "ok", "short", "no_result", or "offset". "short" means the
+    full place string returned no hits and a locality-plus-country query
+    matched. Transport failures raise.
     """
     candidates = query_candidates(place)
     if not candidates:
         print(f"UNLOCATED\t{place}\tno_result\tquery=", file=sys.stderr)
-        return None, "no_result"
+        return None, "no_result", None
     if OFFSET_RE.search(place):
         results = nominatim_search(candidates[0])
         display = results[0].get("display_name", "") if results else ""
@@ -358,22 +418,33 @@ def geocode_place(place: str) -> tuple[tuple[float, float] | None, str]:
             f"UNLOCATED\t{place}\toffset\tdisplay={display}\tignored_latlon={coords}",
             file=sys.stderr,
         )
-        return None, "offset"
+        return None, "offset", None
     seen_queries: set[str] = set()
+    full_string_had_hits = False
     for query in candidates:
-        found, results = _geocode_query(place, query, seen_queries)
+        found, results, _label = _geocode_query(place, query, seen_queries)
+        if results:
+            full_string_had_hits = True
         if found is not None:
-            return found, "ok"
+            return found, "ok", None
         if not asks_for_area(query):
             continue
         follow = area_followup(query, results)
         if not follow or follow.casefold() in seen_queries:
             continue
-        found, _ = _geocode_query(place, follow, seen_queries, area_only=True)
+        found, follow_results, _label = _geocode_query(place, follow, seen_queries, area_only=True)
+        if follow_results:
+            full_string_had_hits = True
         if found is not None:
-            return found, "ok"
-    print(f"UNLOCATED\t{place}\tno_result\tquery={' | '.join(candidates)}", file=sys.stderr)
-    return None, "no_result"
+            return found, "ok", None
+    if not full_string_had_hits:
+        for query in shorter_queries(place):
+            found, _results, label = _geocode_query(place, query, seen_queries)
+            if found is not None:
+                return found, "short", label or None
+    tried = candidates + shorter_queries(place)
+    print(f"UNLOCATED\t{place}\tno_result\tquery={' | '.join(tried)}", file=sys.stderr)
+    return None, "no_result", None
 
 
 def _geocode_query(
@@ -381,9 +452,9 @@ def _geocode_query(
     query: str,
     seen_queries: set[str],
     area_only: bool | None = None,
-) -> tuple[tuple[float, float] | None, list[dict]]:
+) -> tuple[tuple[float, float] | None, list[dict], str]:
     if query.casefold() in seen_queries:
-        return None, []
+        return None, [], ""
     seen_queries.add(query.casefold())
     require_area = asks_for_area(query) if area_only is None else area_only
     results = nominatim_search(query)
@@ -409,8 +480,8 @@ def _geocode_query(
             f"GEOCODED\t{place}\t{lat:.6f}\t{lon:.6f}\tquery={query}\t{display}",
             file=sys.stderr,
         )
-        return (lat, lon), results
-    return None, results
+        return (lat, lon), results, match_label(hit, query)
+    return None, results, ""
 
 
 def new_feature(event: dict, used_ids: set[str], added_utc: str) -> dict:
@@ -547,8 +618,14 @@ def add_events(input_path: Path, geojson_path: Path, csv_path: Path) -> int:
     # Nominatim call either returns a result or a clean miss.
     for feature in pending:
         place = feature["properties"]["place"]
-        coords, reason = geocode_place(place)
+        coords, reason, note = geocode_place(place)
         apply_coordinates(feature, coords)
+        if reason == "short":
+            precision = str(feature["properties"].get("coord_precision") or "")
+            if not precision.startswith("approximate:"):
+                feature["properties"]["coord_precision"] = (
+                    f"approximate: {note}" if note else "approximate"
+                )
         if coords is None:
             unlocated.append((place, reason))
         features.append(feature)
