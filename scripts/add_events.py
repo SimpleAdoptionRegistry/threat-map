@@ -249,7 +249,7 @@ def shorter_queries(place: str) -> list[str]:
     full = " ".join(QUALIFIER_RE.sub(" ", NOTE_PAREN_RE.sub(" ", geocode_query(place))).split())
     parts = [part.strip() for part in full.split(",") if part.strip()]
     if len(parts) < 2:
-        return []
+        return bare_locality_queries(full)
     original_words = parts[0].split()
     words = list(original_words)
     while words and words[-1].casefold().strip(".") in LOCALITY_TYPE_WORDS:
@@ -276,6 +276,27 @@ def shorter_queries(place: str) -> list[str]:
     ):
         add(f"{original_words[0]} {original_words[-1]}, {parts[-1]}")
     return queries
+
+
+def bare_locality_queries(full: str) -> list[str]:
+    """Drop a trailing word such as City when the place has no comma.
+
+    "Gaza City" becomes "Gaza". A bare direction word is not queried.
+    """
+    parts = [part.strip() for part in full.split(",") if part.strip()]
+    if len(parts) != 1:
+        return []
+    words = parts[0].split()
+    if len(words) < 2 or words[-1].casefold().strip(".") not in LOCALITY_TYPE_WORDS:
+        return []
+    while words and words[-1].casefold().strip(".") in LOCALITY_TYPE_WORDS:
+        words.pop()
+    locality = " ".join(words).strip()
+    if not locality or all(word.casefold() in COMPASS_WORDS for word in locality.split()):
+        return []
+    if locality.casefold() == parts[0].casefold():
+        return []
+    return [locality]
 
 
 def distinctive_tokens(place: str) -> set[str]:
@@ -529,17 +550,32 @@ def hit_is_usable(query: str, hit: dict) -> bool:
     query_cf = query.casefold()
     if category == "highway" and not any(hint in query_cf for hint in ROAD_HINTS):
         return False
-    # "Kherson, Ukraine" must not keep the oblast boundary when the city is listed.
+    # "Kherson, Ukraine" must not keep Kherson Oblast. A city that Nominatim
+    # stores as a boundary, such as Gaza, still matches when the name is the city.
     if (
         category == "boundary"
         and str(hit.get("type") or "").casefold() == "administrative"
         and not query_names_admin_area(query)
+        and not boundary_names_place(query, hit)
     ):
         return False
     clause = last_clause(query)
+    if clause is None and not _label_mentions(hit, distinctive_tokens(query)):
+        return False
     if clause and clause.casefold() not in str(hit.get("display_name") or "").casefold():
         return False
     return True
+
+
+def boundary_names_place(query: str, hit: dict) -> bool:
+    """True when an administrative boundary is the queried place, not its region."""
+    name = str(hit.get("name") or "").strip()
+    if not name:
+        name = str(hit.get("display_name") or "").split(",")[0].strip()
+    name_tokens = set(re.findall(r"[a-z0-9']+", name.casefold()))
+    if name_tokens & (set(AREA_WORDS) | {"region", "township", "strip", "state"}):
+        return False
+    return _hit_mentions(hit, distinctive_tokens(query))
 
 
 def geocode_place(place: str) -> tuple[tuple[float, float] | None, str, str | None]:
@@ -595,9 +631,27 @@ def geocode_place(place: str) -> tuple[tuple[float, float] | None, str, str | No
             )
             if found is not None:
                 return found, "short", label or None
-    tried = candidates + shorter_queries(place)
+    # "Gaza City" returns unrelated hits, so the City word is still stripped.
+    for query in bare_locality_queries(candidates[0]):
+        found, _results, label = _geocode_query(
+            place,
+            query,
+            seen_queries,
+            required_tokens=distinctive_tokens(place),
+        )
+        if found is not None:
+            return found, "short", label or None
+    tried = candidates + shorter_queries(place) + bare_locality_queries(candidates[0])
     print(f"UNLOCATED\t{place}\tno_result\tquery={' | '.join(tried)}", file=sys.stderr)
     return None, "no_result", None
+
+
+def _label_mentions(hit: dict, tokens: set[str] | None) -> bool:
+    """True when the displayed name contains a token, ignoring alternate names."""
+    if not tokens:
+        return True
+    blob = f"{hit.get('name') or ''} {hit.get('display_name') or ''}".casefold()
+    return any(token in blob for token in tokens)
 
 
 def _hit_mentions(hit: dict, tokens: set[str] | None) -> bool:

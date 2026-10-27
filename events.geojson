@@ -6,6 +6,132 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          50.067352,
+          26.707417
+        ]
+      },
+      "properties": {
+        "id": "tm-b6f155ac0b",
+        "category": "strike",
+        "place": "Ras Tanura, Saudi Arabia",
+        "what": "Houthi military spokesman Yahya Saree says a Houthi ballistic missile hit the Ras Tanura refinery and caused a fire; Saudi authorities have not confirmed an attack, while a source quoted by Bloomberg says a fire near the oil terminal was contained early Tuesday and the extent of damage is unclear",
+        "when_utc": "2026-10-27 early (time not given)",
+        "source": "https://www.al-monitor.com/originals/2026/10/yemens-houthis-say-they-launched-attack-saudi-ras-tanura-oil-refinery https://www.dawn.com/news/2040204",
+        "status": "claim",
+        "target_type": "infrastructure",
+        "coord_precision": "exact",
+        "added_utc": "2026-10-27T13:21:46Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          46.71601,
+          24.638916
+        ]
+      },
+      "properties": {
+        "id": "tm-eba36a3c24",
+        "category": "strike",
+        "place": "Riyadh, Saudi Arabia",
+        "what": "Saudi-led coalition says its air defenses intercepted and destroyed two Houthi ballistic missiles fired toward Riyadh; no casualty or damage details and no immediate Houthi comment",
+        "when_utc": "2026-10-27 ~11:54Z (reported)",
+        "source": "https://www.aa.com.tr/en/middle-east/saudi-led-coalition-intercepts-2-houthi-ballistic-missiles-targeting-riyadh/4102483",
+        "status": "claim",
+        "target_type": "city",
+        "coord_precision": "exact",
+        "added_utc": "2026-10-27T13:21:46Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          56.20277,
+          26.449406
+        ]
+      },
+      "properties": {
+        "id": "tm-a1bbf749f1",
+        "category": "shipping",
+        "place": "Strait of Hormuz (approximate: east of the strait)",
+        "what": "Iran's navy, via state media, says an unnamed oil tanker caught fire after striking naval mines east of the strait, accusing it of entering a prohibited area with tracking systems off; no UKMTO notice or independent confirmation",
+        "when_utc": "2026-10-27 ~12:30Z (reported)",
+        "source": "https://www.devdiscourse.com/article/international/3998066-iran-says-oil-tanker-caught-fire-after-hitting-mines-east-of-strait-of-hormuz",
+        "status": "claim",
+        "target_type": "ship",
+        "coord_precision": "approximate: east of the strait",
+        "added_utc": "2026-10-27T13:21:46Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.458136,
+          31.512868
+        ]
+      },
+      "properties": {
+        "id": "tm-a4171148e0",
+        "category": "strike",
+        "place": "Gaza City",
+        "what": "Palestinian sources quoted by Al-Manar say Israeli warplanes carried out airstrikes on Gaza City; no casualty details or Israeli comment yet",
+        "when_utc": "2026-10-27 ~10:43Z",
+        "source": "https://english.manartv.com.lb/article/143357/",
+        "status": "claim",
+        "target_type": "city",
+        "coord_precision": "approximate: Gaza",
+        "added_utc": "2026-10-27T13:21:46Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.340103,
+          31.424773
+        ]
+      },
+      "properties": {
+        "id": "tm-781e7f7c44",
+        "category": "strike",
+        "place": "Deir al-Balah, Gaza Strip",
+        "what": "Local sources quoted by the Palestinian Information Center say an Israeli quadcopter dropped an explosive in eastern Deir al-Balah, killing two and injuring one; no Israeli comment",
+        "when_utc": "2026-10-26 evening",
+        "source": "https://english.palinfo.com/news/2026/10/27/372642/",
+        "status": "claim",
+        "target_type": null,
+        "coord_precision": "exact",
+        "added_utc": "2026-10-27T13:21:46Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "tm-6631a53f6f",
+        "category": "strike",
+        "place": "Tunbunma, Borno State, Nigeria (approximate: southern Lake Chad)",
+        "what": "Nigeria's Operation Hadin Kai says air and artillery strikes on three sites killed 16 people it describes as ISWAP fighters and wounded the group's local leader; not independently verified",
+        "when_utc": "2026-10-26 ~00:00-01:00Z",
+        "source": "https://businesstimes.com.ng/2026/10/troops-neutralise-16-iswap-fighters-in-air-artillery-strikes-in-lake-chad/",
+        "status": "claim",
+        "target_type": null,
+        "coord_precision": "approximate: southern Lake Chad",
+        "added_utc": "2026-10-27T13:21:46Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           12.194729,
           23.281102
         ]
