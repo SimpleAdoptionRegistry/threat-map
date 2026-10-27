@@ -19,6 +19,11 @@ country. A hit from that shorter query is stored as approximate, with a
 note naming the match, in the same form as "approximate: Houthi-held Yemen".
 The words "closure order" are stored as the category "closure".
 
+added_utc is the UTC time the row is first inserted, formatted
+YYYY-MM-DDTHH:MM:SSZ. Input cannot set it. A later re-geocode or edit of
+the same source+place+what leaves the original stamp in place. Feeds are
+rewritten newest added_utc first.
+
 Nominatim is called at most once per second with a custom User-Agent.
 Only coordinates returned by Nominatim are stored. An empty result, a
 distance/bearing offset (a gazetteer cannot resolve "63nm SE of" a port),
@@ -532,6 +537,15 @@ def apply_coordinates(feature: dict, coords: tuple[float, float] | None) -> None
     feature["geometry"] = {"type": "Point", "coordinates": [lon, lat]}
 
 
+def sort_newest_first(features: list[dict]) -> list[dict]:
+    """Newest added_utc first. Equal stamps keep their existing order."""
+    return sorted(
+        features,
+        key=lambda feature: str((feature.get("properties") or {}).get("added_utc") or ""),
+        reverse=True,
+    )
+
+
 def write_geojson(path: Path, collection: dict) -> None:
     path.write_text(
         json.dumps(collection, ensure_ascii=False, indent=2) + "\n",
@@ -598,14 +612,21 @@ def add_events(input_path: Path, geojson_path: Path, csv_path: Path) -> int:
     added = 0
     skipped = 0
     unlocated: list[tuple[str, str]] = []
+    original_stamps = {
+        id(feature): str((feature.get("properties") or {}).get("added_utc") or "")
+        for feature in features
+    }
 
     pending: list[dict] = []
     for event in incoming:
+        event = dict(event)
+        # Insert time is owned by the feed. Callers cannot stamp or restamp a row.
+        event.pop("added_utc", None)
         key = dedupe_key(str(event.get("source", "")), str(event.get("place", "")), str(event.get("what", "")))
         if key in keys:
             skipped += 1
             print(
-                f"SKIP\t{event.get('place')}\tduplicate source+place+what",
+                f"SKIP\t{event.get('place')}\tduplicate source+place+what; added_utc kept",
                 file=sys.stderr,
             )
             continue
@@ -631,6 +652,15 @@ def add_events(input_path: Path, geojson_path: Path, csv_path: Path) -> int:
         features.append(feature)
         added += 1
 
+    for feature, stamp in (
+        (feature, original_stamps[id(feature)])
+        for feature in features
+        if id(feature) in original_stamps
+    ):
+        if str((feature.get("properties") or {}).get("added_utc") or "") != stamp:
+            raise SystemExit("Refusing to overwrite added_utc on an existing event")
+
+    features = sort_newest_first(features)
     collection["type"] = "FeatureCollection"
     collection["features"] = features
     write_geojson(geojson_path, collection)

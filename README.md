@@ -12,6 +12,8 @@ Static feed of sourced security events, plus a Leaflet map. GitHub Pages serves 
 
 `events.csv` has those same columns plus `lat` and `lon`. Unlocated rows leave `lat` and `lon` empty.
 
+`added_utc` is when the row was first written to the feed, in UTC, such as `2026-10-27T01:15:22Z`. The script sets it at insert. Re-geocoding or editing the same `source` + `place` + `what` does not change it. Both files are sorted newest `added_utc` first. Consumers can filter on `added_utc` greater than their last pull and ignore rows they already have.
+
 Categories used by the map: `strike`, `shipping`, `military_movement`, `closure`, `protest`, `infrastructure`.
 
 `coord_precision` is `exact`, `approximate`, or `approximate: <note>`. `exact` means Nominatim matched the place name. It does not mean the coordinate was surveyed on the ground. Region and waterway hits are the gazetteer’s representative point. `status` is the sourcing label from the input (`confirmed`, `claim`, or a short qualifier such as `confirmed (toll is claim)`).
@@ -38,7 +40,7 @@ python3 scripts/add_events.py path/to/new_events.json
 
 The script uses only the Python standard library. It:
 
-1. Skips any event whose `source` + `place` + `what` is already in the feed.
+1. Skips any event whose `source` + `place` + `what` is already in the feed, and leaves that row's `added_utc` as it was. New rows are stamped at insert time. An `added_utc` in the input file is ignored.
 2. Geocodes each new `place` with [OpenStreetMap Nominatim](https://nominatim.openstreetmap.org/) at one request per second, with a custom User-Agent identifying this repo. A parenthesis that names a locality, such as `(Desnianskyi district)`, is tried first as a more specific query. A parenthesis that starts with `also`, `including`, `near`, or `and` stays in the place text and does not become a second point. `closure order` is stored as the category `closure`.
 3. Appends new features to `events.geojson`.
 4. Regenerates `events.csv` from the GeoJSON.

@@ -161,6 +161,7 @@
       <table>
         <thead>
           <tr>
+            <th>Added (UTC)</th>
             <th>When (UTC)</th>
             <th>Category</th>
             <th>Place</th>
@@ -176,6 +177,9 @@
     <p class="note">
       Feed files live next to this page:
       <code>events.geojson</code> and <code>events.csv</code>.
+      Added (UTC) is when the row was first written. Later edits do not change it.
+      Rows are newest first, so a consumer can keep rows with
+      <code>added_utc</code> after its last pull.
     </p>
   </main>
 
@@ -249,6 +253,7 @@
         + "<h2>" + escapeHtml(props.place) + "</h2>"
         + "<p>" + escapeHtml(props.what) + "</p>"
         + "<p><strong>When (UTC):</strong> " + escapeHtml(props.when_utc) + "</p>"
+        + "<p><strong>Added (UTC):</strong> " + escapeHtml(props.added_utc) + "</p>"
         + "<p><strong>Status:</strong> " + escapeHtml(props.status) + "</p>"
         + "<p><strong>Source:</strong> " + sourceLink(props.source) + "</p>"
         + precision
@@ -295,6 +300,7 @@
           location += " (" + props.coord_precision + ")";
         }
         row.innerHTML = [
+          escapeHtml(props.added_utc),
           escapeHtml(props.when_utc),
           '<span class="cat" style="background:' + color + '">' + escapeHtml(LABEL[props.category] || props.category || "") + "</span>",
           escapeHtml(props.place),
