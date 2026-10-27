@@ -505,7 +505,13 @@ def area_followup(query: str, hits: list[dict]) -> str | None:
 
 
 def query_names_admin_area(query: str) -> bool:
-    tokens = set(re.findall(r"[a-z0-9']+", query.casefold()))
+    """True when the place itself is an oblast, district, or similar area.
+
+    Only the first clause counts. "Bago Region" in a later clause must not
+    make a township boundary acceptable for a town query.
+    """
+    first = query.split(",")[0]
+    tokens = set(re.findall(r"[a-z0-9']+", first.casefold()))
     return bool(tokens & (set(AREA_WORDS) | {"region"}))
 
 

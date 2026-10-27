@@ -6,6 +6,94 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          12.194729,
+          23.281102
+        ]
+      },
+      "properties": {
+        "id": "tm-f3981aba3c",
+        "category": "strike",
+        "place": "Salvador Pass, Niger",
+        "what": "Niger's military government says a Chadian drone strike in the Emi Lulu area killed 2 civilians and wounded others, calls it aggression with French support, and has summoned Chad's ambassador; no Chadian or French response reported",
+        "when_utc": "2026-10-24 early morning (accusation made 2026-10-26)",
+        "source": "https://www.africanews.com/2026/10/27/niger-accuses-chad-of-deadly-drone-attack-in-which-two-civilians-died/",
+        "status": "claim",
+        "target_type": null,
+        "coord_precision": "exact",
+        "added_utc": "2026-10-27T12:12:54Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          37.780983,
+          47.921291
+        ]
+      },
+      "properties": {
+        "id": "tm-2799c90b89",
+        "category": "strike",
+        "place": "Donetsk Oblast, Ukraine",
+        "what": "Regional authorities say Russian attacks in government-held Donetsk Oblast killed 3 and injured 22 over the past day",
+        "when_utc": "24h to morning Oct 27, 2026",
+        "source": "https://kyivindependent.com/russian-attacks-across-ukraine-kill-four-injure-55-over-past-day-as-kyiv-comes-under-ballistic-missile-assault/",
+        "status": "confirmed",
+        "target_type": "city",
+        "coord_precision": "exact",
+        "added_utc": "2026-10-27T12:12:54Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          92.897086,
+          20.139197
+        ]
+      },
+      "properties": {
+        "id": "tm-28b4a47c18",
+        "category": "strike",
+        "place": "Sittwe, Rakhine State, Myanmar",
+        "what": "An explosion at a crowded Min Bar Gyi Road intersection killed at least 9 and left 5 critical; local outlet DMG reports it was a Myanmar military Y-12 bombing, while DVB says the cause and who was responsible are unconfirmed; neither the military nor the Arakan Army has commented",
+        "when_utc": "2026-10-23 ~01:30Z (08:00 local)",
+        "source": "https://english.dvb.no/at-least-9-killed-in-sittwe-explosion-as-clashes-near-military-command-intensify/ https://www.dmediag.com/news/alskt.html",
+        "status": "claim",
+        "target_type": "city",
+        "coord_precision": "approximate: Sittwe, Sittwe Township",
+        "added_utc": "2026-10-27T12:12:54Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          96.725985,
+          17.953222
+        ]
+      },
+      "properties": {
+        "id": "tm-32b465f59a",
+        "category": "strike",
+        "place": "Nyaunglebin, Bago Region, Myanmar (approximate: Inn Kyaik village)",
+        "what": "The Karen National Union says two Myanmar military jets bombed Inn Kyaik village and military artillery then shelled it, killing 2 and injuring 6 women; no military comment",
+        "when_utc": "2026-10-22 (reported 2026-10-26)",
+        "source": "https://www.ludunwayoo.com/news-mm/2026/10/27/171809/",
+        "status": "claim",
+        "target_type": "city",
+        "coord_precision": "approximate: Inn Kyaik village",
+        "added_utc": "2026-10-27T12:12:54Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           32.614392,
           46.64013
         ]
@@ -892,9 +980,9 @@
         "id": "tm-c87f34a62a",
         "category": "strike",
         "place": "Al-Muzayrib, Daraa, Syria",
-        "what": "Jordanian warplanes struck what Amman called militant hideouts at four sites in the Daraa and Sweida countryside in retaliation for the Karak church attack; Syrian tolls disputed: Syrian Civil Defense preliminary 7 killed incl. 3 children and a woman, 3 wounded; a Syrian health official later said 8 killed, 4 wounded (Reuters: https://www.gmanetwork.com/news/topstories/world/1007278/jordan-says-its-air-force-struck-militant-hideouts-in-syria-after-church-attack/story/); earlier figures 5, 6 and 10; Jordan says strikes were coordinated with Damascus, which denies prior coordination",
+        "what": "Jordanian warplanes struck what Amman called militant hideouts at four sites in the Daraa and Sweida countryside in retaliation for the Karak church attack; Syrian tolls disputed: Syrian Civil Defense preliminary 7 killed incl. 3 children and a woman, 3 wounded; a Syrian health official later said 8 killed, 4 wounded (Reuters: https://www.gmanetwork.com/news/topstories/world/1007278/jordan-says-its-air-force-struck-militant-hideouts-in-syria-after-church-attack/story/); earlier figures 5, 6 and 10; Jordan says strikes were coordinated with Damascus, which denies prior coordination. Oct 27: Jordan's government communication minister Mohammed al-Momani says the strikes killed more than 20 Islamic State militants, regrets civilian casualties and says known civilian areas were avoided; Syria's preliminary toll is 7 killed including 3 children and a woman, 5 from one family in a tent in al-Taff; Damascus calls it a sovereignty violation without prior coordination and says a joint border security committee with Amman will be formed.",
         "when_utc": "2026-10-26 ~20:30 UTC",
-        "source": "https://www.arabnews.com/middle-east/jordan-strikes-southern-syria-after-church-funeral-attack-damascus-says-8-civilians-killed-3008415",
+        "source": "https://www.arabnews.com/middle-east/jordan-strikes-southern-syria-after-church-funeral-attack-damascus-says-8-civilians-killed-3008415 https://apnews.com/article/syria-jordan-strikes-karak-daraa-is-5c278be71a23176a092779ef8484c213 https://www.al-monitor.com/originals/2026/10/jordan-says-it-killed-more-20-islamic-state-militants-airstrikes-syria",
         "status": "confirmed (strikes); toll is a claim",
         "target_type": null,
         "coord_precision": "exact",
