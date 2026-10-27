@@ -48,6 +48,7 @@ Coordinates are copied only from a Nominatim hit for that place string. If Nomin
 - No result.
 - The place is a distance and bearing from somewhere else (for example `63nm SE of Al-Faw`). A hit on the reference port would be a different location.
 - The hit is only a road, unless the place text itself names a road. A comma-separated place also has to mention its last clause (usually the country or city) in the result label.
+- The place names a district, county, or similar area, and the hit is a building or office. If that hit's address names the surrounding area, the script looks the area up once and keeps the point only when Nominatim returns the area itself.
 
 If Nominatim cannot be reached, the script exits without rewriting the feed.
 

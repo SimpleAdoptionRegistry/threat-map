@@ -91,6 +91,20 @@ OFFSET_RE = re.compile(
     re.IGNORECASE,
 )
 ROAD_HINTS = ("road", "street", "highway", "avenue", "lane", "bridge")
+AREA_WORDS = ("district", "county", "raion", "oblast", "governorate", "province", "prefecture", "municipality")
+AREA_PLACE_TYPES = {
+    "city",
+    "town",
+    "village",
+    "municipality",
+    "county",
+    "state",
+    "city_district",
+    "borough",
+    "suburb",
+    "quarter",
+    "region",
+}
 MIN_INTERVAL_SEC = 1.05
 
 
@@ -211,6 +225,7 @@ def nominatim_search(query: str) -> list[dict]:
             "format": "jsonv2",
             "limit": "5",
             "accept-language": "en",
+            "addressdetails": "1",
         }
     )
     request = urllib.request.Request(
@@ -265,6 +280,47 @@ def last_clause(query: str) -> str | None:
     return parts[-1]
 
 
+def asks_for_area(query: str) -> bool:
+    tokens = set(re.findall(r"[a-z0-9']+", query.casefold()))
+    return bool(tokens & set(AREA_WORDS))
+
+
+def is_area_hit(hit: dict) -> bool:
+    category = str(hit.get("category") or "").casefold()
+    kind = str(hit.get("type") or "").casefold()
+    if category == "boundary" and kind == "administrative":
+        return True
+    return category == "place" and kind in AREA_PLACE_TYPES
+
+
+def area_followup(query: str, hits: list[dict]) -> str | None:
+    """One extra query for the admin area named on a building hit.
+
+    The name comes from Nominatim's address for that hit. A district query
+    uses city_district; a county query uses county. The result is kept only
+    when it is itself an area.
+    """
+    folded = query.casefold()
+    if "county" in folded:
+        keys = ("county", "state", "region")
+    elif "district" in folded or "raion" in folded:
+        keys = ("city_district", "county", "state")
+    else:
+        keys = ("state", "county", "region", "city_district")
+    tail = ", ".join(part.strip() for part in query.split(",")[1:] if part.strip())
+    for hit in hits:
+        address = hit.get("address") if isinstance(hit.get("address"), dict) else {}
+        for key in keys:
+            name = str(address.get(key) or "").strip()
+            if not name:
+                continue
+            follow = f"{name}, {tail}" if tail else name
+            follow = " ".join(follow.split())
+            if follow.casefold() != folded:
+                return follow
+    return None
+
+
 def hit_is_usable(query: str, hit: dict) -> bool:
     """True when this Nominatim hit is a coordinate for the queried place.
 
@@ -303,24 +359,58 @@ def geocode_place(place: str) -> tuple[tuple[float, float] | None, str]:
             file=sys.stderr,
         )
         return None, "offset"
+    seen_queries: set[str] = set()
     for query in candidates:
-        results = nominatim_search(query)
-        for hit in results:
-            display = hit.get("display_name", "")
-            if not hit_is_usable(query, hit):
-                print(
-                    f"REJECT\t{place}\t{hit.get('category')}/{hit.get('type')}\t{display}",
-                    file=sys.stderr,
-                )
-                continue
-            lat, lon = usable_hit(hit)
-            print(
-                f"GEOCODED\t{place}\t{lat:.6f}\t{lon:.6f}\tquery={query}\t{display}",
-                file=sys.stderr,
-            )
-            return (lat, lon), "ok"
+        found, results = _geocode_query(place, query, seen_queries)
+        if found is not None:
+            return found, "ok"
+        if not asks_for_area(query):
+            continue
+        follow = area_followup(query, results)
+        if not follow or follow.casefold() in seen_queries:
+            continue
+        found, _ = _geocode_query(place, follow, seen_queries, area_only=True)
+        if found is not None:
+            return found, "ok"
     print(f"UNLOCATED\t{place}\tno_result\tquery={' | '.join(candidates)}", file=sys.stderr)
     return None, "no_result"
+
+
+def _geocode_query(
+    place: str,
+    query: str,
+    seen_queries: set[str],
+    area_only: bool | None = None,
+) -> tuple[tuple[float, float] | None, list[dict]]:
+    if query.casefold() in seen_queries:
+        return None, []
+    seen_queries.add(query.casefold())
+    require_area = asks_for_area(query) if area_only is None else area_only
+    results = nominatim_search(query)
+    for hit in results:
+        display = hit.get("display_name", "")
+        if not hit_is_usable(query, hit):
+            print(
+                f"REJECT\t{place}\t{hit.get('category')}/{hit.get('type')}\t{display}",
+                file=sys.stderr,
+            )
+            continue
+        if require_area and not is_area_hit(hit):
+            print(
+                f"REJECT\t{place}\tnot_area\t{hit.get('category')}/{hit.get('type')}\t{display}",
+                file=sys.stderr,
+            )
+            continue
+        coords = usable_hit(hit)
+        if coords is None:
+            continue
+        lat, lon = coords
+        print(
+            f"GEOCODED\t{place}\t{lat:.6f}\t{lon:.6f}\tquery={query}\t{display}",
+            file=sys.stderr,
+        )
+        return (lat, lon), results
+    return None, results
 
 
 def new_feature(event: dict, used_ids: set[str], added_utc: str) -> dict:

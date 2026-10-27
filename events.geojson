@@ -444,6 +444,44 @@
         "coord_precision": "exact",
         "added_utc": "2026-10-27T00:18:19Z"
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          36.171339,
+          49.95273
+        ]
+      },
+      "properties": {
+        "id": "tm-7ef9a9b3ce",
+        "category": "strike",
+        "place": "Novobavarskyi district, Kharkiv, Ukraine",
+        "what": "Russian forces struck the district three times, killing 2 and injuring 4 per the mayor, damaging a high-rise, apartment blocks, homes and a daycare; officials said missiles, the emergency service said multiple rocket launchers",
+        "when_utc": "2026-10-26 ~16:00Z",
+        "source": "https://www.investing.com/news/world-news/russian-missile-strikes-on-ukraines-kharkiv-kill-two-injure-four-mayor-says-4973402",
+        "status": "confirmed",
+        "target_type": "city",
+        "coord_precision": "exact",
+        "added_utc": "2026-10-27T01:14:57Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "tm-3dc0630263",
+        "category": "military_movement",
+        "place": "Kaepung County, North Korea",
+        "what": "North Korea moved about three 122mm self-propelled howitzers forward, uncovered, onto the western frontline riverbank opposite Gimpo; no fire reported",
+        "when_utc": "reported 2026-10-27 ~00:19Z",
+        "source": "https://news.sbs.co.kr/english/article.do?news_id=N1008815786",
+        "status": "confirmed",
+        "target_type": null,
+        "coord_precision": "exact",
+        "added_utc": "2026-10-27T01:14:57Z"
+      }
     }
   ]
 }
