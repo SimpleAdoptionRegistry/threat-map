@@ -6,6 +6,72 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          36.12058,
+          50.107057
+        ]
+      },
+      "properties": {
+        "id": "tm-a7b9f3a62c",
+        "category": "strike",
+        "place": "Derhachi, Kharkiv Oblast, Ukraine",
+        "what": "Kharkiv regional governor Oleh Syniehubov says a Russian missile struck the city, hitting a warehouse and damaging petrol-station equipment and a car; five people injured as of 14:00 local",
+        "when_utc": "2026-10-27 before ~12:00Z",
+        "source": "https://www.ukrinform.net/rubric-ato/4178628-russian-missile-strike-on-derhachi-leaves-five-injured-causes-damage.html https://en.interfax.com.ua/news/general/1226771.html",
+        "status": "confirmed",
+        "target_type": "city",
+        "coord_precision": "exact",
+        "added_utc": "2026-10-27T14:16:43Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.472645,
+          31.497973
+        ]
+      },
+      "properties": {
+        "id": "tm-6577e97729",
+        "category": "strike",
+        "place": "Shujaiya, Gaza City",
+        "what": "Gaza News Live reports an Israeli airstrike near the Shujaiya junction east of Gaza City burned tents and destroyed property; no casualty figures or Israeli comment",
+        "when_utc": "2026-10-27 ~09:38Z",
+        "source": "https://gazanews.live/en/news/779",
+        "status": "claim",
+        "target_type": "city",
+        "coord_precision": "approximate: Shuja'iyya",
+        "added_utc": "2026-10-27T14:16:43Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          128.4156,
+          38.5139
+        ]
+      },
+      "properties": {
+        "id": "tm-a68249b524",
+        "category": "closure",
+        "place": "Machajin, Gangwon, South Korea",
+        "what": "South Korea's Joint Chiefs of Staff navigational warning NW 370/26 closes a sea area off Machajin (R-77) for live-fire maritime drills",
+        "when_utc": "2026-10-27 to 2026-10-30, daily 00:00-03:00Z and 05:00-10:00Z",
+        "source": "https://www.sealagom.com/coastal/188/message/49246/",
+        "status": "confirmed",
+        "target_type": null,
+        "coord_precision": "approximate: coastal town point for offshore closure area",
+        "added_utc": "2026-10-27T14:16:43Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           50.067352,
           26.707417
         ]

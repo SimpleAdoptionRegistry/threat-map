@@ -275,6 +275,12 @@ def shorter_queries(place: str) -> list[str]:
         and original_words[-1].casefold().strip(".") in LOCALITY_TYPE_WORDS
     ):
         add(f"{original_words[0]} {original_words[-1]}, {parts[-1]}")
+    tail_words = parts[-1].split()
+    while tail_words and tail_words[-1].casefold().strip(".") in LOCALITY_TYPE_WORDS:
+        tail_words.pop()
+    tail = " ".join(tail_words).strip()
+    if tail and tail.casefold() != parts[-1].casefold():
+        add(f"{parts[0]}, {tail}")
     return queries
 
 
@@ -646,24 +652,37 @@ def geocode_place(place: str) -> tuple[tuple[float, float] | None, str, str | No
     return None, "no_result", None
 
 
-def _label_mentions(hit: dict, tokens: set[str] | None) -> bool:
-    """True when the displayed name contains a token, ignoring alternate names."""
+def _fold_name(text: str) -> str:
+    """Ignore apostrophes and doubled letters so Shujaiya matches Shuja'iyya."""
+    text = text.casefold().replace("'", "").replace("’", "").replace("`", "")
+    folded: list[str] = []
+    for char in text:
+        if folded and char.isalpha() and folded[-1] == char:
+            continue
+        folded.append(char)
+    return "".join(folded)
+
+
+def _tokens_in(blob: str, tokens: set[str] | None) -> bool:
     if not tokens:
         return True
-    blob = f"{hit.get('name') or ''} {hit.get('display_name') or ''}".casefold()
-    return any(token in blob for token in tokens)
+    folded = _fold_name(blob)
+    return any(_fold_name(token) in folded for token in tokens)
+
+
+def _label_mentions(hit: dict, tokens: set[str] | None) -> bool:
+    """True when the displayed name contains a token, ignoring alternate names."""
+    blob = f"{hit.get('name') or ''} {hit.get('display_name') or ''}"
+    return _tokens_in(blob, tokens)
 
 
 def _hit_mentions(hit: dict, tokens: set[str] | None) -> bool:
     """True when the hit still names the place, including an old or alternate name."""
-    if not tokens:
-        return True
     parts = [str(hit.get("name") or ""), str(hit.get("display_name") or "")]
     namedetails = hit.get("namedetails")
     if isinstance(namedetails, dict):
         parts.extend(str(value) for value in namedetails.values() if value)
-    blob = " ".join(parts).casefold()
-    return any(token in blob for token in tokens)
+    return _tokens_in(" ".join(parts), tokens)
 
 
 def _geocode_query(
