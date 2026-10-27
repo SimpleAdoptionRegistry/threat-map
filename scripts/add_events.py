@@ -288,6 +288,7 @@ def match_label(hit: dict, query: str) -> str:
     name = str(hit.get("name") or "").strip()
     address = hit.get("address") if isinstance(hit.get("address"), dict) else {}
     country = last_clause(query)
+    query_is_latin = bool(re.search(r"[A-Za-z]", query))
     locality = ""
     for key in ("city", "town", "municipality", "state", "county", "village"):
         value = str(address.get(key) or "").strip()
@@ -296,6 +297,8 @@ def match_label(hit: dict, query: str) -> str:
         if name and value.casefold() == name.casefold():
             continue
         if country and value.casefold() == country.casefold():
+            continue
+        if query_is_latin and not re.search(r"[A-Za-z]", value):
             continue
         locality = value
         break
@@ -361,6 +364,7 @@ def nominatim_search(query: str) -> list[dict]:
             "limit": "5",
             "accept-language": "en",
             "addressdetails": "1",
+            "namedetails": "1",
         }
     )
     request = urllib.request.Request(
@@ -530,9 +534,14 @@ def geocode_place(place: str) -> tuple[tuple[float, float] | None, str, str | No
 
 
 def _hit_mentions(hit: dict, tokens: set[str] | None) -> bool:
+    """True when the hit still names the place, including an old or alternate name."""
     if not tokens:
         return True
-    blob = f"{hit.get('name') or ''} {hit.get('display_name') or ''}".casefold()
+    parts = [str(hit.get("name") or ""), str(hit.get("display_name") or "")]
+    namedetails = hit.get("namedetails")
+    if isinstance(namedetails, dict):
+        parts.extend(str(value) for value in namedetails.values() if value)
+    blob = " ".join(parts).casefold()
     return any(token in blob for token in tokens)
 
 

@@ -3,6 +3,132 @@
   "features": [
     {
       "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          36.347215,
+          46.734315
+        ]
+      },
+      "properties": {
+        "id": "tm-410be30815",
+        "category": "strike",
+        "place": "Prymorsk, Zaporizhzhia Oblast, Ukraine",
+        "what": "Russian-installed governor Yevgeny Balitsky says a Ukrainian drone struck a Simferopol-Moscow passenger bus carrying 31 people, killing one passenger and injuring others",
+        "when_utc": "overnight Oct 26-27, 2026",
+        "source": "https://tass.com/emergencies/2208303",
+        "status": "claim",
+        "target_type": "convoy",
+        "coord_precision": "approximate: Prymorsk, Primorska urban hromada",
+        "added_utc": "2026-10-27T06:08:23Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          37.583762,
+          50.708012
+        ]
+      },
+      "properties": {
+        "id": "tm-3efa61db22",
+        "category": "strike",
+        "place": "Belgorod Oblast, Russia",
+        "what": "Regional officials say a Ukrainian FPV drone struck a car, killing a woman",
+        "when_utc": "overnight Oct 26-27, 2026",
+        "source": "https://kazan.aif.ru/incidents/details/nochnaya-trevoga-ataka-bpla-na-rossiyu-27-oktyabrya-spisok-regionov",
+        "status": "claim",
+        "target_type": null,
+        "coord_precision": "exact",
+        "added_utc": "2026-10-27T06:08:23Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.724909,
+          47.261044
+        ]
+      },
+      "properties": {
+        "id": "tm-a1f1d614ef",
+        "category": "strike",
+        "place": "Rostov-on-Don, Russia",
+        "what": "Governor Yuri Slyusar says 20+ Ukrainian drones were downed over the region and debris damaged a substation, cutting power to homes on Koblova and Volnistaya streets before it was restored",
+        "when_utc": "overnight Oct 26-27, 2026",
+        "source": "https://kazan.aif.ru/incidents/details/nochnaya-trevoga-ataka-bpla-na-rossiyu-27-oktyabrya-spisok-regionov",
+        "status": "claim",
+        "target_type": "infrastructure",
+        "coord_precision": "exact",
+        "added_utc": "2026-10-27T06:08:23Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          37.776135,
+          48.005988
+        ]
+      },
+      "properties": {
+        "id": "tm-8d65855760",
+        "category": "strike",
+        "place": "Kuibyshevskyi district, Donetsk",
+        "what": "Russian-installed officials say drones hit a hospital, damaging its glazing and facade, and damaged two vehicles in Leninskyi district",
+        "when_utc": "overnight Oct 26-27, 2026",
+        "source": "https://kazan.aif.ru/incidents/details/nochnaya-trevoga-ataka-bpla-na-rossiyu-27-oktyabrya-spisok-regionov",
+        "status": "claim",
+        "target_type": "city",
+        "coord_precision": "approximate: Smolianskyi Raion, Donetsk Oblast",
+        "added_utc": "2026-10-27T06:08:23Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          46.71601,
+          24.638916
+        ]
+      },
+      "properties": {
+        "id": "tm-68a04f11f2",
+        "category": "strike",
+        "place": "Riyadh, Saudi Arabia",
+        "what": "Saudi-led coalition says it shot down three Houthi drones over Riyadh and southern Saudi Arabia; no immediate Houthi comment",
+        "when_utc": "2026-10-26 evening",
+        "source": "https://www.aljazeera.com/news/2026/10/27/iran-saudi-turkiye-and-pakistan-agree-to-more-talks-amid-houthi-attacks",
+        "status": "claim",
+        "target_type": "city",
+        "coord_precision": "exact",
+        "added_utc": "2026-10-27T06:08:23Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "tm-5beabd6fd4",
+        "category": "strike",
+        "place": "Rimal, Gaza City",
+        "what": "Al-Shifa hospital says an Israeli airstrike killed one and injured three; a Gaza security source separately says Israeli tanks and a bulldozer advanced west of the Yellow Line in eastern Deir al-Balah with heavy gunfire",
+        "when_utc": "2026-10-26",
+        "source": "https://www.dawn.com/news/2040109",
+        "status": "claim",
+        "target_type": "city",
+        "coord_precision": "exact",
+        "added_utc": "2026-10-27T06:08:23Z"
+      }
+    },
+    {
+      "type": "Feature",
       "geometry": null,
       "properties": {
         "id": "tm-6336132047",
@@ -376,7 +502,7 @@
         "id": "tm-c59b77f3fb",
         "category": "strike",
         "place": "Kyiv, Ukraine (Desnianskyi district)",
-        "what": "Russian ballistic missiles hit a university campus, dorms, homes and two medical facilities; 1 killed, 10 injured",
+        "what": "Russian ballistic missiles hit a university campus, dorms, homes and two medical facilities; 1 killed and 14 injured across the overnight waves, 9 of them medical personnel hospitalized (per Kyiv Independent)",
         "when_utc": "2026-10-26 ~19:45 UTC",
         "source": "https://kyivindependent.com/paramedics-caught-under-fire-as-russian-ballistic-missiles-slam-kyiv/",
         "status": "confirmed",
