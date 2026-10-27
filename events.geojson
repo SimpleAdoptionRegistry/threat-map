@@ -6,6 +6,160 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          30.654927,
+          46.301342
+        ]
+      },
+      "properties": {
+        "id": "tm-df750f538e",
+        "category": "shipping",
+        "place": "Chornomorsk, Odesa Oblast, Ukraine",
+        "what": "Russia's defence ministry says it hit an unnamed dry cargo ship at sea carrying supplies for Ukrainian forces to Chornomorsk; not independently verified",
+        "when_utc": "overnight Oct 26-27, 2026",
+        "source": "https://aa.com.tr/en/russia-ukraine-war/2-killed-15-injured-in-russian-ukrainian-overnight-strikes/4102115",
+        "status": "claim",
+        "target_type": "ship",
+        "coord_precision": "approximate: ship at sea, port point",
+        "added_utc": "2026-10-27T10:05:53Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          36.378896,
+          49.829958
+        ]
+      },
+      "properties": {
+        "id": "tm-55f998e243",
+        "category": "strike",
+        "place": "Kharkiv Oblast, Ukraine",
+        "what": "Russia's defence ministry says it struck a Regional Logistics Center unloading and customs terminal that it says stored supplies and drones for Ukrainian forces; not independently verified",
+        "when_utc": "overnight Oct 26-27, 2026",
+        "source": "https://aa.com.tr/en/russia-ukraine-war/2-killed-15-injured-in-russian-ukrainian-overnight-strikes/4102115",
+        "status": "claim",
+        "target_type": "infrastructure",
+        "coord_precision": "exact",
+        "added_utc": "2026-10-27T10:05:53Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          30.58374,
+          50.456361
+        ]
+      },
+      "properties": {
+        "id": "tm-710c5dddb8",
+        "category": "strike",
+        "place": "Dniprovskyi district, Kyiv, Ukraine",
+        "what": "Ukraine's State Emergency Service says a Russian strike partly collapsed a three-storey non-residential building, and one person was found dead (the single Kyiv death already counted in the city-wide toll)",
+        "when_utc": "overnight Oct 26-27, 2026",
+        "source": "https://zib.com.ua/ua/174897-operativnaya_situaciya_na_fronte_na_utro_27_oktyabrya__gensh.html",
+        "status": "confirmed",
+        "target_type": "city",
+        "coord_precision": "exact",
+        "added_utc": "2026-10-27T10:05:53Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          30.438353,
+          50.530636
+        ]
+      },
+      "properties": {
+        "id": "tm-1708bcedde",
+        "category": "strike",
+        "place": "Obolonskyi district, Kyiv, Ukraine",
+        "what": "Ukraine's State Emergency Service says the Russian attack started two fires in non-residential buildings and injured two people",
+        "when_utc": "overnight Oct 26-27, 2026",
+        "source": "https://zib.com.ua/ua/174897-operativnaya_situaciya_na_fronte_na_utro_27_oktyabrya__gensh.html",
+        "status": "confirmed",
+        "target_type": "city",
+        "coord_precision": "exact",
+        "added_utc": "2026-10-27T10:05:53Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.021527,
+          13.575224
+        ]
+      },
+      "properties": {
+        "id": "tm-80679b3348",
+        "category": "strike",
+        "place": "Taiz, Yemen",
+        "what": "Houthis accuse Yemeni government forces of an attack on a gas station that killed at least 2; no government comment",
+        "when_utc": "2026-10-27 (time not given)",
+        "source": "https://apnews.com/article/mideast-news-october-27-2026-a091490a24447033d3e90a13348cc88a",
+        "status": "claim",
+        "target_type": "infrastructure",
+        "coord_precision": "exact",
+        "added_utc": "2026-10-27T10:05:53Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.474057,
+          33.345103
+        ]
+      },
+      "properties": {
+        "id": "tm-9d722d73b2",
+        "category": "strike",
+        "place": "Mayfadoun, Nabatieh, Lebanon",
+        "what": "Lebanese sources say Israeli artillery shelled a target near Mayfadoun",
+        "when_utc": "2026-10-27 ~08:00Z",
+        "source": "https://www.newsru.co.il/israel/27oct2026/d1117.html",
+        "status": "claim",
+        "target_type": null,
+        "coord_precision": "exact",
+        "added_utc": "2026-10-27T10:05:53Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.518634,
+          33.35188
+        ]
+      },
+      "properties": {
+        "id": "tm-27cd688ad0",
+        "category": "strike",
+        "place": "Kfar Tebnit, Nabatieh, Lebanon",
+        "what": "Lebanon's health ministry says an Israeli drone strike on a car on the Kfar Tebnit-Ali al-Taher road killed 2; separate drone strikes on cars in Tyre reportedly killed journalist Ali Noureddine and one other",
+        "when_utc": "reported 2026-10-27 (strike date and time not confirmed)",
+        "source": "https://ilkha.com/english/world/israeli-drone-strike-kills-three-civilians-in-lebanon-507619",
+        "status": "claim",
+        "target_type": "convoy",
+        "coord_precision": "exact",
+        "added_utc": "2026-10-27T10:05:53Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           32.3973,
           15.7119
         ]
