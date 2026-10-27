@@ -211,6 +211,8 @@ LOCALITY_TYPE_WORDS = {
     "checkpoint",
     "terminal",
     "station",
+    "substation",
+    "power",
     "port",
     "bridge",
     "camp",

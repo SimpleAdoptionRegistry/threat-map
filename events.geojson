@@ -6,6 +6,28 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          32.3973,
+          15.7119
+        ]
+      },
+      "properties": {
+        "id": "tm-ede52a76cc",
+        "category": "strike",
+        "place": "Al-Markhiyat power substation, Omdurman, Sudan",
+        "what": "A drone struck the Al-Markhiyat transformer substation in northwestern Omdurman, cutting power across large parts of Khartoum and Al-Jazira states; an electricity company source told AFP the drones were the RSF's, there was no official attribution as of 06:30Z, and the RSF has not commented",
+        "when_utc": "2026-10-27 early morning (before 06:30Z)",
+        "source": "https://www.arabnews.com/middle-east/sudan-rsf-drones-hit-khartoum-power-station-govt-source-3008470 https://www.aa.com.tr/en/africa/drone-attack-cuts-power-to-large-parts-of-sudanese-capital/4102049",
+        "status": "confirmed (strike/outage); RSF attribution is a claim",
+        "target_type": "infrastructure",
+        "coord_precision": "approximate: Jibal el Markhyat, Al Khartum State",
+        "added_utc": "2026-10-27T09:11:40Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           24.816412,
           12.010667
         ]
@@ -124,9 +146,9 @@
         "id": "tm-5aaba342d0",
         "category": "strike",
         "place": "Synelnykove Raion, Dnipropetrovsk Oblast, Ukraine",
-        "what": "Governor Oleksandr Hanzha says Russian forces made 40+ drone and glide-bomb attacks on Dnipro and the region, damaging homes in the Shakhtarske, Vasylkivka and Petropavlivka communities and injuring three women; infrastructure in Dnipro was also damaged. In Shakhtarske a drone injured two women and set two five-storey buildings on fire.",
+        "what": "Governor Oleksandr Hanzha says Russian forces made 40+ drone and glide-bomb attacks on Dnipro and the region, damaging homes in the Shakhtarske, Vasylkivka and Petropavlivka communities and injuring three women; infrastructure in Dnipro was also damaged. In Shakhtarske a drone injured two women and set two five-storey buildings on fire. State Emergency Service says five districts were attacked 40+ times; homes caught fire in Nikopol and Pavlohrad districts; infrastructure damaged in Dnipro and Kamianske district.",
         "when_utc": "evening Oct 26 to overnight Oct 27, 2026",
-        "source": "https://www.ukrinform.ua/rubric-regions/4178466-rosiani-z-vecora-ponad-40-raziv-atakuvali-dnipro-ta-oblast-e-postrazdali.html",
+        "source": "https://www.ukrinform.ua/rubric-regions/4178466-rosiani-z-vecora-ponad-40-raziv-atakuvali-dnipro-ta-oblast-e-postrazdali.html https://www.kyivpost.com/post/88274",
         "status": "confirmed",
         "target_type": "city",
         "coord_precision": "exact",
@@ -348,9 +370,9 @@
         "id": "tm-6336132047",
         "category": "strike",
         "place": "Southern Bridge, Kyiv, Ukraine",
-        "what": "Kyiv Mayor Klitschko says a Russian ballistic missile in the second overnight wave hit the Southern Bridge over the Dnipro and damaged related metro infrastructure; bridge traffic restricted and green-line metro service reported suspended between Vydubychi and Osokorky",
+        "what": "Kyiv Mayor Klitschko says a Russian ballistic missile in the second overnight wave hit the Southern Bridge over the Dnipro and damaged related metro infrastructure; bridge traffic restricted and green-line metro service reported suspended between Vydubychi and Osokorky. Russia's defence ministry (via Interfax) says it struck the bridge as a military transit route and also hit drone plants in Kyiv; no Ukrainian source confirms the drone plants.",
         "when_utc": "2026-10-27 ~01:30Z (second wave)",
-        "source": "https://kyivindependent.com/paramedics-caught-under-fire-as-russian-ballistic-missiles-slam-kyiv/",
+        "source": "https://kyivindependent.com/paramedics-caught-under-fire-as-russian-ballistic-missiles-slam-kyiv/ https://www.intellinews.com/missile-war-monitor-russian-ballistic-missiles-hit-a-kyiv-university-campus-then-the-southern-bridge-s-metro-line-479097/",
         "status": "confirmed",
         "target_type": "infrastructure",
         "coord_precision": "exact",
@@ -716,9 +738,9 @@
         "id": "tm-c59b77f3fb",
         "category": "strike",
         "place": "Kyiv, Ukraine (Desnianskyi district)",
-        "what": "Russian ballistic missiles hit a university campus, dorms, homes and two medical facilities; 1 killed and 14 injured across the overnight waves, 9 of them medical personnel hospitalized (per Kyiv Independent)",
+        "what": "Russian ballistic missiles hit a university campus, dorms, homes and two medical facilities; 1 killed, 15 injured per Ukraine's State Emergency Service. Zelenskyy says Russia launched 16 ballistic missiles and 280 drones nationwide; Ukraine's Air Force says 2 missiles and 255 drones downed, hits at 25 locations.",
         "when_utc": "2026-10-26 ~19:45 UTC",
-        "source": "https://kyivindependent.com/paramedics-caught-under-fire-as-russian-ballistic-missiles-slam-kyiv/",
+        "source": "https://kyivindependent.com/paramedics-caught-under-fire-as-russian-ballistic-missiles-slam-kyiv/ https://www.rferl.org/a/ukraine-russia-strike-kyiv-dormitory-us-zelenskyy/33884968.html",
         "status": "confirmed",
         "target_type": "city",
         "coord_precision": "exact",
