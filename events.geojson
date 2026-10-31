@@ -6,6 +6,158 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          55.947499,
+          54.726141
+        ]
+      },
+      "properties": {
+        "id": "tm-96b4fab02d",
+        "category": "strike",
+        "place": "Ufa, Bashkortostan, Russia",
+        "what": "Monitoring channels cited by Glavcom report explosions in Ufa's industrial zone during a Ukrainian drone attack, with air defences active; regional officials have not confirmed any hit, damage or casualties",
+        "when_utc": "2026-10-31 early morning (reported ~04:30Z)",
+        "source": "https://glavcom.ua/world/world-politics/droni-atakuvali-ufu-za-1400-km-vid-kordonu-z-ukrajinoju-1152575.html",
+        "status": "claim",
+        "target_type": "infrastructure",
+        "coord_precision": "exact",
+        "added_utc": "2026-10-31T05:11:07Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "tm-5c4977848d",
+        "category": "shipping",
+        "place": "Lavan Island, Iran",
+        "what": "UKMTO (warning 188-26) says an unknown projectile struck a vessel on the port side about 40nm south of Lavan Island, starting a fire; crew safe, no environmental impact reported, attacker unknown",
+        "when_utc": "2026-10-30 18:00Z",
+        "source": "https://english.news.cn/20261031/b150ed4d429747d19ab7e611307c262f/c.html",
+        "status": "confirmed",
+        "target_type": "ship",
+        "coord_precision": "exact",
+        "added_utc": "2026-10-31T05:11:07Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "tm-f3087c54a1",
+        "category": "shipping",
+        "place": "Strait of Hormuz",
+        "what": "UKMTO warning 189-26 (time-late) says a verified source reports a crude oil tanker was struck by an unknown projectile on an outbound transit; no vessel, position or attacker named",
+        "when_utc": "2026-10-28 (time TBC)",
+        "source": "https://regulasshipping.com/blog/ukmto-189-26-records-a-time-late-outbound-hormuz-tanker-projectile-hit/",
+        "status": "confirmed",
+        "target_type": "ship",
+        "coord_precision": "exact",
+        "added_utc": "2026-10-31T05:11:07Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "tm-9e3764ab0a",
+        "category": "strike",
+        "place": "Al-Ma'ashiq Palace, Aden, Yemen",
+        "what": "A local security official says Houthi missiles struck near the presidential palace in Crater; government forces spokesman Majid al-Nuzaili says the Houthis targeted the palace and Aden International Airport; casualties and damage unknown",
+        "when_utc": "2026-10-30",
+        "source": "https://english.news.cn/20261031/52b3cc34df91423696fcacdf68fd6439/c.html",
+        "status": "claim",
+        "target_type": "city",
+        "coord_precision": "exact",
+        "added_utc": "2026-10-31T05:11:07Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.021527,
+          13.575224
+        ]
+      },
+      "properties": {
+        "id": "tm-85b04a5c6c",
+        "category": "strike",
+        "place": "Taiz, Yemen",
+        "what": "Houthi-run al-Masirah TV says Saudi airstrikes on houses killed 7 and wounded a child; Houthi spokesman Yahya Sarea claims 93 Saudi air and missile strikes in 24 hours; not verified, no Saudi comment",
+        "when_utc": "2026-10-30",
+        "source": "https://english.news.cn/20261031/52b3cc34df91423696fcacdf68fd6439/c.html",
+        "status": "claim",
+        "target_type": "city",
+        "coord_precision": "exact",
+        "added_utc": "2026-10-31T05:11:07Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.611122,
+          24.471153
+        ]
+      },
+      "properties": {
+        "id": "tm-563ba20706",
+        "category": "strike",
+        "place": "Madinah, Saudi Arabia",
+        "what": "Saudi-led coalition says it intercepted Houthi drones over Madinah, Makkah and Riyadh and a ballistic missile toward the south; Houthi spokesman Yahya Sarea denies any attack on the Saudi interior and calls it fabricated",
+        "when_utc": "2026-10-30",
+        "source": "https://www.arabnews.com/saudi-arabia/saudi-led-coalition-intercepts-houthi-drones-over-riyadh-and-madinah-missile-in-south-3009043",
+        "status": "claim",
+        "target_type": "city",
+        "coord_precision": "approximate: Madinah city point; also covers Makkah and Riyadh",
+        "added_utc": "2026-10-31T05:11:07Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "tm-ce00056368",
+        "category": "strike",
+        "place": "Nuseirat, Gaza Strip",
+        "what": "Israel's military says an airstrike killed two commanders from Hamas's military wing, saying they advanced attacks in violation of the ceasefire; no Palestinian casualty figure given",
+        "when_utc": "2026-10-29",
+        "source": "https://english.news.cn/20261031/b8b6362eda7b4769abeb94c81ae25e9a/c.html",
+        "status": "claim",
+        "target_type": "city",
+        "coord_precision": "exact",
+        "added_utc": "2026-10-31T05:11:07Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.692734,
+          33.327666
+        ]
+      },
+      "properties": {
+        "id": "tm-7636222a98",
+        "category": "strike",
+        "place": "Kfar Shuba, Lebanon",
+        "what": "Lebanon's NNA says Israeli forces blew up a house on the Kfar Shuba-Shebaa road and shelled Kfar Shuba, Hadatha, Wadi Zibqin, Wadi al-Hujeir and the Mayfadoun-Zawtar area, and set homes on fire in Qantara; no Israeli comment",
+        "when_utc": "2026-10-30",
+        "source": "https://www.aa.com.tr/en/middle-east/israel-blows-up-homes-shells-towns-in-southern-lebanon/4106993",
+        "status": "claim",
+        "target_type": "city",
+        "coord_precision": "exact",
+        "added_utc": "2026-10-31T05:11:07Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           30.524136,
           50.450034
         ]
@@ -980,9 +1132,9 @@
         "id": "tm-f62673dc93",
         "category": "strike",
         "place": "Nyala, South Darfur, Sudan",
-        "what": "A medical source and witnesses told AFP a drone struck a market in north Nyala, killing 21 and wounding 40+; the attacker was not identified, and AFP notes Sudan's army regularly strikes Nyala, the RSF's de facto capital",
+        "what": "A medical source and witnesses told AFP a drone struck a market in north Nyala, killing 21 and wounding 40+; the attacker was not identified, and AFP notes Sudan's army regularly strikes Nyala, the RSF's de facto capital. Update: toll disputed: 21 dead per Sudan Doctors Network; 36 bodies and 150+ wounded per MSF; 102 dead per Emergency Lawyers and the RSF-led administration health ministry; MSF and Emergency Lawyers blame Sudan's army, an army-aligned force says it hit an RSF camp.",
         "when_utc": "2026-10-26 ~18:00Z",
-        "source": "https://www.arabnews.com/middle-east/drone-strike-on-sudans-nyala-kills-21-injures-40-medical-source-3008473",
+        "source": "https://www.arabnews.com/middle-east/drone-strike-on-sudans-nyala-kills-21-injures-40-medical-source-3008473 https://globehourly.com/news/nyala-market-drone-strike-sudan-toll-disputed-102-msf-36-bodies-south-darfur/",
         "status": "claim",
         "target_type": "city",
         "coord_precision": "exact",
