@@ -3,6 +3,44 @@
   "features": [
     {
       "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "tm-15dae16cd9",
+        "category": "strike",
+        "place": "Angoor Adda, Barmal, Paktika, Afghanistan",
+        "what": "Afghanistan's defence ministry says Pakistani forces made four drone strikes on a border post, the Angoor Adda market and security facilities, and Afghan forces then hit a Pakistani base and outposts; Pakistani officials say Afghan mortar fire first killed one civilian and wounded five in Angoor Adda, South Waziristan, and the army then destroyed several Afghan border posts with artillery; each side calls the other the aggressor",
+        "when_utc": "2026-10-27 ~08:00Z (reported again 2026-10-31)",
+        "source": "https://www.afintl.com/en/202610287501 https://english.news.cn/asiapacific/20261029/7f31043e9e6c4c649aedc15abd5fa6e5/c.html https://www.dawn.com/news/2041105/army-targets-afghan-border-positions",
+        "status": "claim",
+        "target_type": "base",
+        "coord_precision": "exact",
+        "added_utc": "2026-10-31T13:06:00Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.487642,
+          31.556135
+        ]
+      },
+      "properties": {
+        "id": "tm-23198c746b",
+        "category": "strike",
+        "place": "Beit Lahia, Gaza Strip",
+        "what": "WAFA, citing medical sources and its correspondent, says Israeli artillery heavily shelled eastern Gaza City and areas west of Beit Lahia, Israeli naval vessels fired toward the Gaza City coast, and Israeli military vehicles fired toward displaced people's tents in al-Mawasi near al-Qarara; no casualty figures or Israeli comment",
+        "when_utc": "2026-10-31 morning",
+        "source": "https://english.wafa.ps/Pages/Details/176459",
+        "status": "claim",
+        "target_type": "city",
+        "coord_precision": "approximate: Beit Lahiya",
+        "added_utc": "2026-10-31T13:06:00Z"
+      }
+    },
+    {
+      "type": "Feature",
       "geometry": {
         "type": "Point",
         "coordinates": [
@@ -628,9 +666,9 @@
         "id": "tm-ef166e2942",
         "category": "shipping",
         "place": "Strait of Hormuz",
-        "what": "Iran's Revolutionary Guards say tankers using what Tehran calls an unauthorized southern route were halted after 'incidents' or mine strikes, and that at least two exploded and caught fire; reported counts vary (three to four) and nothing is independently verified",
+        "what": "Iran's Revolutionary Guards say tankers using what Tehran calls an unauthorized southern route were halted after 'incidents' or mine strikes, and that at least two exploded and caught fire; reported counts vary (three to four) and nothing is independently verified. Update: the IRGC now says a fourth tanker, a supertanker carrying more than 2 million barrels of crude, hit a mine and caught fire on the southern route; not independently verified.",
         "when_utc": "2026-10-30",
-        "source": "https://www.aljazeera.com/news/2026/10/30/oman-rescues-25-from-burning-oil-tanker-in-strait-of-hormuz",
+        "source": "https://www.aljazeera.com/news/2026/10/30/oman-rescues-25-from-burning-oil-tanker-in-strait-of-hormuz https://www.aa.com.tr/en/middle-east/iran-says-4th-oil-tanker-hit-mine-caught-fire-in-strait-of-hormuz/4107011",
         "status": "claim",
         "target_type": "ship",
         "coord_precision": "exact",

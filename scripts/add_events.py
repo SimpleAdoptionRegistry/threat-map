@@ -205,6 +205,7 @@ LOCALITY_TYPE_WORDS = {
     "gun",
     "guyok",
     "region",
+    "strip",
     "subdistrict",
     "borough",
     "crossing",
@@ -276,6 +277,9 @@ def shorter_queries(place: str) -> list[str]:
         and original_words[-1].casefold().strip(".") in LOCALITY_TYPE_WORDS
     ):
         add(f"{original_words[0]} {original_words[-1]}, {parts[-1]}")
+    # A one-word place is tried before "Name, Gaza", so Nuseirat is not the power station.
+    if len(original_words) == 1 and original_words[0].casefold() not in COMPASS_WORDS:
+        add(parts[0])
     tail_words = parts[-1].split()
     while tail_words and tail_words[-1].casefold().strip(".") in LOCALITY_TYPE_WORDS:
         tail_words.pop()
@@ -290,9 +294,6 @@ def shorter_queries(place: str) -> list[str]:
         and not compass_only
     ):
         add(locality)
-    # "Bureij, Gaza Strip" returns nothing; the camp is named Bureij.
-    if len(original_words) == 1 and original_words[0].casefold() not in COMPASS_WORDS:
-        add(parts[0])
     return queries
 
 
