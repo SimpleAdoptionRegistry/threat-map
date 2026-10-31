@@ -294,6 +294,9 @@ def shorter_queries(place: str) -> list[str]:
         and not compass_only
     ):
         add(locality)
+    # "Khan Younis, Gaza Strip" is two words, so the one-word retry does not cover it.
+    if parts[0] and not any(word.casefold() in COMPASS_WORDS for word in parts[0].split()):
+        add(parts[0])
     return queries
 
 
@@ -594,6 +597,14 @@ def hit_is_usable(query: str, hit: dict) -> bool:
         hint in query_cf for hint in ("station", "railway", "train", "halt")
     ):
         return False
+    # "Khan Younis, Gaza" returns a hospital before the city.
+    if category in {"amenity", "building"} and not any(
+        hint in query_cf
+        for hint in ("hospital", "clinic", "college", "school", "university", "building")
+    ):
+        return False
+    if category == "boundary" and str(hit.get("type") or "").casefold() == "timezone":
+        return False
     # "Dnipro, Ukraine" returns the Dnieper before the city of Dnipro.
     if category == "waterway" and not any(
         hint in query_cf for hint in ("river", "canal", "stream", "waterway", "creek")
@@ -762,6 +773,7 @@ def _geocode_query(
     seen_queries.add(query.casefold())
     require_area = asks_for_area(query) if area_only is None else area_only
     results = nominatim_search(query)
+    usable: list[dict] = []
     for hit in results:
         display = hit.get("display_name", "")
         if not hit_is_usable(query, hit):
@@ -782,16 +794,30 @@ def _geocode_query(
                 file=sys.stderr,
             )
             continue
-        coords = usable_hit(hit)
-        if coords is None:
+        if usable_hit(hit) is None:
             continue
-        lat, lon = coords
+        usable.append(hit)
+    place_nodes = [
+        hit
+        for hit in usable
+        if str(hit.get("category") or "").casefold() == "place"
+        and str(hit.get("type") or "").casefold() in {"city", "town", "village", "suburb", "hamlet"}
+    ]
+    # The administrative polygon centroid is not the city when a place node is in the same list.
+    chosen = place_nodes[0] if place_nodes else (usable[0] if usable else None)
+    if chosen is None:
+        return None, results, ""
+    if place_nodes and chosen is not usable[0]:
         print(
-            f"GEOCODED\t{place}\t{lat:.6f}\t{lon:.6f}\tquery={query}\t{display}",
+            f"REJECT\t{place}\tcentroid\t{usable[0].get('category')}/{usable[0].get('type')}\t{usable[0].get('display_name', '')}",
             file=sys.stderr,
         )
-        return (lat, lon), results, match_label(hit, query)
-    return None, results, ""
+    lat, lon = usable_hit(chosen)
+    print(
+        f"GEOCODED\t{place}\t{lat:.6f}\t{lon:.6f}\tquery={query}\t{chosen.get('display_name', '')}",
+        file=sys.stderr,
+    )
+    return (lat, lon), results, match_label(chosen, query)
 
 
 def new_feature(event: dict, used_ids: set[str], added_utc: str) -> dict:

@@ -6,6 +6,72 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          37.617478,
+          55.750541
+        ]
+      },
+      "properties": {
+        "id": "tm-9b5623e9ff",
+        "category": "strike",
+        "place": "Moscow, Russia",
+        "what": "Mayor Sergei Sobyanin says Russian air defences shot down drones flying toward Moscow in several waves (2 reported ~07:59Z, 4 more ~08:53Z, another 4 reported ~11:50Z); emergency crews at debris sites; no damage or casualties given; launcher not named by Sobyanin, no Ukrainian comment",
+        "when_utc": "2026-10-31 ~07:59Z to ~11:50Z",
+        "source": "https://www.fontanka.ru/2026/10/31/76736910/ https://ria.ru/20261031/pvo-2128326879.html",
+        "status": "claim",
+        "target_type": "city",
+        "coord_precision": "exact",
+        "added_utc": "2026-10-31T14:12:48Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          37.423801,
+          55.976088
+        ]
+      },
+      "properties": {
+        "id": "tm-c8eed4a41c",
+        "category": "closure",
+        "place": "Sheremetyevo International Airport, Moscow, Russia",
+        "what": "Rosaviatsia moved Vnukovo and Sheremetyevo to coordination-only operations (~07:54Z) and Domodedovo (~08:27Z), fully halted Sheremetyevo arrivals and departures and later halted them again; by ~12:57Z Sheremetyevo was handling flights only by coordination with authorities",
+        "when_utc": "2026-10-31 ~07:54Z to ~12:57Z",
+        "source": "https://www.interfax.ru/moscow/1126282 https://ria.ru/20261031/sheremetevo--2128333203.html",
+        "status": "confirmed",
+        "target_type": "airfield",
+        "coord_precision": "exact",
+        "added_utc": "2026-10-31T14:12:48Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.296983,
+          31.365631
+        ]
+      },
+      "properties": {
+        "id": "tm-17292d78f1",
+        "category": "strike",
+        "place": "Khan Younis, Gaza Strip",
+        "what": "WAFA, citing medical sources, says an Israeli drone strike near the Taiba Towers west of Khan Younis killed 1 Palestinian and injured several, some critically; no Israeli comment",
+        "when_utc": "2026-10-31 before ~13:35Z",
+        "source": "https://english.wafa.ps/Pages/Details/176470",
+        "status": "claim",
+        "target_type": null,
+        "coord_precision": "approximate: Taiba Towers area, west Khan Younis",
+        "added_utc": "2026-10-31T14:12:48Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           69.269952,
           32.519329
         ]
