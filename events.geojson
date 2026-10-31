@@ -79,7 +79,13 @@
     },
     {
       "type": "Feature",
-      "geometry": null,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.437201,
+          33.178454
+        ]
+      },
       "properties": {
         "id": "tm-7cdf686f8a",
         "category": "strike",
@@ -89,7 +95,7 @@
         "source": "https://pnn.ps/news/729654",
         "status": "claim",
         "target_type": null,
-        "coord_precision": "exact",
+        "coord_precision": "exact (geocoded as Baraachit)",
         "added_utc": "2026-10-31T11:07:45Z"
       }
     },
