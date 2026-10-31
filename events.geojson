@@ -6,6 +6,114 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          34.623239,
+          48.722218
+        ]
+      },
+      "properties": {
+        "id": "tm-f93ce6c40a",
+        "category": "strike",
+        "place": "Petrykivka, Dnipropetrovsk Oblast, Ukraine",
+        "what": "Governor Oleksandr Hanzha says Russian drones struck five districts 20+ times overnight, killing one person in Dnipro district (Slobozhanske, Petrykivka, Tsarychanka communities), damaging infrastructure in Dnipro and Kamianske district, hitting an enterprise in Ternivka (1 injured) and wounding an 18-year-old in Synelnykove district",
+        "when_utc": "evening Oct 30 to morning Oct 31, 2026 (reported ~05:38Z)",
+        "source": "https://www.ukrinform.ua/rubric-regions/4179947-vorog-iz-vecora-ponad-20-raziv-atakuvav-dnipropetrovsinu-zaginula-ludina-e-poraneni.html",
+        "status": "confirmed",
+        "target_type": "infrastructure",
+        "coord_precision": "approximate: Petrykivka town point; strikes across five districts",
+        "added_utc": "2026-10-31T06:06:04Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "tm-5026ba72cb",
+        "category": "strike",
+        "place": "Bryansk Oblast, Russia",
+        "what": "Russia's defence ministry says air defences destroyed 67 Ukrainian drones overnight over 11 regions, including 24 over Bryansk, 12 over Saratov, 11 over Rostov, 9 over Volgograd, 2 over the Moscow region and 2 over Leningrad",
+        "when_utc": "night of 2026-10-30/31",
+        "source": "https://t.me/s/mod_russia/59199",
+        "status": "claim",
+        "target_type": null,
+        "coord_precision": "exact",
+        "added_utc": "2026-10-31T06:06:04Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.263706,
+          52.554283
+        ]
+      },
+      "properties": {
+        "id": "tm-1f809e6e3f",
+        "category": "strike",
+        "place": "Pogar, Bryansk Oblast, Russia",
+        "what": "Bryansk's governor says a Ukrainian drone struck the Pogar district administration building, wounding a civilian woman with shrapnel",
+        "when_utc": "night of 2026-10-30/31",
+        "source": "https://sever-press.ru/news/proisshestviya/novosti-bpla-31-oktjabrja-kakie-regiony-podverglis-atake-i-chto-izvestno-k-utru/",
+        "status": "claim",
+        "target_type": "city",
+        "coord_precision": "exact",
+        "added_utc": "2026-10-31T06:06:04Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "tm-d9bb6d86b1",
+        "category": "shipping",
+        "place": "Musandam, Oman",
+        "what": "Oman's Maritime Security Centre says its navy evacuated 25 crew from the Panama-flagged tanker RITI after it was targeted and caught fire in the Strait of Hormuz; attacker not named; unclear if this is the vessel UKMTO reported hit south of Lavan Island",
+        "when_utc": "2026-10-30",
+        "source": "https://www.arabnews.com/middle-east/oman-rescues-crew-from-burning-ship-as-iran-guards-claim-3-tankers-halted-in-hormuz-3008990",
+        "status": "confirmed",
+        "target_type": "ship",
+        "coord_precision": "exact",
+        "added_utc": "2026-10-31T06:06:04Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "tm-ef166e2942",
+        "category": "shipping",
+        "place": "Strait of Hormuz",
+        "what": "Iran's Revolutionary Guards say tankers using what Tehran calls an unauthorized southern route were halted after 'incidents' or mine strikes, and that at least two exploded and caught fire; reported counts vary (three to four) and nothing is independently verified",
+        "when_utc": "2026-10-30",
+        "source": "https://www.aljazeera.com/news/2026/10/30/oman-rescues-25-from-burning-oil-tanker-in-strait-of-hormuz",
+        "status": "claim",
+        "target_type": "ship",
+        "coord_precision": "exact",
+        "added_utc": "2026-10-31T06:06:04Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "tm-b189efa4a2",
+        "category": "shipping",
+        "place": "Strait of Hormuz",
+        "what": "Iran's navy says it destroyed an 'enemy' remote-controlled vessel east of the strait; US Central Command calls the claim false and says all its unmanned surface vessels in the region are accounted for",
+        "when_utc": "2026-10-30 ~11:50Z",
+        "source": "https://www.aa.com.tr/en/us-israel-iran-war/us-denies-irans-claim-that-it-destroyed-us-sea-drone-in-strait-of-hormuz/4106878",
+        "status": "claim",
+        "target_type": "ship",
+        "coord_precision": "exact",
+        "added_utc": "2026-10-31T06:06:04Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           55.947499,
           54.726141
         ]
