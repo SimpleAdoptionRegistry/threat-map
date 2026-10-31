@@ -1535,13 +1535,7 @@
     },
     {
       "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          35.118287,
-          47.850786
-        ]
-      },
+      "geometry": null,
       "properties": {
         "id": "tm-8a4a8aa314",
         "category": "strike",
@@ -1551,7 +1545,7 @@
         "source": "https://unn.ua/en/news/overnight-russia-attacked-kyiv-kharkiv-zaporizhzhia-and-dnipropetrovsk-region-there-are-fatalities-injuries-and-extensive-destruction https://news.novyny.live/rosiia-zavdala-908-udariv-po-zaporizhzhiu-travmovano-piatokh-osib-351109.html",
         "status": "confirmed",
         "target_type": "city",
-        "coord_precision": "approximate: city point for oblast-wide report",
+        "coord_precision": "not geocoded: oblast only",
         "added_utc": "2026-10-27T07:09:44Z"
       }
     },
