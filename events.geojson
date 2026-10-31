@@ -6,6 +6,110 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          30.524136,
+          50.450034
+        ]
+      },
+      "properties": {
+        "id": "tm-a4f91446f7",
+        "category": "strike",
+        "place": "Kyiv, Ukraine",
+        "what": "Mayor Vitali Klitschko says three Russian drones hit one critical infrastructure facility, cutting power to water systems and leaving Kyiv's whole left bank (Darnytskyi, Dniprovskyi, Desnianskyi) plus Pecherskyi, Solomianskyi and Holosiivskyi districts without water; windows were blown out in a 14-storey building in Shevchenkivskyi",
+        "when_utc": "2026-10-30 late evening",
+        "source": "https://www.kyivpost.com/post/88725",
+        "status": "confirmed",
+        "target_type": "infrastructure",
+        "coord_precision": "exact",
+        "added_utc": "2026-10-31T04:07:31Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          36.33474,
+          49.964369
+        ]
+      },
+      "properties": {
+        "id": "tm-5612bf44c8",
+        "category": "strike",
+        "place": "Nemyshlianskyi district, Kharkiv, Ukraine",
+        "what": "Mayor Ihor Terekhov reported two Russian drone hits in Nemyshlianskyi district, and governor Oleh Syniehubov reported another strike in Novobavarskyi district; damage details not given",
+        "when_utc": "night of 2026-10-30/31",
+        "source": "https://unn.ua/en/news/russia-attacked-kharkiv-with-jet-powered-shaheds-hits-recorded-in-three-districts",
+        "status": "confirmed",
+        "target_type": "city",
+        "coord_precision": "exact",
+        "added_utc": "2026-10-31T04:07:31Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "tm-2b2b415be8",
+        "category": "strike",
+        "place": "Eastern Province, Saudi Arabia",
+        "what": "Saudi-led coalition says it intercepted and destroyed a Houthi drone over the Eastern Region and later another launched toward the Southern Region; no immediate Houthi comment",
+        "when_utc": "2026-10-31 early (reported ~01:55Z)",
+        "source": "https://www.devdiscourse.com/article/international/3999872-saudi-led-coalition-says-it-downs-drone-over-oil-rich-eastern-region",
+        "status": "claim",
+        "target_type": null,
+        "coord_precision": "exact",
+        "added_utc": "2026-10-31T04:07:31Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          36.879682,
+          50.404933
+        ]
+      },
+      "properties": {
+        "id": "tm-2f2858b3eb",
+        "category": "strike",
+        "place": "Shebekino, Belgorod Oblast, Russia",
+        "what": "Belgorod regional headquarters says Ukrainian FPV drones struck a minibus in Shebekino, wounding a man and a woman, and wounded a man in Graivoron",
+        "when_utc": "reported 2026-10-31 ~02:57Z",
+        "source": "https://news.ru/regions/ataki-vsu-na-rossiyu-kakie-regioni-okazalis-v-opasnosti-nochyu-31-oktyabrya",
+        "status": "claim",
+        "target_type": "city",
+        "coord_precision": "exact",
+        "added_utc": "2026-10-31T04:07:31Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.41091,
+          47.490094
+        ]
+      },
+      "properties": {
+        "id": "tm-b33c102714",
+        "category": "strike",
+        "place": "Kamianka-Dniprovska, Zaporizhzhia Oblast, Ukraine",
+        "what": "Russian-installed district administration says Ukrainian artillery shelling seriously wounded a woman",
+        "when_utc": "reported 2026-10-31 ~02:57Z",
+        "source": "https://news.ru/regions/ataki-vsu-na-rossiyu-kakie-regioni-okazalis-v-opasnosti-nochyu-31-oktyabrya",
+        "status": "claim",
+        "target_type": "city",
+        "coord_precision": "approximate: Kamianka-Dniprovska, Kamianka-Dniprovska urban hromada",
+        "added_utc": "2026-10-31T04:07:31Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           36.232805,
           49.934765
         ]

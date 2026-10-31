@@ -496,10 +496,23 @@ def _admin_name_matches_query(query: str, candidate: str) -> bool:
     ]
     if not query_tokens:
         return True
+
+    def squash(word: str) -> str:
+        # "Osnovianskyi" and "Osnovyansky" are the same district name.
+        text = _fold_name(word).replace("i", "y")
+        squashed: list[str] = []
+        for char in text:
+            if squashed and char.isalpha() and squashed[-1] == char:
+                continue
+            squashed.append(char)
+        return "".join(squashed)
+
+    lefts = [squash(word) for word in query_tokens]
+    rights = [squash(word) for word in candidate_tokens]
     return any(
         left == right or left in right or right in left
-        for left in query_tokens
-        for right in candidate_tokens
+        for left in lefts
+        for right in rights
     )
 
 
@@ -533,6 +546,13 @@ def area_followup(query: str, hits: list[dict]) -> str | None:
                 continue
             if key in {"state", "region"} and not _admin_name_matches_query(query, name):
                 continue
+            # A department office in another district must not donate that district.
+            if key in {"city_district", "borough"}:
+                if re.search(r"[A-Za-z]", name):
+                    if not _admin_name_matches_query(query, name):
+                        continue
+                elif not _hit_mentions(hit, distinctive_tokens(query)):
+                    continue
             follow = f"{name}, {tail}" if tail else name
             follow = " ".join(follow.split())
             if follow.casefold() != folded:
@@ -632,6 +652,11 @@ def geocode_place(place: str) -> tuple[tuple[float, float] | None, str, str | No
         return None, "offset", None
     seen_queries: set[str] = set()
     full_string_had_hits = False
+    # An oblast query that only returned other places must not fall through to the city.
+    region_query = any(
+        word in candidates[0].casefold()
+        for word in ("oblast", "governorate", "province", "prefecture")
+    )
     for query in candidates:
         found, results, _label = _geocode_query(place, query, seen_queries)
         if results:
@@ -648,9 +673,9 @@ def geocode_place(place: str) -> tuple[tuple[float, float] | None, str, str | No
             full_string_had_hits = True
         if found is not None:
             return found, "ok", None
-    if not full_string_had_hits:
+    if not full_string_had_hits or not region_query:
         for query in shorter_queries(place):
-            found, _results, label = _geocode_query(
+            found, results, label = _geocode_query(
                 place,
                 query,
                 seen_queries,
@@ -658,6 +683,16 @@ def geocode_place(place: str) -> tuple[tuple[float, float] | None, str, str | No
             )
             if found is not None:
                 return found, "short", label or None
+            if not (asks_for_area(place) and not region_query):
+                continue
+            follow = area_followup(place, results)
+            if not follow or follow.casefold() in seen_queries:
+                continue
+            found, _follow_results, _label = _geocode_query(
+                place, follow, seen_queries, area_only=True
+            )
+            if found is not None:
+                return found, "ok", None
     # "Gaza City" returns unrelated hits, so the City word is still stripped.
     for query in bare_locality_queries(candidates[0]):
         found, _results, label = _geocode_query(
