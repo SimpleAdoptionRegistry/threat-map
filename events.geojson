@@ -3,6 +3,164 @@
   "features": [
     {
       "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          37.605824,
+          48.852269
+        ]
+      },
+      "properties": {
+        "id": "tm-54d0cbbe28",
+        "category": "strike",
+        "place": "Sloviansk, Donetsk Oblast, Ukraine",
+        "what": "Donetsk governor Vadym Filashkin says Russian shelling killed 2 and injured 12 in Sloviansk over the past day, damaging 30 private houses, an apartment building, a gas station and a post office; he also reported 2 injured in Kramatorsk and 2 in Druzhkivka",
+        "when_utc": "24h to 2026-10-31 morning (reported ~10:20Z)",
+        "source": "https://en.interfax.com.ua/news/general/1229151.html",
+        "status": "confirmed",
+        "target_type": "city",
+        "coord_precision": "exact",
+        "added_utc": "2026-10-31T12:07:12Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.391727,
+          47.569206
+        ]
+      },
+      "properties": {
+        "id": "tm-88dc7c20b2",
+        "category": "strike",
+        "place": "Nikopol, Dnipropetrovsk Oblast, Ukraine",
+        "what": "Governor Oleksandr Hanzha says Russian attacks in the Nikopol area killed 1 and injured 4 over the past day",
+        "when_utc": "24h to 2026-10-31 morning",
+        "source": "https://kyivindependent.com/russian-attacks-kill-5-injure-at-least-46-as-ukraine-faces-difficult-energy-situation/",
+        "status": "confirmed",
+        "target_type": "city",
+        "coord_precision": "approximate: Nikopol area",
+        "added_utc": "2026-10-31T12:07:12Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.386085,
+          50.741503
+        ]
+      },
+      "properties": {
+        "id": "tm-4a2bcab3ce",
+        "category": "strike",
+        "place": "Bobrovytsia, Chernihiv Oblast, Ukraine",
+        "what": "Chernihiv governor Viacheslav Chaus says a Russian drone hit a private house, wounding 3 civilians, burning garages and damaging apartment buildings and cars; he says an enterprise in Chernihiv was also hit",
+        "when_utc": "2026-10-30",
+        "source": "https://www.dw.com/uk/rosia-masovano-atakuvala-ukrainu-dronami-e-zagiblij-vlucanna-v-energoobekti/a-79814965",
+        "status": "confirmed",
+        "target_type": "city",
+        "coord_precision": "exact",
+        "added_utc": "2026-10-31T12:07:12Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.265068,
+          48.321081
+        ]
+      },
+      "properties": {
+        "id": "tm-f132051129",
+        "category": "strike",
+        "place": "Kamensk-Shakhtinsky, Rostov Oblast, Russia",
+        "what": "Governor Yuri Slyusar says more than 90 Ukrainian drones were destroyed over Kamensk-Shakhtinsky and the Verkhnedonskoy, Millerovsky, Chertkovsky and Kamensky districts; debris damaged a private house's roof, glazing and an outbuilding, with no injuries",
+        "when_utc": "night of 2026-10-30/31 (reported ~05:24Z)",
+        "source": "https://www.mk.ru/politics/2026/10/31/gubernator-rostovskoy-oblasti-soobshhil-o-posledstviyakh-nochnoy-ataki-vsu.html",
+        "status": "claim",
+        "target_type": "city",
+        "coord_precision": "exact",
+        "added_utc": "2026-10-31T12:07:12Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "tm-b8bb86228f",
+        "category": "strike",
+        "place": "Voronezh Oblast, Russia",
+        "what": "Governor Alexander Gusev says debris from 12 downed Ukrainian drones damaged facades and glazing of 8 private houses and several cars in two municipalities; preliminarily no injuries",
+        "when_utc": "night of 2026-10-30/31 (reported ~07:07Z)",
+        "source": "https://www.ridus.ru/gubernator-voronezhskoj-oblasti-soobshil-o-povrezhdeniyah-ot-oblomkov-bpla-977859.html",
+        "status": "claim",
+        "target_type": "city",
+        "coord_precision": "not geocoded: oblast only",
+        "added_utc": "2026-10-31T12:07:12Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "tm-be2d9aee29",
+        "category": "strike",
+        "place": "Qatabir, Saada, Yemen",
+        "what": "A security source quoted by the Houthi-aligned Yemen Press Agency says the Saudi army shelled the Qatabir border district with artillery; no Saudi comment",
+        "when_utc": "2026-10-31 early morning",
+        "source": "https://en.ypagency.net/",
+        "status": "claim",
+        "target_type": null,
+        "coord_precision": "not geocoded: district only",
+        "added_utc": "2026-10-31T12:07:12Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "tm-2f8397c581",
+        "category": "strike",
+        "place": "Al-Shamayatayn, Taiz, Yemen",
+        "what": "A security source quoted by the Houthi-aligned Yemen Press Agency says Saudi warplanes carried out a series of airstrikes on the district; no casualties given, no Saudi comment",
+        "when_utc": "2026-10-31 early morning",
+        "source": "https://en.ypagency.net/",
+        "status": "claim",
+        "target_type": null,
+        "coord_precision": "not geocoded: district only",
+        "added_utc": "2026-10-31T12:07:12Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          30.222559,
+          13.183366
+        ]
+      },
+      "properties": {
+        "id": "tm-a3733bea39",
+        "category": "strike",
+        "place": "El Obeid, North Kordofan, Sudan",
+        "what": "Dabanga reports an RSF drone attack injured 6 civilians, damaged houses and destroyed 6 vehicles; no RSF comment",
+        "when_utc": "Friday morning per report (reported 2026-10-31)",
+        "source": "https://www.dabangasudan.org/en/all-news/article/drone-strikes-and-deadly-explosions-kill-scores-of-civilians-across-sudan",
+        "status": "claim",
+        "target_type": "city",
+        "coord_precision": "exact",
+        "added_utc": "2026-10-31T12:07:12Z"
+      }
+    },
+    {
+      "type": "Feature",
       "geometry": null,
       "properties": {
         "id": "tm-7e1eef6f53",
@@ -68,9 +226,9 @@
         "id": "tm-161c62fea1",
         "category": "strike",
         "place": "Shostka, Sumy Oblast, Ukraine",
-        "what": "Mayor Mykola Noha says a Russian morning strike damaged an infrastructure facility and non-residential buildings in Vovna, with no injuries reported; President Zelensky says a Russian drone hit Shostka's combined heat and power plant",
+        "what": "Mayor Mykola Noha says a Russian morning strike damaged an infrastructure facility and non-residential buildings in Vovna, with no injuries reported; President Zelensky says a Russian drone hit Shostka's combined heat and power plant. Update: Sumy regional police say a 43-year-old woman was killed and 10 people injured by Russian drones in the Shostka community over the past day.",
         "when_utc": "2026-10-31 early morning (reported 07:22Z)",
-        "source": "https://shostka.info/shostkanews/u-shostkynskij-gromadi-vnaslidok-vorozhogo-udaru-poshkodzheno-ob-yekt-infrastruktury-ta-nezhytlovi-prymishhennya/",
+        "source": "https://shostka.info/shostkanews/u-shostkynskij-gromadi-vnaslidok-vorozhogo-udaru-poshkodzheno-ob-yekt-infrastruktury-ta-nezhytlovi-prymishhennya/ https://www.ukrinform.net/rubric-ato/4179960-one-killed-12-injured-as-russian-forces-attack-sumy-region.html",
         "status": "confirmed",
         "target_type": "infrastructure",
         "coord_precision": "exact",
