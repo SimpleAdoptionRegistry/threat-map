@@ -290,6 +290,9 @@ def shorter_queries(place: str) -> list[str]:
         and not compass_only
     ):
         add(locality)
+    # "Bureij, Gaza Strip" returns nothing; the camp is named Bureij.
+    if len(original_words) == 1 and original_words[0].casefold() not in COMPASS_WORDS:
+        add(parts[0])
     return queries
 
 

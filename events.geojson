@@ -6,6 +6,104 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          35.518634,
+          33.35188
+        ]
+      },
+      "properties": {
+        "id": "tm-0a5ccf44c3",
+        "category": "strike",
+        "place": "Kfar Tebnit, Nabatieh, Lebanon",
+        "what": "Al Jazeera, cited by Middle East Eye, reports an Israeli air strike on the town, with Israeli demolitions and artillery shelling continuing in Bint Jbeil and Tyre districts; no casualty figure or Israeli comment",
+        "when_utc": "reported 2026-10-31 05:59Z",
+        "source": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-air-strikes-target-southern-lebanese-town-kfar-tebnit",
+        "status": "claim",
+        "target_type": "city",
+        "coord_precision": "exact",
+        "added_utc": "2026-10-31T07:06:43Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.403575,
+          31.438198
+        ]
+      },
+      "properties": {
+        "id": "tm-da6551649b",
+        "category": "strike",
+        "place": "Bureij, Gaza Strip",
+        "what": "A local source quoted by the Palestinian Information Center says Israeli artillery shelled areas north of Bureij camp and the al-Alami area near Kamal Adwan Hospital in northern Gaza, and Israeli military vehicles opened heavy fire northeast of Khan Yunis; no casualty figure or Israeli comment",
+        "when_utc": "2026-10-31 (time not given)",
+        "source": "https://english.palinfo.com/news/2026/10/31/372856/",
+        "status": "claim",
+        "target_type": "city",
+        "coord_precision": "approximate: Bureij Refugee Camp, Bureij",
+        "added_utc": "2026-10-31T07:06:43Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.434902,
+          31.504679
+        ]
+      },
+      "properties": {
+        "id": "tm-4d04dd63d5",
+        "category": "strike",
+        "place": "Tel al-Hawa, Gaza City",
+        "what": "A medical source says Arafat al-Ar'ir died of wounds sustained in an earlier Israeli attack on the neighborhood; date of the original attack not given",
+        "when_utc": "reported 2026-10-31",
+        "source": "https://english.palinfo.com/news/2026/10/31/372856/",
+        "status": "claim",
+        "target_type": "city",
+        "coord_precision": "approximate: Tel al-Hawa",
+        "added_utc": "2026-10-31T07:06:43Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "tm-eea4fcec24",
+        "category": "strike",
+        "place": "Poltava Oblast, Ukraine",
+        "what": "Ukraine's State Emergency Service says a Russian attack started fires in several places at a private industrial enterprise in the region; town not named",
+        "when_utc": "reported 2026-10-31 ~06:20Z",
+        "source": "https://nv.ua/ukr/ukraine/events/ataka-reaktivnih-bpla-po-dnipru-harkovu-ta-sumam-vibuhi-ta-pozhezhi-vnochi-50655001.html",
+        "status": "confirmed",
+        "target_type": "infrastructure",
+        "coord_precision": "not geocoded: oblast only",
+        "added_utc": "2026-10-31T07:06:43Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "tm-5524765323",
+        "category": "strike",
+        "place": "Sumy Oblast, Ukraine",
+        "what": "Ukraine's National Police say Russian forces made 56 strikes on 20 settlements in the region over the past day, killing 1 and injuring 12",
+        "when_utc": "24h to 2026-10-31 morning",
+        "source": "https://www.dw.com/ru/kiev-casticno-ostalsa-bez-sveta-i-vody-posle-atak-vs-rf/a-79814530",
+        "status": "confirmed",
+        "target_type": "city",
+        "coord_precision": "not geocoded: oblast only",
+        "added_utc": "2026-10-31T07:06:43Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           34.623239,
           48.722218
         ]
@@ -30,9 +128,9 @@
         "id": "tm-5026ba72cb",
         "category": "strike",
         "place": "Bryansk Oblast, Russia",
-        "what": "Russia's defence ministry says air defences destroyed 67 Ukrainian drones overnight over 11 regions, including 24 over Bryansk, 12 over Saratov, 11 over Rostov, 9 over Volgograd, 2 over the Moscow region and 2 over Leningrad",
+        "what": "Russia's defence ministry says air defences destroyed 67 Ukrainian drones overnight over 11 regions, including 24 over Bryansk, 12 over Saratov, 11 over Rostov, 9 over Volgograd, 2 over the Moscow region and 2 over Leningrad. Update: Russia's defence ministry morning summary says 433 Ukrainian drones were intercepted overnight over Bashkortostan, Tatarstan and 18 other regions.",
         "when_utc": "night of 2026-10-30/31",
-        "source": "https://t.me/s/mod_russia/59199",
+        "source": "https://t.me/s/mod_russia/59199 https://ru.themoscowtimes.com/2026/10/31/ukraina-vtoroi-raz-za-nedelyu-atakovala-ufu-zagorelsya-npz-bashnefti-a210196",
         "status": "claim",
         "target_type": null,
         "coord_precision": "exact",
@@ -122,9 +220,9 @@
         "id": "tm-96b4fab02d",
         "category": "strike",
         "place": "Ufa, Bashkortostan, Russia",
-        "what": "Monitoring channels cited by Glavcom report explosions in Ufa's industrial zone during a Ukrainian drone attack, with air defences active; regional officials have not confirmed any hit, damage or casualties",
+        "what": "Monitoring channels cited by Glavcom report explosions in Ufa's industrial zone during a Ukrainian drone attack, with air defences active; regional officials have not confirmed any hit, damage or casualties. Update: eyewitness footage cited by The Moscow Times shows a fire in Ufa's northern refinery zone; Ukrainian monitoring channel Krymsky Veter says Bashneft-UNPZ was hit, Astra says Bashneft-Novoil; local authorities have not commented.",
         "when_utc": "2026-10-31 early morning (reported ~04:30Z)",
-        "source": "https://glavcom.ua/world/world-politics/droni-atakuvali-ufu-za-1400-km-vid-kordonu-z-ukrajinoju-1152575.html",
+        "source": "https://glavcom.ua/world/world-politics/droni-atakuvali-ufu-za-1400-km-vid-kordonu-z-ukrajinoju-1152575.html https://ru.themoscowtimes.com/2026/10/31/ukraina-vtoroi-raz-za-nedelyu-atakovala-ufu-zagorelsya-npz-bashnefti-a210196",
         "status": "claim",
         "target_type": "infrastructure",
         "coord_precision": "exact",
@@ -378,9 +476,9 @@
         "id": "tm-2132f8fbd1",
         "category": "strike",
         "place": "Osnovianskyi district, Kharkiv, Ukraine",
-        "what": "Mayor Ihor Terekhov says a Russian jet-powered Shahed drone hit a private house, causing a fire; 3 injured and 10 homes damaged",
+        "what": "Mayor Ihor Terekhov says a Russian jet-powered Shahed drone hit a private house, causing a fire; 3 injured and 10 homes damaged. Update: Ukraine's State Emergency Service says 5 injured (mayor earlier said 3) and about 10 private homes, outbuildings and a car damaged (reported ~05:43Z Oct 31).",
         "when_utc": "2026-10-30 ~22:32Z",
-        "source": "https://glavcom.ua/country/incidents/rosija-atakuvala-kharkiv-dronami-udari-po-trokh-rajonakh-je-postrazhdali-1152562.html",
+        "source": "https://glavcom.ua/country/incidents/rosija-atakuvala-kharkiv-dronami-udari-po-trokh-rajonakh-je-postrazhdali-1152562.html https://nv.ua/ukr/ukraine/events/ataka-reaktivnih-bpla-po-dnipru-harkovu-ta-sumam-vibuhi-ta-pozhezhi-vnochi-50655001.html",
         "status": "confirmed",
         "target_type": "city",
         "coord_precision": "exact",
@@ -806,9 +904,9 @@
         "id": "tm-eba36a3c24",
         "category": "strike",
         "place": "Riyadh, Saudi Arabia",
-        "what": "Saudi-led coalition says its air defenses intercepted and destroyed two Houthi ballistic missiles fired toward Riyadh; no casualty or damage details and no immediate Houthi comment. Update: Saudi Civil Defence says debris damaged a building, a construction project and a vehicle; no injuries reported.",
+        "what": "Saudi-led coalition says its air defenses intercepted and destroyed two Houthi ballistic missiles fired toward Riyadh; no casualty or damage details and no immediate Houthi comment. Update: Saudi Civil Defence says debris damaged a building, a construction project and a vehicle; no injuries reported. Update Oct 31: coalition spokesman Turki al-Maliki says a 'hostile' drone was intercepted over the Riyadh region, debris fell, no casualties; launcher not named, no Houthi comment; unclear whether this is a new incident.",
         "when_utc": "2026-10-27 ~11:54Z (reported)",
-        "source": "https://www.aa.com.tr/en/middle-east/saudi-led-coalition-intercepts-2-houthi-ballistic-missiles-targeting-riyadh/4102483 https://www.dawn.com/news/2040244",
+        "source": "https://www.aa.com.tr/en/middle-east/saudi-led-coalition-intercepts-2-houthi-ballistic-missiles-targeting-riyadh/4102483 https://www.dawn.com/news/2040244 https://www.aa.com.tr/en/middle-east/saudi-led-coalition-says-it-intercepted-hostile-drone-over-riyadh-region/4107048",
         "status": "claim",
         "target_type": "city",
         "coord_precision": "exact",
