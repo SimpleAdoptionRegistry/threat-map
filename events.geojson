@@ -3,6 +3,44 @@
   "features": [
     {
       "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "tm-3295ff5f86",
+        "category": "strike",
+        "place": "Ukraine (nationwide)",
+        "what": "Ukraine's Air Force says Russia launched 134 strike drones overnight (72 jet-powered Shaheds, plus Gerbera and Parodiya decoys) from Oryol, Kursk, Shatalovo, Millerovo, occupied Donetsk and Hvardiiske in Crimea; it says 105 were shot down or suppressed, with hits at 20 locations and debris at 10",
+        "when_utc": "2026-10-30 16:00Z to 2026-10-31 06:30Z",
+        "source": "https://newsukraine.rbc.ua/news/six-launch-directions-134-drones-details-1793431116.html",
+        "status": "confirmed",
+        "target_type": null,
+        "coord_precision": "not geocoded: nationwide",
+        "added_utc": "2026-10-31T08:11:14Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          36.31127,
+          49.949093
+        ]
+      },
+      "properties": {
+        "id": "tm-5cb723141a",
+        "category": "strike",
+        "place": "Slobidskyi district, Kharkiv, Ukraine",
+        "what": "A Russian jet-powered drone hit a private production and warehouse building, starting a fire of about 3,000 square metres; preliminarily no casualties",
+        "when_utc": "2026-10-30 evening",
+        "source": "https://mezha.net/eng/news/mezha-8e9f4cf12980e50f28e90e37_a_fire_covering/",
+        "status": "confirmed",
+        "target_type": "infrastructure",
+        "coord_precision": "exact",
+        "added_utc": "2026-10-31T08:11:14Z"
+      }
+    },
+    {
+      "type": "Feature",
       "geometry": {
         "type": "Point",
         "coordinates": [
@@ -542,9 +580,9 @@
         "id": "tm-981c49c9c9",
         "category": "strike",
         "place": "Dnipro, Ukraine",
-        "what": "Suspilne correspondents report explosions in Dnipro as Russian jet-powered drones approached; damage not yet reported",
+        "what": "Suspilne correspondents report explosions in Dnipro as Russian jet-powered drones approached; damage not yet reported. Update (reported ~07:16Z Oct 31): DTEK says a large part of Dnipro, Kamianske and nearby districts remains without power after an infrastructure site in Dnipro was damaged in the overnight Russian drone attack.",
         "when_utc": "2026-10-30 ~22:45Z",
-        "source": "https://nv.ua/ukraine/events/ataka-reaktivnyh-bpla-na-dnepr-harkov-i-sumy-nochnye-vzryvy-i-pozhary-50655001.html",
+        "source": "https://nv.ua/ukraine/events/ataka-reaktivnyh-bpla-na-dnepr-harkov-i-sumy-nochnye-vzryvy-i-pozhary-50655001.html https://nv.ua/ukr/ukraine/events/rosiya-atakuvala-ukrajinu-dronami-zsu-zbili-105-iz-134-bpla-ye-ruynuvannya-v-harkovi-ta-dnipri-50655082.html",
         "status": "claim",
         "target_type": "city",
         "coord_precision": "exact",

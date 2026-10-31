@@ -588,6 +588,11 @@ def hit_is_usable(query: str, hit: dict) -> bool:
     query_cf = query.casefold()
     if category == "highway" and not any(hint in query_cf for hint in ROAD_HINTS):
         return False
+    # "Slobidskyi district" must not keep Kharkiv-Slobidskyi railway station.
+    if category == "railway" and not any(
+        hint in query_cf for hint in ("station", "railway", "train", "halt")
+    ):
+        return False
     # "Dnipro, Ukraine" returns the Dnieper before the city of Dnipro.
     if category == "waterway" and not any(
         hint in query_cf for hint in ("river", "canal", "stream", "waterway", "creek")
