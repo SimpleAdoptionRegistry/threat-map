@@ -507,7 +507,7 @@ def area_followup(query: str, hits: list[dict]) -> str | None:
     """One extra query for the admin area named on a building hit.
 
     The name comes from Nominatim's address for that hit. A district query
-    uses city_district; a county query uses county. A state or region is
+    uses city_district or borough; a county query uses county. A state or region is
     used only when it is the area named in the query. The result is kept
     only when it is itself an area.
     """
@@ -515,7 +515,7 @@ def area_followup(query: str, hits: list[dict]) -> str | None:
     if "county" in folded:
         keys = ("county", "state", "region")
     elif "district" in folded or "raion" in folded:
-        keys = ("city_district", "county", "state")
+        keys = ("city_district", "borough", "county", "state")
     else:
         keys = ("state", "county", "region", "city_district")
     tail = ", ".join(part.strip() for part in query.split(",")[1:] if part.strip())
@@ -564,6 +564,11 @@ def hit_is_usable(query: str, hit: dict) -> bool:
     category = str(hit.get("category") or "").casefold()
     query_cf = query.casefold()
     if category == "highway" and not any(hint in query_cf for hint in ROAD_HINTS):
+        return False
+    # "Dnipro, Ukraine" returns the Dnieper before the city of Dnipro.
+    if category == "waterway" and not any(
+        hint in query_cf for hint in ("river", "canal", "stream", "waterway", "creek")
+    ):
         return False
     # "Gaza, Gaza Strip" returns Port of Gaza, a marina, ahead of the city.
     kind = str(hit.get("type") or "").casefold()

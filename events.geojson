@@ -6,6 +6,198 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          36.232805,
+          49.934765
+        ]
+      },
+      "properties": {
+        "id": "tm-2132f8fbd1",
+        "category": "strike",
+        "place": "Osnovianskyi district, Kharkiv, Ukraine",
+        "what": "Mayor Ihor Terekhov says a Russian jet-powered Shahed drone hit a private house, causing a fire; 3 injured and 10 homes damaged",
+        "when_utc": "2026-10-30 ~22:32Z",
+        "source": "https://glavcom.ua/country/incidents/rosija-atakuvala-kharkiv-dronami-udari-po-trokh-rajonakh-je-postrazhdali-1152562.html",
+        "status": "confirmed",
+        "target_type": "city",
+        "coord_precision": "exact",
+        "added_utc": "2026-10-31T03:11:25Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.802772,
+          50.911977
+        ]
+      },
+      "properties": {
+        "id": "tm-94899feef1",
+        "category": "strike",
+        "place": "Sumy, Ukraine",
+        "what": "Regional authorities say two Russian drones hit a non-residential building and a car wash in Zarichnyi district, causing fires; preliminarily no injuries",
+        "when_utc": "2026-10-30 ~21:40Z",
+        "source": "https://24tv.ua/ataka-shahediv-ukrayinu-31-zhovtnya-2026-kudi-zaraz-letyat-droni_n3171067",
+        "status": "confirmed",
+        "target_type": "city",
+        "coord_precision": "exact",
+        "added_utc": "2026-10-31T03:11:25Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.501049,
+          50.236303
+        ]
+      },
+      "properties": {
+        "id": "tm-ded0897b94",
+        "category": "strike",
+        "place": "Pyriatyn, Poltava Oblast, Ukraine",
+        "what": "Poltava regional military administration says a Russian drone hit a private home in Pyriatyn community, damaging windows and a power line; preliminarily no injuries",
+        "when_utc": "2026-10-30 ~23:30Z",
+        "source": "https://24tv.ua/ataka-shahediv-ukrayinu-31-zhovtnya-2026-kudi-zaraz-letyat-droni_n3171067",
+        "status": "confirmed",
+        "target_type": "city",
+        "coord_precision": "exact",
+        "added_utc": "2026-10-31T03:11:25Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.041771,
+          48.468022
+        ]
+      },
+      "properties": {
+        "id": "tm-981c49c9c9",
+        "category": "strike",
+        "place": "Dnipro, Ukraine",
+        "what": "Suspilne correspondents report explosions in Dnipro as Russian jet-powered drones approached; damage not yet reported",
+        "when_utc": "2026-10-30 ~22:45Z",
+        "source": "https://nv.ua/ukraine/events/ataka-reaktivnyh-bpla-na-dnepr-harkov-i-sumy-nochnye-vzryvy-i-pozhary-50655001.html",
+        "status": "claim",
+        "target_type": "city",
+        "coord_precision": "exact",
+        "added_utc": "2026-10-31T03:11:25Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          36.48527,
+          51.656845
+        ]
+      },
+      "properties": {
+        "id": "tm-92de40e340",
+        "category": "strike",
+        "place": "Kursk Oblast, Russia",
+        "what": "Governor Alexander Khinshtein says a Ukrainian drone struck a truck, wounding the driver",
+        "when_utc": "2026-10-30 evening",
+        "source": "https://yamal-news.net/incident/2026/10/31/531100.html",
+        "status": "claim",
+        "target_type": "convoy",
+        "coord_precision": "exact",
+        "added_utc": "2026-10-31T03:11:25Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.285514,
+          55.60741
+        ]
+      },
+      "properties": {
+        "id": "tm-cfcb25ae47",
+        "category": "closure",
+        "place": "Kazan International Airport, Russia",
+        "what": "Rosaviatsia temporarily halted arrivals and departures at Penza, Saransk, Saratov, Ulyanovsk, Kazan and Samara airports during Ukrainian drone alerts, citing flight safety",
+        "when_utc": "night of 2026-10-30/31",
+        "source": "https://yamal-news.net/incident/2026/10/31/531100.html",
+        "status": "confirmed",
+        "target_type": "airfield",
+        "coord_precision": "approximate: Kazan airport point; covers six airports",
+        "added_utc": "2026-10-31T03:11:25Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.88221,
+          54.554358
+        ]
+      },
+      "properties": {
+        "id": "tm-75fa755efc",
+        "category": "closure",
+        "place": "Ufa International Airport, Russia",
+        "what": "Bashkortostan emergencies committee head Kirill Pervov says Ufa airport halted arrivals and departures after a drone alert was declared",
+        "when_utc": "2026-10-31 early morning",
+        "source": "https://ufa1.ru/text/incidents/2026/10/31/76736648/",
+        "status": "confirmed",
+        "target_type": "airfield",
+        "coord_precision": "exact",
+        "added_utc": "2026-10-31T03:11:25Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.605402,
+          24.491739
+        ]
+      },
+      "properties": {
+        "id": "tm-30b1a26f44",
+        "category": "military_movement",
+        "place": "Taiwan Strait",
+        "what": "Taiwan's defense ministry tracked 13 Chinese aircraft sorties, 7 navy ships and 2 official ships around Taiwan; 6 sorties crossed the median line; no fire reported",
+        "when_utc": "2026-10-29 22:00Z to 2026-10-30 22:00Z",
+        "source": "https://www.mnd.gov.tw/EN/news/plaact/88099",
+        "status": "confirmed",
+        "target_type": null,
+        "coord_precision": "exact",
+        "added_utc": "2026-10-31T03:11:25Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "tm-a2a76f9483",
+        "category": "shipping",
+        "place": "Khasab, Oman",
+        "what": "UKMTO says a small boat attached two explosive devices to an outbound tanker's hull 25nm NE of Khasab in the Strait of Hormuz, causing an engine-room fire that briefly disabled it; crew safe, vessel continued; attacker unknown",
+        "when_utc": "2026-10-29 ~22:12Z",
+        "source": "https://www.arabnews.com/middle-east/fire-hit-tanker-continues-journey-after-being-attacked-in-strait-of-hormuz-ukmto-says-3008930",
+        "status": "confirmed",
+        "target_type": "ship",
+        "coord_precision": "exact",
+        "added_utc": "2026-10-31T03:11:25Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           34.261094,
           31.355066
         ]
