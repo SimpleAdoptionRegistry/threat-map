@@ -5,6 +5,136 @@
       "type": "Feature",
       "geometry": null,
       "properties": {
+        "id": "tm-7e1eef6f53",
+        "category": "shipping",
+        "place": "Qeshm Island, Iran (at sea 14-18 nm south)",
+        "what": "Hormozgan deputy governor Ahmad Nafisi says US forces attacked two fishing boats about 18 miles off Masan village; Fars says an 'enemy' drone hit them 14 nm south of Qeshm; two fishermen missing and one or two wounded per differing reports; no US comment found",
+        "when_utc": "2026-10-31 ~08:00Z (11:30 local)",
+        "source": "https://wanaen.com/us-attack-targets-two-fishing-boats-off-qeshm-island/ https://www.dawn.com/news/2041175",
+        "status": "claim",
+        "target_type": "ship",
+        "coord_precision": "not geocoded: at sea south of Qeshm",
+        "added_utc": "2026-10-31T11:07:45Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.197143,
+          52.379054
+        ]
+      },
+      "properties": {
+        "id": "tm-88727ff74f",
+        "category": "strike",
+        "place": "Klimovo, Bryansk Oblast, Russia",
+        "what": "Bryansk governor Yegor Kovalchuk says a Ukrainian kamikaze drone hit a private house, killing a 30-year-old woman and a 41-year-old man; he says five civilians were wounded across the region (Klimovo, Pogar, Voronok); no Ukrainian comment",
+        "when_utc": "night of 2026-10-30/31 (reported ~04:00Z)",
+        "source": "https://www.interfax.ru/russia/1126273",
+        "status": "claim",
+        "target_type": "city",
+        "coord_precision": "exact",
+        "added_utc": "2026-10-31T11:07:45Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "tm-74c17002f5",
+        "category": "strike",
+        "place": "Brovary Raion, Kyiv Oblast, Ukraine",
+        "what": "Kyiv regional head Tymur Tkachenko says Russian drones damaged a private house and outbuilding, hospitalizing a 76-year-old woman and leaving a 75-year-old man treated on site",
+        "when_utc": "night of 2026-10-30/31",
+        "source": "https://en.lb.ua/news/2026/10/31/47436_two_injured_overnight_russian.html",
+        "status": "confirmed",
+        "target_type": "city",
+        "coord_precision": "not geocoded: district only",
+        "added_utc": "2026-10-31T11:07:45Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.472854,
+          51.864355
+        ]
+      },
+      "properties": {
+        "id": "tm-161c62fea1",
+        "category": "strike",
+        "place": "Shostka, Sumy Oblast, Ukraine",
+        "what": "Mayor Mykola Noha says a Russian morning strike damaged an infrastructure facility and non-residential buildings in Vovna, with no injuries reported; President Zelensky says a Russian drone hit Shostka's combined heat and power plant",
+        "when_utc": "2026-10-31 early morning (reported 07:22Z)",
+        "source": "https://shostka.info/shostkanews/u-shostkynskij-gromadi-vnaslidok-vorozhogo-udaru-poshkodzheno-ob-yekt-infrastruktury-ta-nezhytlovi-prymishhennya/",
+        "status": "confirmed",
+        "target_type": "infrastructure",
+        "coord_precision": "exact",
+        "added_utc": "2026-10-31T11:07:45Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "tm-7cdf686f8a",
+        "category": "strike",
+        "place": "Barachit, Bint Jbeil, Lebanon",
+        "what": "Lebanon's NNA says an Israeli airstrike hit the outskirts of Barachit and another hit between Adshit al-Qusayr and Taybeh; Israeli forces also set off a blast in Tallouseh and fired machine guns from the Khiam direction toward Ebel al-Saqi; no casualties given, no Israeli comment",
+        "when_utc": "2026-10-31 morning local",
+        "source": "https://pnn.ps/news/729654",
+        "status": "claim",
+        "target_type": null,
+        "coord_precision": "exact",
+        "added_utc": "2026-10-31T11:07:45Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "tm-e9ce180b63",
+        "category": "shipping",
+        "place": "Off Odesa, Ukraine (at sea 18 km south)",
+        "what": "Russia's defence ministry says it struck a dry-cargo ship carrying cargo for Ukraine's armed forces, and also hit Kyiv's CHP-6 and drone workshops in Kharkiv's Proton industrial zone; not independently verified, ship not named",
+        "when_utc": "reported 2026-10-31",
+        "source": "https://www.intellinews.com/missile-war-monitor-ukraine-resumes-refinery-strikes-novak-says-as-russian-strike-blacks-out-parts-of-kyiv-480552/",
+        "status": "claim",
+        "target_type": "ship",
+        "coord_precision": "not geocoded: at sea south of Odesa",
+        "added_utc": "2026-10-31T11:07:45Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          117.793879,
+          15.163587
+        ]
+      },
+      "properties": {
+        "id": "tm-5154c38138",
+        "category": "military_movement",
+        "place": "Scarborough Shoal",
+        "what": "China's PLA Southern Theater Command says its navy and air force conducted combat-readiness patrols around the shoal as what it called necessary countermeasures to Philippine provocations; no fire reported; Philippines had no immediate response",
+        "when_utc": "reported 2026-10-31",
+        "source": "https://www.manilatimes.net/2026/10/31/news/china-boosts-patrols-around-disputed-shoal/2458437",
+        "status": "confirmed",
+        "target_type": null,
+        "coord_precision": "exact",
+        "added_utc": "2026-10-31T11:07:45Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
         "id": "tm-6ad0b02734",
         "category": "military_movement",
         "place": "Taiwan Strait",
@@ -771,13 +901,7 @@
     },
     {
       "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          119.605402,
-          24.491739
-        ]
-      },
+      "geometry": null,
       "properties": {
         "id": "tm-30b1a26f44",
         "category": "military_movement",
@@ -787,7 +911,7 @@
         "source": "https://www.mnd.gov.tw/EN/news/plaact/88099",
         "status": "confirmed",
         "target_type": null,
-        "coord_precision": "exact",
+        "coord_precision": "not geocoded: strait",
         "added_utc": "2026-10-31T03:11:25Z"
       }
     },
@@ -2037,13 +2161,7 @@
     },
     {
       "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          119.605402,
-          24.491739
-        ]
-      },
+      "geometry": null,
       "properties": {
         "id": "tm-b79269e064",
         "category": "military_movement",
@@ -2053,7 +2171,7 @@
         "source": "https://www.cna.com.tw/news/aipl/202610270025.aspx",
         "status": "confirmed",
         "target_type": null,
-        "coord_precision": "exact",
+        "coord_precision": "not geocoded: strait",
         "added_utc": "2026-10-27T02:12:42Z"
       }
     },
@@ -2471,13 +2589,7 @@
     },
     {
       "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          119.605402,
-          24.491739
-        ]
-      },
+      "geometry": null,
       "properties": {
         "id": "tm-a4daff173b",
         "category": "military_movement",
@@ -2487,7 +2599,7 @@
         "source": "https://www.mnd.gov.tw/en/news/plaact/88069",
         "status": "confirmed",
         "target_type": null,
-        "coord_precision": "exact",
+        "coord_precision": "not geocoded: strait",
         "added_utc": "2026-10-26T21:22:28Z"
       }
     },
