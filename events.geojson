@@ -3,6 +3,82 @@
   "features": [
     {
       "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "tm-6ad0b02734",
+        "category": "military_movement",
+        "place": "Taiwan Strait",
+        "what": "Taiwan's defense ministry says 22 Chinese military aircraft sorties (J-10, J-16, KJ-500, YU-20 and drones) flew out from 05:15 UTC, 18 crossing the median line or its extension into northern, central, southwestern and Western Pacific airspace alongside Chinese navy ships in what Beijing calls a 'joint combat readiness patrol'; no fire reported",
+        "when_utc": "2026-10-31 from ~05:15Z",
+        "source": "https://www.cna.com.tw/news/aipl/202610310154.aspx",
+        "status": "confirmed",
+        "target_type": null,
+        "coord_precision": "not geocoded: strait",
+        "added_utc": "2026-10-31T10:08:37Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          38.786398,
+          14.411965
+        ]
+      },
+      "properties": {
+        "id": "tm-9b4996ccd3",
+        "category": "strike",
+        "place": "Rama, Tigray, Ethiopia",
+        "what": "Residents told AFP a drone strike hit a truck carrying sorghum in central Rama, and a second strike the next morning hit people collecting the grain; a hospital source confirmed 11 dead; ACLED says the strike is believed to have been carried out by Ethiopia's federal army (ENDF); no government comment",
+        "when_utc": "2026-10-29 ~18:00Z and 2026-10-30 morning",
+        "source": "https://www.africanews.com/2026/10/31/drone-strikes-in-ethiopia-kill-at-least-25-witnesses/",
+        "status": "claim",
+        "target_type": "convoy",
+        "coord_precision": "exact",
+        "added_utc": "2026-10-31T10:08:37Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "tm-585517aad0",
+        "category": "strike",
+        "place": "Amhara Region, Ethiopia",
+        "what": "Witnesses told AFP four drone strikes in a row hit a displaced-persons camp about 400 km northeast of Addis Ababa, killing at least 16 including children; camp not named and attacker not identified by witnesses",
+        "when_utc": "2026-10-29",
+        "source": "https://www.africanews.com/2026/10/31/drone-strikes-in-ethiopia-kill-at-least-25-witnesses/",
+        "status": "claim",
+        "target_type": "city",
+        "coord_precision": "not geocoded: region only",
+        "added_utc": "2026-10-31T10:08:37Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          127.428424,
+          39.172595
+        ]
+      },
+      "properties": {
+        "id": "tm-3ef0a2c9ee",
+        "category": "military_movement",
+        "place": "Wonsan, North Korea",
+        "what": "South Korea's Joint Chiefs of Staff say North Korea fired about 10 short-range ballistic missiles from the Wonsan area into the sea off its east coast; Japan says they fell outside its EEZ; KCNA reported a same-day weapons demonstration with drones, cruise missiles and a 600-mm rocket launcher",
+        "when_utc": "2026-10-29 ~03:30Z",
+        "source": "https://www.nbcnews.com/world/asia/north-korea-fires-10-ballistic-missiles-sea-east-coast-seoul-says-rcna606273 https://en.yna.co.kr/view/AEN20261030000600315",
+        "status": "confirmed",
+        "target_type": null,
+        "coord_precision": "exact",
+        "added_utc": "2026-10-31T10:08:37Z"
+      }
+    },
+    {
+      "type": "Feature",
       "geometry": {
         "type": "Point",
         "coordinates": [
@@ -982,7 +1058,7 @@
         "place": "Riyadh, Saudi Arabia",
         "what": "Saudi-led coalition says its air defenses intercepted and destroyed two Houthi ballistic missiles fired toward Riyadh; no casualty or damage details and no immediate Houthi comment. Update: Saudi Civil Defence says debris damaged a building, a construction project and a vehicle; no injuries reported. Update Oct 31: coalition spokesman Turki al-Maliki says a 'hostile' drone was intercepted over the Riyadh region, debris fell, no casualties; launcher not named, no Houthi comment; unclear whether this is a new incident. (Oct 31 interception first reported ~03:45Z, per QNA)",
         "when_utc": "2026-10-27 ~11:54Z (reported)",
-        "source": "https://www.aa.com.tr/en/middle-east/saudi-led-coalition-intercepts-2-houthi-ballistic-missiles-targeting-riyadh/4102483 https://www.dawn.com/news/2040244 https://www.aa.com.tr/en/middle-east/saudi-led-coalition-says-it-intercepted-hostile-drone-over-riyadh-region/4107048 https://www.gulf-times.com/article/737093/region/coalition-says-it-intercepted-drone-targeting-riyadh",
+        "source": "https://www.aa.com.tr/en/middle-east/saudi-led-coalition-intercepts-2-houthi-ballistic-missiles-targeting-riyadh/4102483 https://www.dawn.com/news/2040244 https://www.aa.com.tr/en/middle-east/saudi-led-coalition-says-it-intercepted-hostile-drone-over-riyadh-region/4107048 https://www.gulf-times.com/article/737093/region/coalition-says-it-intercepted-drone-targeting-riyadh https://english.alarabiya.net/News/saudi-arabia/2026/10/31/saudi-coalition-intercepts-hostile-drone-in-riyadh-region",
         "status": "claim",
         "target_type": "city",
         "coord_precision": "exact",
