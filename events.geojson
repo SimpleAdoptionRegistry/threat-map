@@ -3,7 +3,13 @@
   "features": [
     {
       "type": "Feature",
-      "geometry": null,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.269952,
+          32.519329
+        ]
+      },
       "properties": {
         "id": "tm-15dae16cd9",
         "category": "strike",
@@ -13,7 +19,7 @@
         "source": "https://www.afintl.com/en/202610287501 https://english.news.cn/asiapacific/20261029/7f31043e9e6c4c649aedc15abd5fa6e5/c.html https://www.dawn.com/news/2041105/army-targets-afghan-border-positions",
         "status": "claim",
         "target_type": "base",
-        "coord_precision": "exact",
+        "coord_precision": "approximate: Angoor Adda border crossing (Pakistan side point)",
         "added_utc": "2026-10-31T13:06:00Z"
       }
     },
