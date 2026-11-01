@@ -95,7 +95,7 @@
       "properties": {
         "id": "tm-531d04c5a1",
         "category": "strike",
-        "place": "Gaza City, Palestinian Territories (Al-Thawra Street, near Taj Mall)",
+        "place": "Gaza City (Al-Thawra Street, near Taj Mall)",
         "what": "WAFA, citing medical sources, says an Israeli strike on a gathering of civilians on al-Thawra Street (behind Taj Mall) in western Gaza City killed 3 Palestinians including a child and injured several, some critically; no Israeli comment found (reported by about 10:07 UTC)",
         "when_utc": "2026-11-01T10:07Z",
         "source": "https://english.wafa.ps/Pages/Details/176486 https://www.sadanews.ps/en/news/349067.html",
@@ -165,7 +165,7 @@
       "properties": {
         "id": "tm-6327759c82",
         "category": "shipping",
-        "place": "Arabian Gulf, Saudi Arabia (at sea)",
+        "place": "Arabian Gulf (at sea)",
         "what": "Qatar Gas Transport Company (Nakilat) says its LNG carrier Al Mayeda was hit by unidentified objects while transiting the Gulf on Friday evening; no crew injured, no environmental impact, vessel safe and operational; attacker not named. Bloomberg reports the Pakistan-bound ship had Iranian transit clearance and then reversed course; OSINT trackers link it to the UKMTO report of a vessel hit 40nm south of Lavan Island, which is not officially confirmed",
         "when_utc": "2026-10-30",
         "source": "https://www.nakilat.com/al-mayeda-vessel-incident-in-the-arabian-gulf/ https://www.arabnews.com/middle-east/qatari-gas-tanker-struck-in-gulf-state-media-3009222 https://www.investing.com/news/economy-news/pakistanbound-lng-tanker-attacked-near-hormuz-despite-iran-clearance--bloomberg-4989531",
@@ -187,7 +187,7 @@
       "properties": {
         "id": "tm-f1494f7e6a",
         "category": "strike",
-        "place": "Al-Mawasi, Gaza Strip, Palestine (Khan Younis)",
+        "place": "Al-Mawasi, Gaza Strip (Khan Younis)",
         "what": "WAFA, citing medical sources, and Petra report five Palestinians killed and others injured in an Israeli drone strike in the al-Mawasi area west of Khan Younis; earlier CGTN reports said 2 then 3; the Israeli military reportedly said four Palestinian Islamic Jihad members were killed in Khan Younis strikes",
         "when_utc": "2026-11-01T09:56Z",
         "source": "https://news.cgtn.com/news/2026-11-01/news-1RIDpPicZBS/p.html https://news.cgtn.com/news/2026-11-01/news-1RIDB0OvKaQ/p.html https://petra.gov.jo/en/news/five-palestinians-killed-in-israeli-drone-strike-on-southern-gaza https://english.wafa.ps/Pages/Details/176486",
@@ -607,7 +607,7 @@
       "properties": {
         "id": "tm-17292d78f1",
         "category": "strike",
-        "place": "Khan Yunis, Palestinian Territories (Gaza Strip)",
+        "place": "Khan Yunis (Gaza Strip)",
         "what": "WAFA, citing medical sources, says an Israeli drone strike near the Taiba Towers west of Khan Younis killed 1 Palestinian and injured several, some critically; no Israeli comment (before about 13:35 UTC)",
         "when_utc": "2026-10-31",
         "source": "https://english.wafa.ps/Pages/Details/176470",
@@ -651,7 +651,7 @@
       "properties": {
         "id": "tm-23198c746b",
         "category": "strike",
-        "place": "Beit Lahiya, Palestinian Territories (Gaza Strip)",
+        "place": "Beit Lahiya (Gaza Strip)",
         "what": "WAFA, citing medical sources and its correspondent, says Israeli artillery heavily shelled eastern Gaza City and areas west of Beit Lahia, Israeli naval vessels fired toward the Gaza City coast, and Israeli military vehicles fired toward displaced people's tents in al-Mawasi near al-Qarara; no casualty figures or Israeli comment",
         "when_utc": "2026-10-31",
         "source": "https://english.wafa.ps/Pages/Details/176459",
@@ -945,7 +945,7 @@
       "properties": {
         "id": "tm-5154c38138",
         "category": "military_movement",
-        "place": "Scarborough Shoal, China",
+        "place": "Scarborough Shoal (South China Sea)",
         "what": "China's PLA Southern Theater Command says its navy and air force conducted combat-readiness patrols around the shoal as what it called necessary countermeasures to Philippine provocations; no fire reported; Philippines had no immediate response (reported that day)",
         "when_utc": "2026-10-31",
         "source": "https://www.manilatimes.net/2026/10/31/news/china-boosts-patrols-around-disputed-shoal/2458437",
@@ -961,7 +961,7 @@
       "properties": {
         "id": "tm-6ad0b02734",
         "category": "military_movement",
-        "place": "Taiwan Strait, Taiwan",
+        "place": "Taiwan Strait",
         "what": "Taiwan's defense ministry says 22 Chinese military aircraft sorties (J-10, J-16, KJ-500, YU-20 and drones) flew out from 05:15 UTC, 18 crossing the median line or its extension into northern, central, southwestern and Western Pacific airspace alongside Chinese navy ships in what Beijing calls a 'joint combat readiness patrol'; no fire reported",
         "when_utc": "2026-10-31T05:15Z",
         "source": "https://www.cna.com.tw/news/aipl/202610310154.aspx",
@@ -1043,7 +1043,7 @@
       "properties": {
         "id": "tm-181982bf50",
         "category": "strike",
-        "place": "Nuseirat, Palestinian Territories (Gaza Strip)",
+        "place": "Nuseirat (Gaza Strip)",
         "what": "A medical source at Al-Awda Hospital says an Israeli strike north of Nuseirat refugee camp killed Diaa Abu al-Rous; witnesses say an Israeli drone hit near an electricity company building; no Israeli comment (early morning local)",
         "when_utc": "2026-10-31",
         "source": "https://www.aa.com.tr/en/middle-east/2-palestinians-killed-in-israels-ongoing-violations-of-gaza-ceasefire/4107086",
@@ -1141,7 +1141,7 @@
       "properties": {
         "id": "tm-da6551649b",
         "category": "strike",
-        "place": "Bureij, Palestinian Territories (Gaza Strip)",
+        "place": "Bureij (Gaza Strip)",
         "what": "A local source quoted by the Palestinian Information Center says Israeli artillery shelled areas north of Bureij camp and the al-Alami area near Kamal Adwan Hospital in northern Gaza, and Israeli military vehicles opened heavy fire northeast of Khan Yunis; no casualty figure or Israeli comment",
         "when_utc": "2026-10-31",
         "source": "https://english.palinfo.com/news/2026/10/31/372856/",
@@ -1163,7 +1163,7 @@
       "properties": {
         "id": "tm-4d04dd63d5",
         "category": "strike",
-        "place": "Gaza City, Palestinian Territories (Tel al-Hawa)",
+        "place": "Gaza City (Tel al-Hawa)",
         "what": "A medical source says Arafat al-Ar'ir died of wounds sustained in an earlier Israeli attack on the neighborhood; date of the original attack not given (reported that day)",
         "when_utc": "2026-10-31",
         "source": "https://english.palinfo.com/news/2026/10/31/372856/",
@@ -1287,7 +1287,7 @@
       "properties": {
         "id": "tm-ef166e2942",
         "category": "shipping",
-        "place": "Strait of Hormuz, Oman",
+        "place": "Strait of Hormuz",
         "what": "Iran's Revolutionary Guards say tankers using what Tehran calls an unauthorized southern route were halted after 'incidents' or mine strikes, and that at least two exploded and caught fire; reported counts vary (three to four) and nothing is independently verified. Update: the IRGC now says a fourth tanker, a supertanker carrying more than 2 million barrels of crude, hit a mine and caught fire on the southern route; not independently verified.",
         "when_utc": "2026-10-30",
         "source": "https://www.aljazeera.com/news/2026/10/30/oman-rescues-25-from-burning-oil-tanker-in-strait-of-hormuz https://www.aa.com.tr/en/middle-east/iran-says-4th-oil-tanker-hit-mine-caught-fire-in-strait-of-hormuz/4107011",
@@ -1303,7 +1303,7 @@
       "properties": {
         "id": "tm-b189efa4a2",
         "category": "shipping",
-        "place": "Strait of Hormuz, Oman",
+        "place": "Strait of Hormuz",
         "what": "Iran's navy says it destroyed an 'enemy' remote-controlled vessel east of the strait; US Central Command calls the claim false and says all its unmanned surface vessels in the region are accounted for (about 11:50 UTC)",
         "when_utc": "2026-10-30T11:50Z",
         "source": "https://www.aa.com.tr/en/us-israel-iran-war/us-denies-irans-claim-that-it-destroyed-us-sea-drone-in-strait-of-hormuz/4106878",
@@ -1357,7 +1357,7 @@
       "properties": {
         "id": "tm-f3087c54a1",
         "category": "shipping",
-        "place": "Strait of Hormuz, Oman",
+        "place": "Strait of Hormuz",
         "what": "UKMTO warning 189-26 (time-late) says a verified source reports a crude oil tanker was struck by an unknown projectile on an outbound transit; no vessel, position or attacker named (time not confirmed)",
         "when_utc": "2026-10-28",
         "source": "https://regulasshipping.com/blog/ukmto-189-26-records-a-time-late-outbound-hormuz-tanker-projectile-hit/",
@@ -1433,7 +1433,7 @@
       "properties": {
         "id": "tm-ce00056368",
         "category": "strike",
-        "place": "Nuseirat, Palestinian Territories (Gaza Strip)",
+        "place": "Nuseirat (Gaza Strip)",
         "what": "Israel's military says an airstrike killed two commanders from Hamas's military wing, saying they advanced attacks in violation of the ceasefire; no Palestinian casualty figure given",
         "when_utc": "2026-10-29",
         "source": "https://english.news.cn/20261031/b8b6362eda7b4769abeb94c81ae25e9a/c.html",
@@ -1729,7 +1729,7 @@
       "properties": {
         "id": "tm-30b1a26f44",
         "category": "military_movement",
-        "place": "Taiwan Strait, Taiwan",
+        "place": "Taiwan Strait",
         "what": "Taiwan's defense ministry tracked 13 Chinese aircraft sorties, 7 navy ships and 2 official ships around Taiwan; 6 sorties crossed the median line; no fire reported (from 22:00 UTC 29 Oct to 22:00 UTC 30 Oct)",
         "when_utc": "2026-10-29T22:00Z",
         "source": "https://www.mnd.gov.tw/EN/news/plaact/88099",
@@ -1767,7 +1767,7 @@
       "properties": {
         "id": "tm-8451cd48d7",
         "category": "strike",
-        "place": "Al-Mawasi, Gaza Strip, Palestine (Rafah)",
+        "place": "Al-Mawasi, Rafah, Gaza Strip",
         "what": "Gaza News Live, citing local sources, says an Israeli drone strike near the Yellow Line killed one Palestinian; a separate Israeli strike on Al-Bahr Street west of Rafah and shelling near Al-Rashid Street each injured one; PIC separately reports a drone-strike death in al-Mawasi, Khan Younis, possibly the same strike; no Israeli comment",
         "when_utc": "2026-10-27T08:49Z",
         "source": "https://gazanews.live/en/news/774",
@@ -1783,7 +1783,7 @@
       "properties": {
         "id": "tm-6544337354",
         "category": "strike",
-        "place": "Khan Yunis, Palestinian Territories (Gaza Strip, Fash Frash area, southwest)",
+        "place": "Khan Yunis (Gaza Strip, Fash Frash area, southwest)",
         "what": "Gaza News Live says an Israeli artillery shell hit a police point in the Fash Frash area southwest of Khan Younis, causing injuries; no Israeli comment (about 10:50 UTC, 12:50 local)",
         "when_utc": "2026-10-27T10:50Z",
         "source": "https://gazanews.live/en/news/789",
@@ -1805,7 +1805,7 @@
       "properties": {
         "id": "tm-26e6886ba5",
         "category": "strike",
-        "place": "Gaza City, Palestinian Territories (beachfront, Gaza Strip)",
+        "place": "Gaza City (beachfront, Gaza Strip)",
         "what": "The Palestinian Information Center says Israeli gunboats fired machine guns and projectiles at Gaza City's beachfront, causing multiple injuries; no Israeli comment (time not given)",
         "when_utc": "2026-10-27",
         "source": "https://english.palinfo.com/news/2026/10/27/372673/",
@@ -1937,7 +1937,7 @@
       "properties": {
         "id": "tm-6577e97729",
         "category": "strike",
-        "place": "Shujaiya, Palestine",
+        "place": "Shujaiya, Gaza",
         "what": "Gaza News Live reports an Israeli airstrike near the Shujaiya junction east of Gaza City burned tents and destroyed property; no casualty figures or Israeli comment (about 09:38 UTC)",
         "when_utc": "2026-10-27T09:38Z",
         "source": "https://gazanews.live/en/news/779",
@@ -2025,7 +2025,7 @@
       "properties": {
         "id": "tm-a1bbf749f1",
         "category": "shipping",
-        "place": "Strait of Hormuz, Oman (east of the strait)",
+        "place": "Strait of Hormuz (east of the strait)",
         "what": "Iran's navy, via state media, says an unnamed oil tanker caught fire after striking naval mines east of the strait, accusing it of entering a prohibited area with tracking systems off; no UKMTO notice or independent confirmation (about 12:30 UTC, reported)",
         "when_utc": "2026-10-27T12:30Z",
         "source": "https://www.devdiscourse.com/article/international/3998066-iran-says-oil-tanker-caught-fire-after-hitting-mines-east-of-strait-of-hormuz",
@@ -2047,7 +2047,7 @@
       "properties": {
         "id": "tm-a4171148e0",
         "category": "strike",
-        "place": "Gaza City, Palestinian Territories (Gaza Strip)",
+        "place": "Gaza City (Gaza Strip)",
         "what": "Palestinian sources quoted by Al-Manar say Israeli warplanes carried out airstrikes on Gaza City; no casualty details or Israeli comment yet (about 10:43 UTC)",
         "when_utc": "2026-10-27T10:43Z",
         "source": "https://english.manartv.com.lb/article/143357/",
@@ -2069,7 +2069,7 @@
       "properties": {
         "id": "tm-781e7f7c44",
         "category": "strike",
-        "place": "Deir al-Balah, Gaza Strip, Palestinian Territories",
+        "place": "Deir al-Balah, Gaza Strip",
         "what": "Local sources quoted by the Palestinian Information Center say an Israeli quadcopter dropped an explosive in eastern Deir al-Balah, killing two and injuring one; no Israeli comment (evening)",
         "when_utc": "2026-10-26",
         "source": "https://english.palinfo.com/news/2026/10/27/372642/",
@@ -2239,7 +2239,7 @@
       "properties": {
         "id": "tm-37536d4783",
         "category": "shipping",
-        "place": "Strait of Hormuz, Oman",
+        "place": "Strait of Hormuz",
         "what": "Iran's Persian Gulf Strait Authority says it will take legal action against all Sinokor Shipping vessels from Nov 1 over alleged transit violations, saying at least seven have already faced enforcement; the US has sanctioned the authority; no Sinokor comment reported (announced)",
         "when_utc": "2026-10-27T09:00Z",
         "source": "https://www.iranintl.com/en/202610274926 https://en.mehrnews.com/news/248962/PGSA-to-lodge-complaint-against-Sinokor-Shipping-Co-vessels",
@@ -2481,7 +2481,7 @@
       "properties": {
         "id": "tm-bde4f1f0f2",
         "category": "shipping",
-        "place": "Strait of Hormuz, Oman",
+        "place": "Strait of Hormuz",
         "what": "Iran's armed forces chief of staff Maj. Gen. Ali Abdollahi was quoted by Tasnim as saying the strait is 'completely closed' and vessels cannot transit unless they comply with Iranian regulations; no navy or UKMTO notice confirms a closure (about 21:10 UTC, reported)",
         "when_utc": "2026-10-26T21:10Z",
         "source": "https://gulfnews.com/world/mena/middle-east-war-saudi-arabia-intercepts-houthi-missiles-drones-as-iran-talks-continue-1.500724842",
@@ -2503,7 +2503,7 @@
       "properties": {
         "id": "tm-318e021616",
         "category": "military_movement",
-        "place": "Philippine Sea, Philippines (approximate)",
+        "place": "Philippine Sea (approximate)",
         "what": "Yonhap reports China's Liaoning carrier group sailed around the Philippines and is heading north into the Philippine Sea, where the US-Japan Keen Sword exercise runs to Oct 29; China says it is routine training not aimed at any country; no fire reported (reported that day)",
         "when_utc": "2026-10-27",
         "source": "https://www.yna.co.kr/view/AKR20261027100400704?section=international%2Fall",
@@ -2749,7 +2749,7 @@
       "properties": {
         "id": "tm-5beabd6fd4",
         "category": "strike",
-        "place": "Gaza City, Palestinian Territories (Rimal)",
+        "place": "Gaza City (Rimal)",
         "what": "Al-Shifa hospital says an Israeli airstrike killed one and injured three; a Gaza security source separately says Israeli tanks and a bulldozer advanced west of the Yellow Line in eastern Deir al-Balah with heavy gunfire",
         "when_utc": "2026-10-26",
         "source": "https://www.dawn.com/news/2040109",
@@ -2891,7 +2891,7 @@
       "properties": {
         "id": "tm-5eaa5d8334",
         "category": "strike",
-        "place": "Al-Mawasi, Gaza Strip, Palestine (Khan Yunis)",
+        "place": "Al-Mawasi, Gaza Strip (Khan Yunis)",
         "what": "Gaza Civil Defense says an Israeli airstrike on a displaced-persons camp killed 3 including a child; Israel's military told AFP it was not aware of military activity in the area (time not given)",
         "when_utc": "2026-10-26",
         "source": "https://www.thedailystar.net/news/world/news/israeli-strikes-gaza-kill-5-4308301",
@@ -2989,7 +2989,7 @@
       "properties": {
         "id": "tm-b79269e064",
         "category": "military_movement",
-        "place": "Taiwan Strait, Taiwan",
+        "place": "Taiwan Strait",
         "what": "Taiwan's defense ministry tracked 8 Chinese navy ships, 4 official ships and 3 aircraft sorties around Taiwan; no fire reported (from 22:00 UTC 25 Oct to 22:00 UTC 26 Oct)",
         "when_utc": "2026-10-25T22:00Z",
         "source": "https://www.cna.com.tw/news/aipl/202610270025.aspx",
@@ -3385,7 +3385,7 @@
       "properties": {
         "id": "tm-f16599457e",
         "category": "shipping",
-        "place": "Strait of Hormuz, Oman",
+        "place": "Strait of Hormuz",
         "what": "Outbound tanker struck and disabled by unknown projectile, crew safe (UKMTO late report)",
         "when_utc": "2026-10-23T08:39Z",
         "source": "https://www.ukmto.org/-/media/ukmto/products/20261026-ukmto_warning-182-26.pdf?rev=95f39111e3a9423ab7f2787ef85ce04c",
@@ -3417,7 +3417,7 @@
       "properties": {
         "id": "tm-a4daff173b",
         "category": "military_movement",
-        "place": "Taiwan Strait, Taiwan",
+        "place": "Taiwan Strait",
         "what": "Taiwan tracked Chinese aircraft, 6 navy ships, 9 official ships; one aircraft crossed the median line (25-26 Oct)",
         "when_utc": "2026-10-25",
         "source": "https://www.mnd.gov.tw/en/news/plaact/88069",
@@ -3455,7 +3455,7 @@
       "properties": {
         "id": "tm-1fef1ea3da",
         "category": "strike",
-        "place": "Gaza, Palestinian Territories (Gaza Strip)",
+        "place": "Gaza Strip",
         "what": "Israeli strikes killed three Hamas and Islamic Jihad members; Gaza Civil Defense says 13 killed in 24h (25-26 Oct)",
         "when_utc": "2026-10-25",
         "source": "https://www.timesofisrael.com/liveblog-october-26-2026/",
