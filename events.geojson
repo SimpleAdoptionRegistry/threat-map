@@ -6,6 +6,138 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          44.198032,
+          56.149551
+        ]
+      },
+      "properties": {
+        "id": "tm-5704c5ec25",
+        "category": "strike",
+        "place": "Kstovo, Nizhny Novgorod Oblast, Russia",
+        "what": "Governor Gleb Nikitin says more than 100 drones were destroyed in a mass Ukrainian drone attack on the region and an industrial enterprise in Kstovo district was significantly damaged; Ukrainian monitoring channels and ASTRA say the Lukoil NORSI refinery was hit and burning (refinery identity not confirmed by officials)",
+        "when_utc": "2026-11-01 overnight (explosions from ~22:00Z Oct 31)",
+        "source": "https://www.kommersant.ru/doc/9078372 https://kyivindependent.com/russian-oil-refinery-in-kstovo-ablaze-after-reported-overnight-drone-strike/",
+        "status": "confirmed",
+        "target_type": "infrastructure",
+        "coord_precision": "approximate: town point; enterprise location not given by officials",
+        "added_utc": "2026-11-01T05:23:01Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.27799,
+          52.004259
+        ]
+      },
+      "properties": {
+        "id": "tm-9233f731f4",
+        "category": "strike",
+        "place": "Novhorod-Siverskyi, Chernihiv Oblast, Ukraine",
+        "what": "District administration head Oleksandr Selivertsev says two Russian strike drones hit the town's central square overnight",
+        "when_utc": "2026-11-01 overnight",
+        "source": "https://112.ua/en/rosiani-obstrilali-cernigivsinu-balisticnimi-raketami-podrobici-ataki-109353",
+        "status": "confirmed",
+        "target_type": "city",
+        "coord_precision": "exact",
+        "added_utc": "2026-11-01T05:23:01Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.21638,
+          51.52279
+        ]
+      },
+      "properties": {
+        "id": "tm-f85e0ee864",
+        "category": "strike",
+        "place": "Mena, Chernihiv Oblast, Ukraine",
+        "what": "Koriukivka district administration head Pavlo Miroshnychenko says two Russian ballistic missiles struck the Mena community, hitting an agricultural enterprise",
+        "when_utc": "2026-10-31 evening (reported)",
+        "source": "https://112.ua/en/rosiani-obstrilali-cernigivsinu-balisticnimi-raketami-podrobici-ataki-109353",
+        "status": "confirmed",
+        "target_type": "infrastructure",
+        "coord_precision": "approximate: community-level location; exact site not given",
+        "added_utc": "2026-11-01T05:23:01Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          37.584381,
+          48.738942
+        ]
+      },
+      "properties": {
+        "id": "tm-e61734bf34",
+        "category": "strike",
+        "place": "Kramatorsk, Donetsk Oblast, Ukraine",
+        "what": "Ukrainian outlet Glavkom reports a Russian airstrike destroyed the Kramatorsk city council building overnight; casualties not reported",
+        "when_utc": "2026-11-01 overnight",
+        "source": "https://glavcom.ua/world/world-politics/ataka-shakhediv-po-ukrajini-droni-atakuvali-lukojl-v-rf-holovne-za-nich-1-listopada-1152687.html",
+        "status": "claim",
+        "target_type": "city",
+        "coord_precision": "approximate: city point; building location not geocoded",
+        "added_utc": "2026-11-01T05:23:01Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          36.584644,
+          50.537592
+        ]
+      },
+      "properties": {
+        "id": "tm-b3d8020a23",
+        "category": "strike",
+        "place": "Dubovoye, Belgorod Oblast, Russia",
+        "what": "Belgorod regional operational HQ says a man was injured and a house roof and windows damaged when a downed Ukrainian drone detonated",
+        "when_utc": "2026-11-01 overnight",
+        "source": "https://mosregtoday.ru/news/sec/ataka-bespilotnikov-vsu-na-regiony-rossii-1-nojabrja-2026-hronologija-sobytij-za-noch/",
+        "status": "confirmed",
+        "target_type": "city",
+        "coord_precision": "exact",
+        "added_utc": "2026-11-01T05:23:01Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          38.954331,
+          49.830878
+        ]
+      },
+      "properties": {
+        "id": "tm-b9d0597865",
+        "category": "strike",
+        "place": "Nizhnyaya Serebryanka, Belgorod Oblast, Russia",
+        "what": "Belgorod regional operational HQ says a Ukrainian drone detonation injured a resident with shrapnel wounds and burns and destroyed a truck",
+        "when_utc": "2026-11-01 overnight",
+        "source": "https://mosregtoday.ru/news/sec/ataka-bespilotnikov-vsu-na-regiony-rossii-1-nojabrja-2026-hronologija-sobytij-za-noch/",
+        "status": "confirmed",
+        "target_type": "city",
+        "coord_precision": "exact",
+        "added_utc": "2026-11-01T05:23:01Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           37.617478,
           55.750541
         ]
