@@ -6,6 +6,94 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          25.937653,
+          48.28647
+        ]
+      },
+      "properties": {
+        "id": "tm-abe2c1e5ad",
+        "category": "strike",
+        "place": "Chernivtsi, Ukraine",
+        "what": "Chernivtsi regional head Ruslan Osypenko says two of three Russian drones launched at the region hit an office building in Chernivtsi, injuring a 67-year-old man with shrapnel and starting a fire; a third drone was destroyed near the city.",
+        "when_utc": "2026-11-01",
+        "source": "https://www.pravda.com.ua/eng/news/2026/11/01/8060740/ https://www.bbc.com/ukrainian/articles/cqd09m4j9x8ko",
+        "status": "confirmed",
+        "target_type": "city",
+        "coord_precision": "exact",
+        "added_utc": "2026-11-01T15:39:10Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          30.62697,
+          50.110163
+        ]
+      },
+      "properties": {
+        "id": "tm-f6af7de48e",
+        "category": "strike",
+        "place": "Obukhiv, Kyiv Oblast, Ukraine (also Boryspil, Brovary, Bucha, Fastiv, Bila Tserkva districts)",
+        "what": "Kyiv regional military administration says Russian drones attacked six districts of the region for a second day, injuring a woman in Obukhiv district and damaging houses, a retail site, vehicles and energy facilities.",
+        "when_utc": "2026-11-01",
+        "source": "https://english.nv.ua/nation/russian-uavs-attacking-kyiv-oblast-for-second-day-in-a-row-50655263.html",
+        "status": "confirmed",
+        "target_type": "infrastructure",
+        "coord_precision": "exact",
+        "added_utc": "2026-11-01T15:39:10Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          26.520363,
+          50.329021
+        ]
+      },
+      "properties": {
+        "id": "tm-be85a297e0",
+        "category": "strike",
+        "place": "Ostroh, Rivne Oblast, Ukraine (Ostroh district)",
+        "what": "BBC Ukrainian, citing local authorities, reports a residential building caught fire in Ostroh district after a Russian attack, injuring four people.",
+        "when_utc": "2026-11-01",
+        "source": "https://www.bbc.com/ukrainian/articles/cqd09m4j9x8ko",
+        "status": "confirmed",
+        "target_type": "city",
+        "coord_precision": "exact",
+        "added_utc": "2026-11-01T15:39:10Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          30.220305,
+          48.749762
+        ]
+      },
+      "properties": {
+        "id": "tm-32d775c0bf",
+        "category": "strike",
+        "place": "Uman, Cherkasy Oblast, Ukraine",
+        "what": "BBC Ukrainian reports a Russian drone fell on an asphalt plant near Uman, with debris and blast damage to a nearby building-materials depot; no injuries reported.",
+        "when_utc": "2026-11-01",
+        "source": "https://www.bbc.com/ukrainian/articles/cqd09m4j9x8ko",
+        "status": "confirmed",
+        "target_type": "infrastructure",
+        "coord_precision": "exact",
+        "added_utc": "2026-11-01T15:39:10Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           42.954487,
           14.797868
         ]
