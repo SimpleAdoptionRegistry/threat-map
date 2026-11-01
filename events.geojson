@@ -6,6 +6,66 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          40.231835,
+          48.275519
+        ]
+      },
+      "properties": {
+        "id": "tm-a93ac2b8e5",
+        "category": "strike",
+        "place": "Kamensk-Shakhtinsky, Rostov Oblast, Russia (Kamensky plant)",
+        "what": "Ukrainian President Zelensky says Ukraine struck the Kamensky plant in Russia's Rostov region, which he says is involved in missile manufacturing; Moscow did not comment on the reported attack and damage was not independently confirmed.",
+        "when_utc": "2026-11-01",
+        "source": "https://www.cnbc.com/2026/11/01/russian-strikes-cut-power-to-thousands-in-ukraine.html https://www.independent.co.uk/news/world/europe/ukraine-russia-war-live-live-drone-oil-refinery-nizhny-novgorod-kstovo-b3077050.html",
+        "status": "claim",
+        "target_type": "infrastructure",
+        "coord_precision": "exact",
+        "added_utc": "2026-11-01T18:11:56Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "tm-385572539e",
+        "category": "military_movement",
+        "place": "Taiwan Strait",
+        "what": "Taiwan's defense ministry tracked 32 Chinese military aircraft sorties, 7 navy ships and 2 official ships around Taiwan, with 26 sorties crossing the median line into northern, central, southwestern and eastern airspace; no fire reported (22:00 UTC 30 Oct to 22:00 UTC 31 Oct).",
+        "when_utc": "2026-10-30T22:00Z",
+        "source": "https://www.mnd.gov.tw/en/Publication/88102 https://www.cna.com.tw/news/aipl/202611010016.aspx",
+        "status": "confirmed",
+        "target_type": null,
+        "coord_precision": "not geocoded: strait",
+        "added_utc": "2026-11-01T18:11:56Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          125.21013,
+          39.692923
+        ]
+      },
+      "properties": {
+        "id": "tm-e185b2b003",
+        "category": "military_movement",
+        "place": "Chongju, North Pyongan, North Korea",
+        "what": "South Korea's Joint Chiefs of Staff say North Korea fired a missile from the Chongju area toward the Yellow Sea; KCNA says it was a test of a cluster-bomb warhead for Hwasong-11 tactical ballistic missiles hitting an island target.",
+        "when_utc": "2026-10-31",
+        "source": "https://www3.nhk.or.jp/nhkworld/news/20261101de69282/ https://www.japantimes.co.jp/news/2026/11/01/asia-pacific/north-korea-cluster-bomb-warhead/",
+        "status": "confirmed",
+        "target_type": null,
+        "coord_precision": "exact",
+        "added_utc": "2026-11-01T18:11:56Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           25.937653,
           48.28647
         ]
@@ -184,9 +244,9 @@
         "id": "tm-531d04c5a1",
         "category": "strike",
         "place": "Gaza City (Al-Thawra Street, near Taj Mall)",
-        "what": "WAFA, citing medical sources, says an Israeli strike on a gathering of civilians on al-Thawra Street (behind Taj Mall) in western Gaza City killed 3 Palestinians including a child and injured several, some critically; no Israeli comment found (reported by about 10:07 UTC)",
+        "what": "WAFA and al-Shifa hospital sources say an Israeli strike on civilians on al-Thawra Street (near Taj Mall, Rimal) in western Gaza City killed 3 Palestinians including a child; Israel's military says it struck military operatives, without giving details (by about 10:07 UTC)",
         "when_utc": "2026-11-01T10:07Z",
-        "source": "https://english.wafa.ps/Pages/Details/176486 https://www.sadanews.ps/en/news/349067.html",
+        "source": "https://english.wafa.ps/Pages/Details/176486 https://www.sadanews.ps/en/news/349067.html https://www.bbc.com/news/articles/cmqln14rrzxvo",
         "status": "claim",
         "target_type": "city",
         "coord_precision": "approximate: al-Thawra Street near Taj Mall, western Gaza City; exact site not given",
@@ -276,9 +336,9 @@
         "id": "tm-f1494f7e6a",
         "category": "strike",
         "place": "Al-Mawasi, Gaza Strip (Khan Younis)",
-        "what": "WAFA, citing medical sources, and Petra report five Palestinians killed and others injured in an Israeli drone strike in the al-Mawasi area west of Khan Younis; earlier CGTN reports said 2 then 3; the Israeli military reportedly said four Palestinian Islamic Jihad members were killed in Khan Younis strikes",
+        "what": "Gaza's Hamas-run interior ministry and WAFA say an Israeli drone strike in al-Mawasi west of Khan Younis killed five Palestinian police officers on duty; Israel's military says it targeted militants (earlier it reportedly said four PIJ members were killed in Khan Younis strikes)",
         "when_utc": "2026-11-01T09:56Z",
-        "source": "https://news.cgtn.com/news/2026-11-01/news-1RIDpPicZBS/p.html https://news.cgtn.com/news/2026-11-01/news-1RIDB0OvKaQ/p.html https://petra.gov.jo/en/news/five-palestinians-killed-in-israeli-drone-strike-on-southern-gaza https://english.wafa.ps/Pages/Details/176486",
+        "source": "https://news.cgtn.com/news/2026-11-01/news-1RIDpPicZBS/p.html https://news.cgtn.com/news/2026-11-01/news-1RIDB0OvKaQ/p.html https://petra.gov.jo/en/news/five-palestinians-killed-in-israeli-drone-strike-on-southern-gaza https://english.wafa.ps/Pages/Details/176486 https://www.aljazeera.com/news/2026/11/1/at-least-eight-palestinians-killed-in-israeli-attacks-across-gaza",
         "status": "claim",
         "target_type": null,
         "coord_precision": "approximate: al-Mawasi area west of Khan Younis; exact site not given",
