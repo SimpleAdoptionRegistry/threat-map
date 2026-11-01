@@ -3,6 +3,83 @@
   "features": [
     {
       "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "tm-812b960696",
+        "category": "shipping",
+        "place": "Strait of Hormuz",
+        "what": "UKMTO warning 191-26 says a merchant vessel master relayed a VHF Ch 16 Mayday reporting that another vessel was struck by an unknown projectile in the strait; vessel, position and attacker not named; authorities investigating.",
+        "when_utc": "2026-11-01T15:09Z",
+        "source": "https://www.ukmto.org/-/media/ukmto/products/20261101-ukmto_warning_191_26.pdf?rev=d4620238ffd446959c914049b1474287 https://www.middleeasteye.net/live-blog/live-blog-update/vessel-struck-unknown-projectile-hormuz-ukmto-says https://www.iranintl.com/en/202611017577",
+        "status": "confirmed",
+        "target_type": "ship",
+        "coord_precision": "not geocoded: strait",
+        "added_utc": "2026-11-01T19:15:50Z",
+        "major": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          92.97282,
+          20.843957
+        ]
+      },
+      "properties": {
+        "id": "tm-e83f8e307b",
+        "category": "strike",
+        "place": "Kyauktaw, Rakhine State, Myanmar (Yo Chaung Bridge)",
+        "what": "Narinjara, citing local sources, says Myanmar military jets bombed the Yo Chaung Bridge area, killing 7 civilians and destroying the bridge; a separate strike near Mrauk-U's Ngwe Taung Pauk Bridge killed 4, and 7-8 were hurt near Kyaukphyu.",
+        "when_utc": "2026-11-01T11:00Z",
+        "source": "https://www.narinjara.com/international/detail/6ad406682bbe5aa41bd26cc1 https://www.crphsupportgroup.no/post/myanmar-military-airstrikes-kill-11-injure-over-10-in-rakhine-state",
+        "status": "claim",
+        "target_type": "infrastructure",
+        "coord_precision": "approximate: Kyauktaw, Kyauktaw Township",
+        "added_utc": "2026-11-01T19:15:50Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          30.95119,
+          18.043988
+        ]
+      },
+      "properties": {
+        "id": "tm-4dd13e941e",
+        "category": "strike",
+        "place": "Al-Dabbah, Northern State, Sudan (power substation)",
+        "what": "AP reports a drone strike knocked out the Al-Dabbah power substation, leaving the town without power; Sudan's government and a rights group blamed the RSF, which did not comment in the report.",
+        "when_utc": "2026-11-01",
+        "source": "https://apnews.com/article/sudan-rapid-support-forces-drone-strikes-power-3d8369aa7479b594a72bc8439d08a0a2",
+        "status": "claim",
+        "target_type": "infrastructure",
+        "coord_precision": "exact",
+        "added_utc": "2026-11-01T19:15:50Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "tm-5de2092850",
+        "category": "shipping",
+        "place": "Hafun, Bari, Somalia (at sea, off Bandar Bayla)",
+        "what": "Somali pirates seized the Iranian fishing vessel Azini with 21 Iranian crew and 2 Somali guards, per a Puntland Maritime Police officer; the Maritime Security Center Indian Ocean warns it may be used as a mother ship for attacks on merchant vessels.",
+        "when_utc": "2026-10-29",
+        "source": "https://gulfnews.com/world/mena/middle-east-conflict-trump-says-us-still-has-to-take-care-of-one-or-two-targets-in-iran-1.500731311",
+        "status": "confirmed",
+        "target_type": "ship",
+        "coord_precision": "not geocoded: at sea",
+        "added_utc": "2026-11-01T19:15:50Z"
+      }
+    },
+    {
+      "type": "Feature",
       "geometry": {
         "type": "Point",
         "coordinates": [
