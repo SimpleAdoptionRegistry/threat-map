@@ -6,6 +6,424 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          42.954487,
+          14.797868
+        ]
+      },
+      "properties": {
+        "id": "tm-218e457252",
+        "category": "strike",
+        "place": "Hodeidah University, Hodeidah, Yemen",
+        "what": "Houthi-run Al-Masirah TV says two airstrikes, which it attributes to Saudi Arabia, hit the medical school of the University of Hodeidah; no immediate Saudi-led coalition comment and no casualty figures given",
+        "when_utc": "2026-11-01, reported by ~14:00Z",
+        "source": "https://apnews.com/article/mideast-news-november-1-2026-b918f44d8f212d7daf7f2f9a98c91a0b",
+        "status": "claim",
+        "target_type": "infrastructure",
+        "coord_precision": "approximate: city-level; exact campus building not given",
+        "added_utc": "2026-11-01T14:47:15Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.477227,
+          33.348462
+        ]
+      },
+      "properties": {
+        "id": "tm-fda46b1322",
+        "category": "strike",
+        "place": "Mifdoun, Nabatieh, Lebanon",
+        "what": "Lebanese reports cited by Ynet say an Israeli 'suicide drone' exploded in the town; no casualty details given",
+        "when_utc": "2026-11-01, reported ~11:35Z",
+        "source": "https://www.ynetnews.com/article/kd0oo3bch",
+        "status": "claim",
+        "target_type": "city",
+        "coord_precision": "approximate: town-level; exact impact site not given",
+        "added_utc": "2026-11-01T14:47:15Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          37.605824,
+          48.852269
+        ]
+      },
+      "properties": {
+        "id": "tm-6dbb10025a",
+        "category": "strike",
+        "place": "Sloviansk, Donetsk Oblast, Ukraine",
+        "what": "Donetsk Oblast Governor Vadym Filashkin says Russian attacks killed one person in Sloviansk over the past day, with eight more injured across the region",
+        "when_utc": "2026-10-31 to 2026-11-01, reported by ~12:44Z",
+        "source": "https://kyivindependent.com/russian-attacks-kill-1-injure-47-over-past-day-leaving-hundreds-of-thousands-without-electricity/",
+        "status": "confirmed",
+        "target_type": "city",
+        "coord_precision": "approximate: city-level; exact impact site not given",
+        "added_utc": "2026-11-01T14:47:13Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          30.524136,
+          50.450034
+        ]
+      },
+      "properties": {
+        "id": "tm-8649c610ba",
+        "category": "closure",
+        "place": "Kyiv, Ukraine",
+        "what": "Energy company DTEK introduced emergency power outages in Kyiv after overnight Russian strikes on energy infrastructure; it says crews are restoring damaged equipment when safe",
+        "when_utc": "2026-11-01, reported by ~12:44Z",
+        "source": "https://kyivindependent.com/russian-attacks-kill-1-injure-47-over-past-day-leaving-hundreds-of-thousands-without-electricity/",
+        "status": "confirmed",
+        "target_type": "infrastructure",
+        "coord_precision": "approximate: city-wide outage; no specific site",
+        "added_utc": "2026-11-01T14:47:13Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "tm-531d04c5a1",
+        "category": "strike",
+        "place": "Al-Thawra Street, Gaza City, Gaza Strip",
+        "what": "WAFA, citing medical sources, says an Israeli strike on a gathering of civilians on al-Thawra Street (behind Taj Mall) in western Gaza City killed 3 Palestinians including a child and injured several, some critically; no Israeli comment found",
+        "when_utc": "2026-11-01, reported by ~10:07Z",
+        "source": "https://english.wafa.ps/Pages/Details/176486 https://www.sadanews.ps/en/news/349067.html",
+        "status": "claim",
+        "target_type": "city",
+        "coord_precision": "approximate: al-Thawra Street near Taj Mall, western Gaza City; exact site not given",
+        "added_utc": "2026-11-01T14:47:03Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "tm-a262bf172a",
+        "category": "strike",
+        "place": "Al-Sukhnah, Homs, Syria",
+        "what": "Kurdish outlet ANHA cites activists reporting a series of explosions and smoke in the desert south of al-Sukhnah as warplanes flew overhead; some reports attribute airstrikes to aircraft believed to belong to the US-led coalition; targets, cause and casualties unconfirmed and no official statement found",
+        "when_utc": "2026-11-01, reported ~10:59Z",
+        "source": "https://hawarnews.com/en/explosions-heard-near-al-sukhnah-in-homs-countryside",
+        "status": "claim",
+        "target_type": null,
+        "coord_precision": "approximate: desert south of al-Sukhnah; exact sites not given",
+        "added_utc": "2026-11-01T14:47:03Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "tm-f628e61bce",
+        "category": "strike",
+        "place": "Kamin-Kashyrskyi district, Volyn Oblast, Ukraine",
+        "what": "Volyn regional head Roman Romaniuk says Russia launched 10 Shahed-type drones at the region overnight and into the morning; strikes and debris in Kamin-Kashyrskyi district, including the Manevychi community, damaged infrastructure and disused buildings and injured 1",
+        "when_utc": "2026-10-31 night to 2026-11-01 morning",
+        "source": "https://en.lb.ua/news/2026/11/01/47578_russian_drone_attack_injures.html",
+        "status": "confirmed",
+        "target_type": "infrastructure",
+        "coord_precision": "not geocoded: district",
+        "added_utc": "2026-11-01T14:47:03Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          24.031592,
+          49.841952
+        ]
+      },
+      "properties": {
+        "id": "tm-4eab68109e",
+        "category": "strike",
+        "place": "Lviv, Ukraine",
+        "what": "LB.ua reports a Russian drone attack on the Lviv community damaged five residential buildings and a car; no casualties reported",
+        "when_utc": "2026-10-31 night to 2026-11-01 morning",
+        "source": "https://en.lb.ua/news/2026/11/01/47578_russian_drone_attack_injures.html",
+        "status": "confirmed",
+        "target_type": "city",
+        "coord_precision": "approximate: Lviv community; exact impact sites not given",
+        "added_utc": "2026-11-01T14:47:03Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "tm-6327759c82",
+        "category": "shipping",
+        "place": "Arabian Gulf (at sea)",
+        "what": "Qatar Gas Transport Company (Nakilat) says its LNG carrier Al Mayeda was hit by unidentified objects while transiting the Gulf on Friday evening; no crew injured, no environmental impact, vessel safe and operational; attacker not named. Bloomberg reports the Pakistan-bound ship had Iranian transit clearance and then reversed course; OSINT trackers link it to the UKMTO report of a vessel hit 40nm south of Lavan Island, which is not officially confirmed",
+        "when_utc": "2026-10-30 evening (announced 2026-11-01)",
+        "source": "https://www.nakilat.com/al-mayeda-vessel-incident-in-the-arabian-gulf/ https://www.arabnews.com/middle-east/qatari-gas-tanker-struck-in-gulf-state-media-3009222 https://www.investing.com/news/economy-news/pakistanbound-lng-tanker-attacked-near-hormuz-despite-iran-clearance--bloomberg-4989531",
+        "status": "confirmed",
+        "target_type": "ship",
+        "coord_precision": "not geocoded: at sea",
+        "added_utc": "2026-11-01T14:47:00Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.261094,
+          31.355066
+        ]
+      },
+      "properties": {
+        "id": "tm-f1494f7e6a",
+        "category": "strike",
+        "place": "Al-Mawasi, Khan Younis, Gaza Strip",
+        "what": "WAFA, citing medical sources, and Petra report five Palestinians killed and others injured in an Israeli drone strike in the al-Mawasi area west of Khan Younis; earlier CGTN reports said 2 then 3; the Israeli military reportedly said four Palestinian Islamic Jihad members were killed in Khan Younis strikes",
+        "when_utc": "2026-11-01, reported by ~09:56Z",
+        "source": "https://news.cgtn.com/news/2026-11-01/news-1RIDpPicZBS/p.html https://news.cgtn.com/news/2026-11-01/news-1RIDB0OvKaQ/p.html https://petra.gov.jo/en/news/five-palestinians-killed-in-israeli-drone-strike-on-southern-gaza https://english.wafa.ps/Pages/Details/176486",
+        "status": "claim",
+        "target_type": null,
+        "coord_precision": "approximate: al-Mawasi area west of Khan Younis; exact site not given",
+        "added_utc": "2026-11-01T14:47:00Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.9093,
+          51.67831
+        ]
+      },
+      "properties": {
+        "id": "tm-9b096b611e",
+        "category": "strike",
+        "place": "Hlukhiv, Sumy Oblast, Ukraine",
+        "what": "Ukraine's State Emergency Service says a Russian drone hit a residential area overnight and a second strike hit the same spot while rescuers were fighting the fire; no rescuers hurt, three women treated for acute stress; six people were injured across Sumy Oblast in the past day",
+        "when_utc": "2026-11-01 overnight",
+        "source": "https://suspilne.media/sumy/1442055-armia-rf-dvici-obstrilala-gluhiv-bili-po-ratuvalnikah-aki-gasili-pozezu/ https://suspilne.media/sumy/1442009-sestero-ludej-zaznali-travm-unaslidok-obstriliv-sumsini-za-dobu/",
+        "status": "confirmed",
+        "target_type": "city",
+        "coord_precision": "approximate: town point; exact impact site not given",
+        "added_utc": "2026-11-01T14:46:59Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.324847,
+          19.537893
+        ]
+      },
+      "properties": {
+        "id": "tm-8331b1dc2c",
+        "category": "strike",
+        "place": "Abu Hamad, River Nile State, Sudan",
+        "what": "Witnesses told Anadolu a drone strike hit the Abu Hamad power station early Sunday, causing explosions and a large fire; attacker not named and no immediate comment from Sudanese authorities on casualties or damage",
+        "when_utc": "2026-11-01 early morning",
+        "source": "https://www.aa.com.tr/en/africa/drone-strike-hits-power-station-in-northern-sudan-sparks-fire/4107741",
+        "status": "claim",
+        "target_type": "infrastructure",
+        "coord_precision": "approximate: town point; exact station location not given",
+        "added_utc": "2026-11-01T14:46:52Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "tm-6be1e1578e",
+        "category": "strike",
+        "place": "Red Sea State, Sudan",
+        "what": "Anadolu reports a drone strike on Saturday targeted the Hayya power station, a facility still under construction; attacker not named",
+        "when_utc": "2026-10-31",
+        "source": "https://www.aa.com.tr/en/africa/drone-strike-hits-power-station-in-northern-sudan-sparks-fire/4107741",
+        "status": "claim",
+        "target_type": "infrastructure",
+        "coord_precision": "not geocoded: state (Hayya station position not given)",
+        "added_utc": "2026-11-01T14:46:52Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "tm-d10bec3165",
+        "category": "strike",
+        "place": "Dawran Anis district, Dhamar, Yemen",
+        "what": "The Houthi-run health ministry says airstrikes it attributes to Saudi Arabia hit houses in al-Ar village, killing three children and wounding more than a dozen; no Saudi comment",
+        "when_utc": "2026-10-30",
+        "source": "https://conven.org/saudi-arabia/news/airstrike-kills-3-children-in-yemen-and-other-middle-east-developments/",
+        "status": "claim",
+        "target_type": "city",
+        "coord_precision": "not geocoded: district (village position not verified)",
+        "added_utc": "2026-11-01T14:46:52Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.211088,
+          33.173653
+        ]
+      },
+      "properties": {
+        "id": "tm-5894b27590",
+        "category": "strike",
+        "place": "Mansouri, Tyre, Lebanon",
+        "what": "Lebanese reports say Israeli artillery shelled Mansouri and the outskirts of Haddatha at dawn, troops set off a blast in Ainatha, a large explosion hit Kafr Tibnit and an Israeli drone dropped a bomb on a house in Mayfadoun with no injuries; the IDF has described similar Kafr Tibnit blasts as controlled demolitions",
+        "when_utc": "2026-11-01 dawn",
+        "source": "https://waradana.com/english/article/277397-israeli-drone-conducts-residential-search-in-tulin-amid-tensions-and-explosions https://www.nna-leb.gov.lb/en/news/225188/israeli-airstrike-hits-mansouri-as-forces-open-machine-gun-fire-toward-haddatha-2",
+        "status": "claim",
+        "target_type": "city",
+        "coord_precision": "exact",
+        "added_utc": "2026-11-01T14:46:52Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "tm-7ca3757ba0",
+        "category": "strike",
+        "place": "Dnipropetrovsk Oblast, Ukraine",
+        "what": "Regional military administration says overnight Russian strikes hit energy infrastructure, leaving almost 100,000 customers without power in Dnipro, Pavlohrad and Samarivskyi districts",
+        "when_utc": "2026-11-01 overnight",
+        "source": "https://www.kyivpost.com/uk/post/88771",
+        "status": "confirmed",
+        "target_type": "infrastructure",
+        "coord_precision": "not geocoded: oblast",
+        "added_utc": "2026-11-01T14:46:49Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "tm-120385a3ac",
+        "category": "strike",
+        "place": "Desnianskyi district, Kyiv, Ukraine",
+        "what": "Kyiv Post reports a parking lot near a market caught fire after a Russian drone attack, and a drone fell on open ground of a private property in Darnytskyi district; emergency power cuts were introduced in Kyiv in the morning",
+        "when_utc": "2026-11-01 overnight",
+        "source": "https://www.kyivpost.com/uk/post/88771",
+        "status": "confirmed",
+        "target_type": "city",
+        "coord_precision": "not geocoded: district-level, exact site not given",
+        "added_utc": "2026-11-01T14:46:49Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "tm-136d93c5d6",
+        "category": "strike",
+        "place": "Vinnytsia Oblast, Ukraine",
+        "what": "Kyiv Post reports Russian forces attacked energy infrastructure in the region overnight, damaging a mobile phone tower, a private warehouse and a bus stop and blowing out windows in apartment blocks",
+        "when_utc": "2026-11-01 overnight",
+        "source": "https://www.kyivpost.com/uk/post/88771",
+        "status": "confirmed",
+        "target_type": "infrastructure",
+        "coord_precision": "not geocoded: oblast",
+        "added_utc": "2026-11-01T14:46:49Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "tm-a12742662e",
+        "category": "strike",
+        "place": "Ukraine (nationwide)",
+        "what": "Ukraine's Air Force says Russia launched 433 strike drones (64 jet-powered Shaheds, plus Gerbera and Parodiya decoys) from Oryol, Kursk, Shatalovo, Bryansk, Millerovo and occupied Donetsk; it says 371 were shot down or suppressed by 07:30 local, with hits at 16 locations, debris at 14, and more than 40 drones still airborne",
+        "when_utc": "2026-10-31 16:00Z to 2026-11-01 ~05:30Z",
+        "source": "https://nv.ua/ukr/ukraine/events/ataka-droniv-shahed-i-gerbera-masshtabniy-udar-po-ukrajini-robota-ppo-trivaye-50655222.html https://24tv.ua/ataka-droniv-1-listopada-ppo-zneshkodila-371-bpla-433_n3171578",
+        "status": "confirmed",
+        "target_type": null,
+        "coord_precision": "not geocoded: nationwide",
+        "added_utc": "2026-11-01T14:46:45Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "tm-c3fad4707f",
+        "category": "shipping",
+        "place": "Black Sea, 69 km southwest of Odesa (at sea)",
+        "what": "Russia's defence ministry says it struck a dry-cargo ship it says was carrying cargo for Ukraine's armed forces; ship not named, no Ukrainian confirmation",
+        "when_utc": "2026-11-01 overnight (reported ~05:35Z)",
+        "source": "https://lenta.ru/news/2026/11/01/minoborony-otchitalos-o-nochnyh-udarah-po-ukraine/",
+        "status": "claim",
+        "target_type": "ship",
+        "coord_precision": "not geocoded: at sea",
+        "added_utc": "2026-11-01T14:46:45Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.187863,
+          51.223154
+        ]
+      },
+      "properties": {
+        "id": "tm-c6965248c9",
+        "category": "strike",
+        "place": "Konotop railway station, Sumy Oblast, Ukraine",
+        "what": "Russia's defence ministry says it struck traffic-control facilities at Konotop railway station, which it says was used to deliver weapons to Ukraine's armed forces; no Ukrainian confirmation",
+        "when_utc": "2026-11-01 overnight (reported ~05:35Z)",
+        "source": "https://lenta.ru/news/2026/11/01/minoborony-otchitalos-o-nochnyh-udarah-po-ukraine/",
+        "status": "claim",
+        "target_type": "infrastructure",
+        "coord_precision": "exact",
+        "added_utc": "2026-11-01T14:46:45Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          43.28506,
+          15.058353
+        ]
+      },
+      "properties": {
+        "id": "tm-d23d39d8cd",
+        "category": "strike",
+        "place": "Bajil, Hodeidah, Yemen",
+        "what": "Houthi-affiliated Al-Masirah TV says two Saudi-led coalition air raids hit an oil company station in Bajil district, injuring 3 civilians; no coalition comment",
+        "when_utc": "2026-11-01 ~03:00Z",
+        "source": "https://www.middleeasteye.net/live-blog/live-blog-update/three-civilians-injured-saudi-coalition-air-raids-hodeidah-houthis-say https://english.masirahtv.net/news/59379/",
+        "status": "claim",
+        "target_type": "infrastructure",
+        "coord_precision": "exact",
+        "added_utc": "2026-11-01T14:46:45Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           44.198032,
           56.149551
         ]
