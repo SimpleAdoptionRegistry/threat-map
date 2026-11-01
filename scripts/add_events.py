@@ -7,6 +7,8 @@ Nominatim, and updates events.geojson plus events.csv.
 Input objects require: place, what, when_utc, source, status, category,
 target_type. target_type may be null. Optional coord_precision is "exact"
 or "approximate"; optional coord_note is appended for approximate values.
+Optional major is a boolean. When it is omitted, the property is left off
+the feature and the CSV cell is empty. true and false are stored as given.
 If coord_precision is omitted, a place ending in "(approximate)" or
 "(approximate: note)" is stored as approximate and that parenthesis is not
 sent to the geocoder. A different parenthesis that names a locality, such
@@ -74,6 +76,7 @@ PROP_KEYS = [
     "target_type",
     "coord_precision",
     "added_utc",
+    "major",
 ]
 CSV_FIELDS = PROP_KEYS + ["lat", "lon"]
 REQUIRED = [
@@ -178,6 +181,18 @@ def coord_precision_for(event: dict, place: str) -> str:
     if note:
         return f"approximate: {note}"
     return "approximate"
+
+
+def major_value(event: dict) -> bool | None:
+    """Return the optional major flag, or None when the caller left it off."""
+    if "major" not in event or event.get("major") is None:
+        return None
+    value = event["major"]
+    if isinstance(value, bool):
+        return value
+    raise SystemExit(
+        f"major for {event.get('place')!r} must be a boolean, not {value!r}"
+    )
 
 
 def geocode_query(place: str) -> str:
@@ -842,21 +857,25 @@ def new_feature(event: dict, used_ids: set[str], added_utc: str) -> dict:
     feature_id = str(event["id"]).strip() if event.get("id") else make_id(source, place, what, used_ids)
     if feature_id in used_ids:
         raise SystemExit(f"Duplicate id {feature_id}")
+    properties = {
+        "id": feature_id,
+        "category": category,
+        "place": place,
+        "what": what,
+        "when_utc": when_utc,
+        "source": source,
+        "status": status,
+        "target_type": target,
+        "coord_precision": coord_precision_for(event, place),
+        "added_utc": added_utc,
+    }
+    major = major_value(event)
+    if major is not None:
+        properties["major"] = major
     return {
         "type": "Feature",
         "geometry": None,
-        "properties": {
-            "id": feature_id,
-            "category": category,
-            "place": place,
-            "what": what,
-            "when_utc": when_utc,
-            "source": source,
-            "status": status,
-            "target_type": target,
-            "coord_precision": coord_precision_for(event, place),
-            "added_utc": added_utc,
-        },
+        "properties": properties,
     }
 
 
@@ -911,6 +930,13 @@ def write_csv(path: Path, features: list[dict]) -> None:
             row = {key: props.get(key) for key in PROP_KEYS}
             if row["target_type"] is None:
                 row["target_type"] = ""
+            major = row.get("major")
+            if major is True:
+                row["major"] = "true"
+            elif major is False:
+                row["major"] = "false"
+            else:
+                row["major"] = ""
             row["lat"] = lat
             row["lon"] = lon
             writer.writerow(row)

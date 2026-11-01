@@ -8,7 +8,7 @@ Static feed of sourced security events, plus a Leaflet map. GitHub Pages serves 
 - GeoJSON: https://simpleadoptionregistry.github.io/threat-map/events.geojson
 - CSV: https://simpleadoptionregistry.github.io/threat-map/events.csv
 
-`events.geojson` is a GeoJSON FeatureCollection. Each feature is a Point `[lon, lat]`, or `geometry: null` when the place could not be geocoded. Properties are `id`, `category`, `place`, `what`, `when_utc`, `source`, `status`, `target_type`, `coord_precision`, `added_utc`.
+`events.geojson` is a GeoJSON FeatureCollection. Each feature is a Point `[lon, lat]`, or `geometry: null` when the place could not be geocoded. Properties are `id`, `category`, `place`, `what`, `when_utc`, `source`, `status`, `target_type`, `coord_precision`, `added_utc`, and optional `major`.
 
 `events.csv` has those same columns plus `lat` and `lon`. Unlocated rows leave `lat` and `lon` empty.
 
@@ -32,7 +32,7 @@ Put new events in a JSON file. The file may be a list, or an object with an `eve
 | `category` | One of the categories above. |
 | `target_type` | Short label, or `null`. |
 
-Optional: `coord_precision` (`exact` or `approximate`) and `coord_note`.
+Optional: `coord_precision` (`exact` or `approximate`), `coord_note`, and `major` (`true` or `false`). Omit `major` to leave it off the feature; the CSV cell stays empty.
 
 ```bash
 python3 scripts/add_events.py path/to/new_events.json
