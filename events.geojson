@@ -3,6 +3,846 @@
   "features": [
     {
       "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.847665,
+          26.76873
+        ]
+      },
+      "properties": {
+        "id": "tm-adefb9be22",
+        "category": "strike",
+        "place": "Qeshm Island, Hormozgan, Iran",
+        "what": "US officials say US forces carried out limited 'defensive' strikes on Iranian surface-to-air missile launchers on Qeshm after the IRGC fired at a US aircraft (IRGC claims it downed a US MQ-9); Iranian media reported five explosions; Iran says it retains the right to self-defense",
+        "when_utc": "2026-11-02",
+        "source": "https://www.cbsnews.com/news/u-s-strikes-iran-targets/ https://www.nbcnews.com/world/iran/us-conducted-defensive-strikes-iranian-targets-strait-hormuz-us-offici-rcna607161 https://www.jpost.com/middle-east/iran-news/article-913644 https://www.theguardian.com/world/2026/nov/03/us-strikes-irans-qeshm-island",
+        "status": "confirmed",
+        "target_type": "base",
+        "coord_precision": "exact",
+        "added_utc": "2026-11-03T14:25:51Z",
+        "major": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "tm-e09d6fda17",
+        "category": "shipping",
+        "place": "Strait of Hormuz",
+        "what": "IRGC Navy claims three oil tankers using 'unauthorized' routes with transponders off hit naval mines from the early hours, exploded and were left burning off the strait's southern shores; no ship names, casualties or independent confirmation",
+        "when_utc": "2026-11-03",
+        "source": "https://www.tasnimnews.ir/en/news/2026/11/03/3739457/three-tankers-explode-at-strait-of-hormuz-irgc-navy https://www.aa.com.tr/en/us-israel-iran-war/iran-says-3-oil-tankers-hit-naval-mines-catch-fire-in-strait-of-hormuz/4110024 https://english.news.cn/20261103/30bde8211a4949a6b9d672cd3da67b0d/c.html",
+        "status": "claim",
+        "target_type": "ship",
+        "coord_precision": "not geocoded: strait",
+        "added_utc": "2026-11-03T14:25:51Z",
+        "major": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "tm-7b413896c0",
+        "category": "shipping",
+        "place": "Lima, Musandam, Oman (at sea, 9 nm NE)",
+        "what": "UKMTO warning 193-26 says a vessel was struck by an unknown projectile that holed its starboard side; vessel and crew safe, no environmental impact reported",
+        "when_utc": "2026-11-01T20:20Z",
+        "source": "https://www.ukmto.org/-/media/ukmto/products/20261102-ukmto_warning_193.pdf?rev=2957426ce15244a6b6185ce851dc6782 https://www.aa.com.tr/en/us-israel-iran-war/vessel-struck-by-unknown-projectile-off-oman-uk-maritime-agency/4109148",
+        "status": "confirmed",
+        "target_type": "ship",
+        "coord_precision": "not geocoded: at sea",
+        "added_utc": "2026-11-03T14:25:51Z",
+        "major": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "tm-c438ee04cc",
+        "category": "strike",
+        "place": "Komyshuvakha, Zaporizhzhia Oblast, Ukraine (aid distribution site)",
+        "what": "Ukrainian officials say Russian guided aerial bombs hit a school used as a humanitarian aid centre and shelter, killing at least 31 including police and rescuers; more than 40 missing",
+        "when_utc": "2026-11-02",
+        "source": "https://apnews.com/article/russia-ukraine-humanitarian-attack-drones-power-264da8725dc2bb1f0039a698a59af9fc https://www.theguardian.com/world/2026/nov/03/russia-bombs-ukrainian-aid-centre-komyshuvakha https://meduza.io/en/feature/2026/11/03/russia-bombs-humanitarian-aid-distribution-site-in-southern-ukraine-killing-31-more-than-40-people-remain-missing",
+        "status": "confirmed",
+        "target_type": "city",
+        "coord_precision": "not geocoded: village not found",
+        "added_utc": "2026-11-03T14:25:51Z",
+        "major": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "tm-b56cae885b",
+        "category": "strike",
+        "place": "Ukraine (nationwide)",
+        "what": "Zelensky says Russia launched 289 drones, 17 ballistic and 59 cruise missiles overnight 2-3 Nov at energy sites in nine regions; Ukraine's Air Force says it downed 257 drones, 49 cruise and 3 ballistic missiles; Russia's MoD says it hit energy and Odesa port facilities",
+        "when_utc": "2026-11-02",
+        "source": "https://www.aljazeera.com/news/2026/11/3/at-least-73-injured-as-russia-bombs-ukrainian-hospital-and-power-plants https://kyivindependent.com/russian-attacks-across-ukraine-kill-38-injure-158-as-russia-hits-dnipro-hospitals-in-morning-missile-strike/ https://www.euronews.com/2026/11/03/russia-pounds-ukraine-with-289-drones-and-17-ballistic-missiles-in-overnight-strikes-zelen",
+        "status": "confirmed",
+        "target_type": "infrastructure",
+        "coord_precision": "not geocoded: nationwide",
+        "added_utc": "2026-11-03T14:25:51Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          36.231015,
+          49.992318
+        ]
+      },
+      "properties": {
+        "id": "tm-2d24584d95",
+        "category": "strike",
+        "place": "Kharkiv, Ukraine (Nemyshlianskyi district hospital)",
+        "what": "Ukrainian officials say a Russian strike hit a city clinical hospital around 03:00 local, damaging the cardiology unit; injury figures vary from 62 to 73 by source, and about 200 patients were moved",
+        "when_utc": "2026-11-03T01:00Z",
+        "source": "https://www.aljazeera.com/news/2026/11/3/at-least-73-injured-as-russia-bombs-ukrainian-hospital-and-power-plants https://www.npr.org/2026/11/03/g-s1-151439/russia-ukraine-war",
+        "status": "confirmed",
+        "target_type": "city",
+        "coord_precision": "exact",
+        "added_utc": "2026-11-03T14:25:51Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.041771,
+          48.468022
+        ]
+      },
+      "properties": {
+        "id": "tm-570d17ea15",
+        "category": "strike",
+        "place": "Dnipro, Ukraine",
+        "what": "Dnipropetrovsk governor Oleksandr Hanzha says a morning Russian missile strike killed 2 and injured 20, damaging a hospital and a medical centre",
+        "when_utc": "2026-11-03",
+        "source": "https://kyivindependent.com/russian-attacks-across-ukraine-kill-38-injure-158-as-russia-hits-dnipro-hospitals-in-morning-missile-strike/",
+        "status": "confirmed",
+        "target_type": "city",
+        "coord_precision": "exact",
+        "added_utc": "2026-11-03T14:25:51Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.893371,
+          57.626388
+        ]
+      },
+      "properties": {
+        "id": "tm-e238bedf85",
+        "category": "strike",
+        "place": "Yaroslavl, Russia (oil refinery)",
+        "what": "Governor Mikhail Yevrayev says a Ukrainian drone attack set the refinery on fire and injured two employees",
+        "when_utc": "2026-11-03",
+        "source": "https://www.npr.org/2026/11/03/g-s1-151439/russia-ukraine-war https://www.aljazeera.com/news/2026/11/3/at-least-73-injured-as-russia-bombs-ukrainian-hospital-and-power-plants",
+        "status": "confirmed",
+        "target_type": "infrastructure",
+        "coord_precision": "exact",
+        "added_utc": "2026-11-03T14:25:51Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          37.617478,
+          55.750541
+        ]
+      },
+      "properties": {
+        "id": "tm-ac4be2687e",
+        "category": "strike",
+        "place": "Moscow, Russia",
+        "what": "Mayor Sergei Sobyanin says 493 drones flying toward the capital region were destroyed overnight; Russia's MoD says it downed 856 Ukrainian drones nationwide",
+        "when_utc": "2026-11-03",
+        "source": "https://www.npr.org/2026/11/03/g-s1-151439/russia-ukraine-war https://www.euronews.com/2026/11/03/russia-pounds-ukraine-with-289-drones-and-17-ballistic-missiles-in-overnight-strikes-zelen",
+        "status": "claim",
+        "target_type": "city",
+        "coord_precision": "exact",
+        "added_utc": "2026-11-03T14:25:51Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          37.278409,
+          49.19132
+        ]
+      },
+      "properties": {
+        "id": "tm-33f662ebf7",
+        "category": "strike",
+        "place": "Izium, Kharkiv Oblast, Ukraine (four-storey residential building)",
+        "what": "Kharkiv regional head Oleh Syniehubov says a Russian strike hit a four-storey residential building on Monday morning, setting cars and a post office branch on fire; 1 killed and at least 3 needed medical help",
+        "when_utc": "2026-11-02",
+        "source": "https://www.kyivpost.com/post/88850",
+        "status": "confirmed",
+        "target_type": "city",
+        "coord_precision": "exact",
+        "added_utc": "2026-11-03T14:25:36Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.518634,
+          33.35188
+        ]
+      },
+      "properties": {
+        "id": "tm-f5480c9adf",
+        "category": "strike",
+        "place": "Kfar Tibnit, Nabatieh, Lebanon",
+        "what": "Al-Manar, citing its correspondent, says Israeli warplanes carried out an airstrike on the town; no casualty details given",
+        "when_utc": "2026-11-02T07:18Z",
+        "source": "https://www.almanar.com.lb/article/1315532/ https://darelhilal.com/News/3335769.aspx",
+        "status": "claim",
+        "target_type": "city",
+        "coord_precision": "exact",
+        "added_utc": "2026-11-03T14:25:36Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "tm-3ce434a58b",
+        "category": "strike",
+        "place": "Al-Qusair, Marjayoun, Lebanon",
+        "what": "Dar al-Hilal reports an Israeli airstrike on Al-Qusair in Marjayoun district, alongside an Israeli demolition blast in Bani Hayyan and 10+ artillery shells near Ebel el-Saqi; no casualty details given",
+        "when_utc": "2026-11-02",
+        "source": "https://darelhilal.com/News/3335769.aspx",
+        "status": "claim",
+        "target_type": "city",
+        "coord_precision": "not geocoded: place not found",
+        "added_utc": "2026-11-03T14:25:36Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "tm-ad9ca078a3",
+        "category": "strike",
+        "place": "Ukraine (nationwide)",
+        "what": "Ukraine's Air Force says Russia launched 193 drones from 18:00 local time on 1 Nov (75 jet-powered Shaheds plus Gerbera and decoys), 154 downed or jammed, with hits at 26 locations; emergency power cuts followed in Kyiv and Kyiv region",
+        "when_utc": "2026-11-01T16:00Z",
+        "source": "https://www.pravda.com.ua/eng/news/2026/11/02/8060800/ https://newsukraine.rbc.ua/news/russia-launches-193-drones-at-ukraine-overnight-1793602875.html",
+        "status": "confirmed",
+        "target_type": "infrastructure",
+        "coord_precision": "not geocoded: nationwide",
+        "added_utc": "2026-11-03T14:25:30Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "tm-15194edb20",
+        "category": "strike",
+        "place": "Russia (nationwide)",
+        "what": "Russia's Defence Ministry says air defences intercepted 212 Ukrainian fixed-wing drones overnight over 17 regions including the Moscow region, Crimea and the Black and Azov seas; flight restrictions were imposed at Vnukovo, Domodedovo and Zhukovsky airports (claim)",
+        "when_utc": "2026-11-02",
+        "source": "https://www.fontanka.ru/2026/11/02/76738873/ https://www.ntv.ru/novosti/3019827/",
+        "status": "claim",
+        "target_type": null,
+        "coord_precision": "not geocoded: nationwide",
+        "added_utc": "2026-11-03T14:25:30Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "tm-7ab8cd1863",
+        "category": "strike",
+        "place": "Voronezh Oblast, Russia",
+        "what": "Governor Alexander Gusev says debris from 20 downed Ukrainian drones damaged facades and glazing of two private houses in Voronezh city and one district overnight; preliminarily no injuries",
+        "when_utc": "2026-11-02",
+        "source": "https://www.fontanka.ru/2026/11/02/76738873/",
+        "status": "confirmed",
+        "target_type": "city",
+        "coord_precision": "not geocoded: oblast",
+        "added_utc": "2026-11-03T14:25:30Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "tm-f4f061edaa",
+        "category": "military_movement",
+        "place": "Taiwan Strait",
+        "what": "Taiwan's defense ministry tracked 19 Chinese military aircraft sorties, 7 navy ships and 6 official ships around Taiwan, with 4 sorties entering the southwestern and eastern ADIZ; no fire reported (22:00 UTC 31 Oct to 22:00 UTC 1 Nov)",
+        "when_utc": "2026-10-31T22:00Z",
+        "source": "https://www.mnd.gov.tw/en/news/plaact/88110 https://www.cna.com.tw/news/aipl/202611020020.aspx",
+        "status": "confirmed",
+        "target_type": null,
+        "coord_precision": "not geocoded: strait",
+        "added_utc": "2026-11-03T14:25:30Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          93.191577,
+          20.590127
+        ]
+      },
+      "properties": {
+        "id": "tm-2a7071f82b",
+        "category": "strike",
+        "place": "Mrauk-U, Rakhine State, Myanmar (temporary maternity clinic)",
+        "what": "The Arakan Army, cited by DVB, says four consecutive Myanmar military airstrikes hit a temporary maternity clinic in Mrauk-U, killing five staff and patients including an infant and injuring nine; no military government comment given",
+        "when_utc": "2026-11-01",
+        "source": "https://english.dvb.no/airstrikes-kill-12-in-rakhine-state-as-bombs-target-bridge-and-maternity-clinic/",
+        "status": "claim",
+        "target_type": "city",
+        "coord_precision": "approximate: clinic location within Mrauk-U not given",
+        "added_utc": "2026-11-03T14:25:14Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.9093,
+          51.67831
+        ]
+      },
+      "properties": {
+        "id": "tm-b3634f2fcb",
+        "category": "strike",
+        "place": "Hlukhiv, Sumy Oblast, Ukraine",
+        "what": "Sumy regional authorities, cited by UNN, say a Russian drone hit a car in the Hlukhiv community, killing a 70-year-old woman; the region reported 43 Russian strikes on 15 settlements over the past day",
+        "when_utc": "2026-11-01",
+        "source": "https://unn.ua/en/news/russias-nighttime-attacks-on-ukraines-regions-where-the-enemy-struck-and-the-aftermath-of-the-attacks",
+        "status": "confirmed",
+        "target_type": "convoy",
+        "coord_precision": "approximate: exact location within Hlukhiv community not given",
+        "added_utc": "2026-11-03T14:25:14Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "tm-bea400abb4",
+        "category": "strike",
+        "place": "Kropyvnytskyi district, Kirovohrad Oblast, Ukraine",
+        "what": "NV, citing local reports, says a Russian drone attack on the evening of 1 Nov hit a transport company in Kropyvnytskyi district, starting a fire; no casualty details given",
+        "when_utc": "2026-11-01",
+        "source": "https://nv.ua/ukr/ukraine/events/ataka-droniv-shahed-i-gerbera-ppo-zbila-154-bpla-poshkodzheni-budinki-ta-poraneni-50655359.html",
+        "status": "confirmed",
+        "target_type": "infrastructure",
+        "coord_precision": "not geocoded: district",
+        "added_utc": "2026-11-03T14:25:14Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          30.08778,
+          45.871349
+        ]
+      },
+      "properties": {
+        "id": "tm-9bb7292acd",
+        "category": "strike",
+        "place": "Tuzly, Odesa Oblast, Ukraine",
+        "what": "Russia's Defence Ministry claims its drones struck a site near Tuzly used to shelter and store Ukrainian Neptune anti-ship missile launchers overnight; no Ukrainian comment on this site given (claim)",
+        "when_utc": "2026-11-02",
+        "source": "https://www.fontanka.ru/2026/11/02/76738873/",
+        "status": "claim",
+        "target_type": "base",
+        "coord_precision": "approximate: area of Tuzly village; exact site not given",
+        "added_utc": "2026-11-03T14:25:14Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "tm-9ffa8dcc04",
+        "category": "shipping",
+        "place": "Odesa, Ukraine (at sea, 58 km S)",
+        "what": "Russia's Defence Ministry claims its drones struck a dry cargo ship it says was carrying cargo for Ukraine's armed forces about 58 km south of Odesa overnight; vessel not named and no Ukrainian comment given (claim)",
+        "when_utc": "2026-11-02",
+        "source": "https://www.fontanka.ru/2026/11/02/76738873/",
+        "status": "claim",
+        "target_type": "ship",
+        "coord_precision": "not geocoded: at sea",
+        "added_utc": "2026-11-03T14:25:14Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.261094,
+          31.355066
+        ]
+      },
+      "properties": {
+        "id": "tm-f88e4ed14d",
+        "category": "strike",
+        "place": "Al-Mawasi, Khan Younis, Gaza Strip (Bir 19 junction, Zuarub Street)",
+        "what": "Palestinian Information Center, citing a local source, says an Israeli drone strike near the Bir 19 junction in al-Mawasi killed one man and injured a girl; no Israeli comment given",
+        "when_utc": "2026-11-02",
+        "source": "https://palinfo.com/news/2026/11/02/1122604/",
+        "status": "claim",
+        "target_type": "city",
+        "coord_precision": "approximate: Bir 19 junction area of al-Mawasi; exact impact point not given",
+        "added_utc": "2026-11-03T14:25:01Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "tm-a0829b4fd9",
+        "category": "strike",
+        "place": "Al-Masdar, Deir al-Balah, Gaza Strip",
+        "what": "Palestinian Information Center says shrapnel from an Israeli quadcopter-dropped bomb east of al-Masdar village killed a 40-year-old man; it also reports a large Israeli demolition blast in the village; no Israeli comment given",
+        "when_utc": "2026-11-02",
+        "source": "https://palinfo.com/news/2026/11/02/1122604/ https://gazanews.live/en/news/1338",
+        "status": "claim",
+        "target_type": "city",
+        "coord_precision": "not geocoded: place not found",
+        "added_utc": "2026-11-03T14:25:01Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.296983,
+          31.365631
+        ]
+      },
+      "properties": {
+        "id": "tm-9532ce8857",
+        "category": "strike",
+        "place": "Khan Younis, Gaza Strip (al-Yabani area, northwest)",
+        "what": "Palestinian Information Center says an Israeli strike in the al-Yabani area northwest of Khan Younis killed a 46-year-old man; no Israeli comment given",
+        "when_utc": "2026-11-02",
+        "source": "https://palinfo.com/news/2026/11/02/1122604/",
+        "status": "claim",
+        "target_type": "city",
+        "coord_precision": "approximate: al-Yabani area, northwest Khan Younis; exact point not given",
+        "added_utc": "2026-11-03T14:25:01Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          30.732288,
+          46.484302
+        ]
+      },
+      "properties": {
+        "id": "tm-5227da815d",
+        "category": "strike",
+        "place": "Odesa, Ukraine",
+        "what": "Ukrainian officials say an overnight Russian drone attack on Odesa injured 4 and damaged infrastructure, two residential buildings and a garage; Ukraine's Air Force says Russia launched 193 drones nationwide and 154 were downed",
+        "when_utc": "2026-11-02",
+        "source": "https://war.obozrevatel.com/ukr/section-war/news-rosiya-atakuvala-ukrayinu-mayzhe-200-droniv-syly-ppo-zbyly-154-z-nykh-naslidky-vorozhykh-udariv-foto-i-video-02-11-2026.html https://unn.ua/en/news/russias-nighttime-attacks-on-ukraines-regions-where-the-enemy-struck-and-the-aftermath-of-the-attacks",
+        "status": "confirmed",
+        "target_type": "city",
+        "coord_precision": "approximate: impact sites in Odesa not named",
+        "added_utc": "2026-11-03T14:25:01Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "tm-8a3e8d2993",
+        "category": "strike",
+        "place": "Prosvet, Samara Oblast, Russia (Transneft LPDS Samara oil hub)",
+        "what": "Ukrainian monitoring channels Exilenova+ and Supernova+ say drones hit Transneft's Samara oil pumping and storage station, starting a fire; Governor Vyacheslav Fedorishchev says air defences repelled an attack and gave no damage details",
+        "when_utc": "2026-11-02T03:00Z",
+        "source": "https://echofm.online/news/v-samarskoj-oblasti-posle-ataki-vsu-gorit-neftyanaya-stancziya-v-luganske-udarili-po-operatoru-svyazi https://www.rbc.ua/ukr/news/rosiyu-znovu-atakuvali-droni-pid-udar-potrapila-1793593160.html",
+        "status": "claim",
+        "target_type": "infrastructure",
+        "coord_precision": "not geocoded: administrative area only",
+        "added_utc": "2026-11-03T14:25:00Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.120629,
+          49.231177
+        ]
+      },
+      "properties": {
+        "id": "tm-083b6416b7",
+        "category": "strike",
+        "place": "Hradyzk, Poltava Oblast, Ukraine",
+        "what": "Poltava regional head Vitaliy Diakivnych says a Russian drone fell on a private home in the Hradyzk community on the evening of 1 Nov, injuring one person and damaging four neighbouring houses and cars",
+        "when_utc": "2026-11-01",
+        "source": "https://nv.ua/ukr/ukraine/events/rosiyski-ataki-na-ukrajinu-v-nich-z-1-na-2-listopada-2026-roku-vsi-podrobici-onlayn-50655321.html",
+        "status": "confirmed",
+        "target_type": "city",
+        "coord_precision": "exact",
+        "added_utc": "2026-11-03T14:24:59Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "tm-33d97f2d2e",
+        "category": "strike",
+        "place": "Ternopil Oblast, Ukraine",
+        "what": "Ternopil governor Taras Pastukh says a Russian attack on infrastructure in a town in the region knocked out power to several localities; crews working to restore it (town not named)",
+        "when_utc": "2026-11-01",
+        "source": "https://english.alarabiya.net/News/world/2026/11/02/russian-strikes-cut-power-to-thousands-in-ukraine-as-drones-damage-russian-facility",
+        "status": "confirmed",
+        "target_type": "infrastructure",
+        "coord_precision": "not geocoded: oblast",
+        "added_utc": "2026-11-03T14:24:59Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          36.331216,
+          49.835365
+        ]
+      },
+      "properties": {
+        "id": "tm-f7a6caf9d2",
+        "category": "strike",
+        "place": "Vasyshcheve, Kharkiv Oblast, Ukraine",
+        "what": "Kharkiv regional head Oleh Syniehubov says Russian drones hit the roof of a five-storey apartment block and damaged two private houses in Vasyshcheve, injuring five people including an 18-year-old.",
+        "when_utc": "2026-11-01T20:22Z",
+        "source": "https://nv.ua/ukr/ukraine/events/rosiyski-ataki-na-ukrajinu-v-nich-z-1-na-2-listopada-2026-roku-vsi-podrobici-onlayn-50655321.html",
+        "status": "confirmed",
+        "target_type": "city",
+        "coord_precision": "exact",
+        "added_utc": "2026-11-03T14:24:56Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          37.833202,
+          51.298038
+        ]
+      },
+      "properties": {
+        "id": "tm-e5cc66a0f7",
+        "category": "strike",
+        "place": "Stary Oskol, Belgorod Oblast, Russia",
+        "what": "The regional operational headquarters says a falling Ukrainian drone damaged the facade of an apartment building; no injuries reported preliminarily (night of 1-2 Nov).",
+        "when_utc": "2026-11-01",
+        "source": "https://news.ru/regions/ataki-vsu-na-rossiyu-kakie-regioni-okazalis-v-opasnosti-nochyu-2-noyabrya",
+        "status": "confirmed",
+        "target_type": "city",
+        "coord_precision": "exact",
+        "added_utc": "2026-11-03T14:24:56Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          36.879682,
+          50.404933
+        ]
+      },
+      "properties": {
+        "id": "tm-dcd40f8d84",
+        "category": "strike",
+        "place": "Shebekino, Belgorod Oblast, Russia",
+        "what": "The regional operational headquarters says a Ukrainian FPV drone struck a car, wounding a man in the shoulder, and a separate drone detonation damaged a private house's windows in Shebekino district (night of 1-2 Nov).",
+        "when_utc": "2026-11-01",
+        "source": "https://news.ru/regions/ataki-vsu-na-rossiyu-kakie-regioni-okazalis-v-opasnosti-nochyu-2-noyabrya",
+        "status": "confirmed",
+        "target_type": "city",
+        "coord_precision": "exact",
+        "added_utc": "2026-11-03T14:24:56Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "tm-eeaa3a594b",
+        "category": "shipping",
+        "place": "Ras al-Khafji, Saudi Arabia (at sea, 72 nm E, Arabian Gulf)",
+        "what": "UKMTO says a southeast-bound tanker was struck on its port side by two unidentified projectiles; all crew accounted for, no environmental impact reported; attacker not identified and authorities investigating",
+        "when_utc": "2026-11-01T23:47Z",
+        "source": "https://www.iranintl.com/en/202611025952 https://www.devdiscourse.com/article/international/4000408-tanker-struck-by-two-projectiles-near-saudi-arabia-ukmto-says",
+        "status": "confirmed",
+        "target_type": "ship",
+        "coord_precision": "not geocoded: at sea",
+        "added_utc": "2026-11-03T14:24:50Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          43.763026,
+          16.940932
+        ]
+      },
+      "properties": {
+        "id": "tm-f0b0e89ef7",
+        "category": "strike",
+        "place": "Saada, Yemen (southeast of city, Houthi-held)",
+        "what": "Houthi-affiliated media say an air strike hit a communications network southeast of Saada city; attacker not named in the report and no Saudi-led coalition comment (reported about 19:05 UTC)",
+        "when_utc": "2026-11-01T19:05Z",
+        "source": "https://www.middleeasteye.net/live-blog/live-blog-update/air-strike-hits-communication-network-northern-yemen-houthi-affiliated",
+        "status": "claim",
+        "target_type": "infrastructure",
+        "coord_precision": "approximate: southeast of Saada city; exact site not named",
+        "added_utc": "2026-11-03T14:24:47Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "tm-7988576856",
+        "category": "strike",
+        "place": "Jabal Habashi, Taiz, Yemen (Al-Anin area)",
+        "what": "The Houthi-run health ministry in Sanaa says Saudi airstrikes on Al-Anin killed a child and injured two girls, and a strike on Hayjat al-Abd injured two more; no Saudi-led coalition comment",
+        "when_utc": "2026-11-01",
+        "source": "https://www.saba.ye/en/news3824603.htm https://en.ypagency.net/410690",
+        "status": "claim",
+        "target_type": "city",
+        "coord_precision": "not geocoded: district",
+        "added_utc": "2026-11-03T14:24:47Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          50.103999,
+          26.436782
+        ]
+      },
+      "properties": {
+        "id": "tm-d8a940b3d3",
+        "category": "strike",
+        "place": "Dammam, Saudi Arabia (industrial area)",
+        "what": "Iran's IRNA and Mehr claim a Yemeni (Houthi) strike set an industrial complex in Dammam ablaze; Saudi civil defence, per Slaati, says a fire at two AC-unit maintenance and storage sites was controlled with no injuries and gave no cause; no formal Houthi claim",
+        "when_utc": "2026-11-01",
+        "source": "https://www.dawn.com/news/2041382 https://en.mehrnews.com/news/249074/VIDEO-Fire-break-out-at-ind-facilities-in-Saudi-s-Dammam https://defenseandtech.com/saudi-coalition-strike-houthi-hodeidah-dammam-fire-claim/",
+        "status": "claim",
+        "target_type": "infrastructure",
+        "coord_precision": "approximate: industrial area of Dammam; exact site not named",
+        "added_utc": "2026-11-03T14:24:45Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "tm-8390338c9c",
+        "category": "shipping",
+        "place": "Odesa, Ukraine (at sea, 16 km SE)",
+        "what": "Russia's defence ministry says its forces struck a dry-cargo ship it says was carrying cargo for Ukraine's armed forces about 16 km from Odesa, a second such claim that day; ship not named, no Ukrainian confirmation (reported about 14:52 UTC)",
+        "when_utc": "2026-11-01T14:52Z",
+        "source": "https://tass.com/defense/2211547 https://ria.ru/20261101/spetsoperatsiya-2128463097.html",
+        "status": "claim",
+        "target_type": "ship",
+        "coord_precision": "not geocoded: at sea",
+        "added_utc": "2026-11-03T14:24:39Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "tm-d2641382b7",
+        "category": "strike",
+        "place": "Khasab, Musandam, Oman (coastline)",
+        "what": "Maritime security firm Ambrey logged a report of a projectile impacting a target along Khasab's coastline; OSINT accounts said it was an Iranian drone likely aimed at a vessel in the Strait of Hormuz; no Omani or Iranian official comment found",
+        "when_utc": "2026-10-31T20:00Z",
+        "source": "https://ambrey.com/operations/event/war-risk-physical-damage-14/ https://www.jfeed.com/latest-news/iranian-drone-reportedly-struck-khasab-in-northern-oman-57837",
+        "status": "claim",
+        "target_type": "city",
+        "coord_precision": "not geocoded: place not found",
+        "added_utc": "2026-11-03T14:24:39Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          25.726078,
+          50.096097
+        ]
+      },
+      "properties": {
+        "id": "tm-831ef93a26",
+        "category": "strike",
+        "place": "Kremenets, Ternopil Oblast, Ukraine (energy facility)",
+        "what": "Ternopil regional head Taras Pastukh says a Russian attack hit an energy facility in Kremenets community, leaving 12 settlements fully or partly without power; crews are restoring supply. No casualties reported.",
+        "when_utc": "2026-11-01T13:51Z",
+        "source": "https://www.ukrinform.net/rubric-ato/4180324-russian-forces-hit-energy-facility-in-ternopil-region-causing-power-outages.html https://www.pravda.com.ua/eng/news/2026/11/01/8060744/ https://ria.ru/20261101/punkty-2128470507.html",
+        "status": "confirmed",
+        "target_type": "infrastructure",
+        "coord_precision": "exact",
+        "added_utc": "2026-11-03T14:24:36Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "tm-86d4d71861",
+        "category": "strike",
+        "place": "Ukraine (nationwide)",
+        "what": "Ukraine's Air Force says Russia launched 326 attack drones (55 jet-powered) and six S8000 Banderol/Dan-T cruise missiles during the day (04:30-17:00 UTC) and that 274 drones and all six missiles were downed or jammed; 20+ drones were still airborne.",
+        "when_utc": "2026-11-01T04:30Z",
+        "source": "https://www.pravda.com.ua/eng/news/2026/11/01/8060761/",
+        "status": "claim",
+        "target_type": "city",
+        "coord_precision": "not geocoded: nationwide",
+        "added_utc": "2026-11-03T14:24:36Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          28.835428,
+          49.719587
+        ]
+      },
+      "properties": {
+        "id": "tm-98cf260822",
+        "category": "strike",
+        "place": "Koziatyn, Vinnytsia Oblast, Ukraine (vocational school dormitory)",
+        "what": "Local authorities and Ukraine's State Emergency Service say a Russian drone hit the grounds of a vocational school dormitory in Koziatyn community; the regional head later said 3 were killed, including a 13-year-old girl, and four injured, three of them children.",
+        "when_utc": "2026-11-01",
+        "source": "https://www.dw.com/uk/rosijski-droni-atakuvali-kilka-oblastej-ukraini-e-zagibli-ta-poraneni/a-79824295 https://en.apa.az/europe/russia-strikes-ukraine-killing-three-people-533400",
+        "status": "confirmed",
+        "target_type": "city",
+        "coord_precision": "exact",
+        "added_utc": "2026-11-03T14:24:18Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "tm-0ee5edf00b",
+        "category": "strike",
+        "place": "Southern Region, Saudi Arabia",
+        "what": "Saudi-led coalition spokesman Turki al-Maliki says air defenses intercepted a Houthi ballistic missile and a drone launched toward southern Saudi Arabia; no targets, casualties or damage given. Emergency warnings were issued earlier in Abha and Khamis Mushait.",
+        "when_utc": "2026-11-01",
+        "source": "https://www.aa.com.tr/en/middle-east/saudi-led-coalition-intercepts-houthi-missile-drone-targeting-kingdom/4108159 https://shafaq.com/en/Middle-East/Saudi-air-defenses-intercept-Houthi-missile-drone",
+        "status": "claim",
+        "target_type": "infrastructure",
+        "coord_precision": "not geocoded: region",
+        "added_utc": "2026-11-03T14:24:18Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "tm-71429d8a94",
+        "category": "strike",
+        "place": "Ras Issa, Hodeidah, Yemen (port, Houthi-held)",
+        "what": "Houthi-affiliated Al Masirah TV says a Saudi-led coalition air attack on Ras Isa port wounded four people; Houthi spokesman Yahya Saree claims 75 Saudi air and missile strikes across eight provinces in 24h. No immediate coalition comment.",
+        "when_utc": "2026-11-01",
+        "source": "https://shafaq.com/en/Middle-East/Saudi-air-defenses-intercept-Houthi-missile-drone https://www.dawn.com/news/2041562 https://www.middleeasteye.net/live-blog/live-blog-update/casualties-reported-after-attacks-saudi-led-coalition-yemens-hodeidah",
+        "status": "claim",
+        "target_type": "port",
+        "coord_precision": "not geocoded: port not found",
+        "added_utc": "2026-11-03T14:24:18Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.464296,
+          33.270856
+        ]
+      },
+      "properties": {
+        "id": "tm-d317271831",
+        "category": "strike",
+        "place": "Qantara, Marjayoun, Lebanon",
+        "what": "Lebanese reports say Israeli forces detonated homes of displaced residents in Qantara; Lebanon's state news agency described an earlier explosion there as a blasting operation. No casualties reported.",
+        "when_utc": "2026-11-01T14:06Z",
+        "source": "https://today.lorientlejour.com/article/1552896/6-pm-recap-israeli-threats-of-advancing-as-far-as-saida-escalation-continues-in-the-south-and-record-cocaine-seizure-at-beirut-airport.html https://sitmap.live/day/2026-11-01",
+        "status": "claim",
+        "target_type": "city",
+        "coord_precision": "exact",
+        "added_utc": "2026-11-03T14:24:18Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "tm-22a5d13e46",
+        "category": "strike",
+        "place": "Aita al-Jabal, Bint Jbeil, Lebanon (near Haddatha)",
+        "what": "Lebanese reports say an Israeli airstrike hit near Aita al-Jabal in southern Lebanon; no casualty details given and no immediate Israeli military comment.",
+        "when_utc": "2026-11-01T16:18Z",
+        "source": "https://sitmap.live/day/2026-11-01",
+        "status": "claim",
+        "target_type": "city",
+        "coord_precision": "not geocoded: place not found",
+        "added_utc": "2026-11-03T14:24:18Z"
+      }
+    },
+    {
+      "type": "Feature",
       "geometry": null,
       "properties": {
         "id": "tm-812b960696",
