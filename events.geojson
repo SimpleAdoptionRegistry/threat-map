@@ -6,6 +6,98 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          30.732288,
+          46.484302
+        ]
+      },
+      "properties": {
+        "id": "tm-6a6a904a6b",
+        "category": "strike",
+        "place": "Odesa, Ukraine",
+        "what": "Odesa city military administration head Serhii Lysak says Russian forces struck Odesa again in the evening of 7 Nov, killing one person and damaging city infrastructure; further strike details not given",
+        "when_utc": "2026-11-07",
+        "source": "https://suspilne.media/odesa/1447501-unaslidok-povtornoi-ataki-rf-na-odesu-zaginula-ludina-poskodzeno-infrastrukturu/ https://dumskaya.net/news/vrag-udaril-po-odesse-odin-chelovek-pogib-postra-192594/ https://tsn.ua/ukrayina/rosiia-atakuvala-odesu-ye-zahyblyy-podrobytsi-3210855.html",
+        "status": "confirmed",
+        "target_type": "infrastructure",
+        "coord_precision": "exact",
+        "added_utc": "2026-11-07T21:19:18Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          30.732288,
+          46.484302
+        ]
+      },
+      "properties": {
+        "id": "tm-9116039dca",
+        "category": "strike",
+        "place": "Odesa, Ukraine",
+        "what": "Odesa city military administration head Serhii Lysak says a Russian daytime strike on 7 Nov damaged a private residential house and set an outbuilding on fire; he said no one was injured",
+        "when_utc": "2026-11-07",
+        "source": "https://www.ukrinform.ua/rubric-regions/4182454-vijska-rf-atakuvali-odesu-poskodzenij-budinok.html https://ru.interfax.com.ua/news/general/1232860.html https://en.lb.ua/news/2026/11/07/48464_residential_home_damaged_odesa.html https://mezha.net/eng/news/mezha-9689620ac1dd966188edc9cc/",
+        "status": "confirmed",
+        "target_type": "city",
+        "coord_precision": "exact",
+        "added_utc": "2026-11-07T21:19:18Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "tm-8fee13346e",
+        "category": "strike",
+        "place": "Odesa Oblast, Ukraine (north)",
+        "what": "Odesa regional governor Oleh Kiper says a Russian strike drone hit a private residential house in northern Odesa Oblast on the afternoon of 7 Nov, causing significant damage and a fire at an outbuilding; no casualties reported",
+        "when_utc": "2026-11-07",
+        "source": "https://www.ukrinform.ua/rubric-regions/4182454-vijska-rf-atakuvali-odesu-poskodzenij-budinok.html https://odessa-life.od.ua/news/rossijskie-drony-atakovali-odessu-i-oblast-goreli-dom-i-hozpostrojka",
+        "status": "confirmed",
+        "target_type": "city",
+        "coord_precision": "approximate: northern oblast; exact town not named",
+        "added_utc": "2026-11-07T21:19:18Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "tm-fb95b85cf9",
+        "category": "shipping",
+        "place": "Odesa, Ukraine (at sea, SE, Black Sea)",
+        "what": "Russia's Defence Ministry says its forces struck a dry-cargo ship southeast of Odesa in the Black Sea on 7 Nov that it says was carrying military and dual-use cargo for Ukraine; vessel not named and no Ukrainian confirmation found",
+        "when_utc": "2026-11-07",
+        "source": "https://www.interfax.ru/russia/1127544 https://ria.ru/20261107/sukhogruz-2129982131.html",
+        "status": "claim",
+        "target_type": "ship",
+        "coord_precision": "not geocoded: at sea",
+        "added_utc": "2026-11-07T21:19:18Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "tm-8fa021cba4",
+        "category": "strike",
+        "place": "Khan Yunis and Rafah, Gaza Strip (south of Khan Yunis; al-Mawasi)",
+        "what": "Palestinian outlets cited by Saba and PIC say Israeli vehicles opened heavy fire south of Khan Yunis and toward tents in al-Mawasi, Rafah, on 7 Nov; a local report also said artillery fired toward western Rafah; no casualty figures given",
+        "when_utc": "2026-11-07",
+        "source": "https://www.saba.ye/en/news3828849.htm https://english.palinfo.com/news/2026/11/07/373307/ https://gazanews.live/en/news/2155",
+        "status": "claim",
+        "target_type": "city",
+        "coord_precision": "not geocoded: multi-area",
+        "added_utc": "2026-11-07T21:19:18Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           35.426739,
           33.159202
         ]
@@ -192,9 +284,9 @@
         "id": "tm-8d7c04ac38",
         "category": "strike",
         "place": "Al-Matali, Al-Misrakh, Taiz, Yemen",
-        "what": "Houthi-run Saba, citing a local security official, says a Saudi airstrike on Al-Matali village in Al-Misrakh district of Taiz on 7 Nov injured five civilians, some seriously; no Saudi-led coalition comment found",
+        "what": "Houthi Health Ministry says a Saudi airstrike on Al-Matali in Al-Misrakh (Al-Masarakh), Taiz on 7 Nov killed 1 civilian and injured 4 including a child (earlier local report: five injured); no Saudi-led coalition comment found",
         "when_utc": "2026-11-07",
-        "source": "https://www.saba.ye/en/news3829062.htm",
+        "source": "https://www.saba.ye/en/news3829062.htm https://saba.ye/en/news3829153.htm",
         "status": "claim",
         "target_type": "city",
         "coord_precision": "not geocoded: place not found",
