@@ -3,6 +3,99 @@
   "features": [
     {
       "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "tm-93a38fb6cc",
+        "category": "strike",
+        "place": "Qeshm Island, Hormozgan, Iran (Suza area)",
+        "what": "US President Trump says US forces carried out limited 'minor' strikes that destroyed an Iranian anti-aircraft device; IRNA and Tasnim report two projectiles hit Suza on Qeshm after aircraft were heard; IRGC-linked media claim a US MQ-1 was downed over Qeshm earlier",
+        "when_utc": "2026-11-07",
+        "source": "https://www.theguardian.com/world/2026/nov/07/us-carries-out-another-round-of-minor-strikes-on-iran-trump-says https://www.arabnews.com/middle-east/two-missiles-strike-irans-qeshm-island-tasnim-news-agency-reports-3010264 https://www.jpost.com/middle-east/iran-news/article-914097",
+        "status": "confirmed",
+        "target_type": "base",
+        "coord_precision": "not geocoded: administrative area only",
+        "added_utc": "2026-11-07T03:20:36Z",
+        "major": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "tm-e45f437885",
+        "category": "strike",
+        "place": "Kyiv, Ukraine (Solomianskyi district)",
+        "what": "Ukrainian officials say several waves of Russian ballistic missiles hit Kyiv overnight 6-7 Nov; Klitschko and the city military administration report two injured, damage to a five-storey residential building and a kindergarten, and a fire at a non-residential building",
+        "when_utc": "2026-11-06T21:00Z",
+        "source": "https://kyivindependent.com/russian-ballistic-missiles-slam-kyiv-after-zelensky-warns-of-mass-attack/ https://www.yahoo.com/news/world/articles/russian-forces-launch-missile-attack-012321092.html",
+        "status": "confirmed",
+        "target_type": "city",
+        "coord_precision": "not geocoded: district",
+        "added_utc": "2026-11-07T03:20:36Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "tm-997152265e",
+        "category": "strike",
+        "place": "Brovary district, Kyiv Oblast, Ukraine",
+        "what": "Kyiv Oblast Governor Tymur Tkachenko says a Russian jet-powered drone attack in Brovary district set a home on fire; one man was pulled from rubble with burns and shrapnel wounds and hospitalized",
+        "when_utc": "2026-11-06",
+        "source": "https://kyivindependent.com/russian-ballistic-missiles-slam-kyiv-after-zelensky-warns-of-mass-attack/",
+        "status": "confirmed",
+        "target_type": "city",
+        "coord_precision": "not geocoded: district",
+        "added_utc": "2026-11-07T03:20:36Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          46.71601,
+          24.638916
+        ]
+      },
+      "properties": {
+        "id": "tm-d53cc886f3",
+        "category": "strike",
+        "place": "Riyadh, Saudi Arabia",
+        "what": "Saudi-led coalition spokesman Turki al-Maliki says air defenses intercepted and destroyed a drone in the Riyadh region late Friday; Arab News notes earlier Friday intercepts toward Najran and Makkah; launcher not named in the Riyadh statement",
+        "when_utc": "2026-11-06",
+        "source": "https://www.arabnews.com/saudi-arabia/saudi-air-defenses-intercept-drone-in-riyadh-region-3010236",
+        "status": "claim",
+        "target_type": "city",
+        "coord_precision": "exact",
+        "added_utc": "2026-11-07T03:20:36Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.498659,
+          33.36188
+        ]
+      },
+      "properties": {
+        "id": "tm-917c5b37fb",
+        "category": "strike",
+        "place": "Nabatieh al-Fawqa, Nabatieh, Lebanon",
+        "what": "Al-Manar correspondents report Israeli artillery shelling across southern Lebanon on 6 Nov including the area between Mayfadoun and Nabatieh al-Fawqa, plus shelling of Barashit, Qantara and Wadi al-Salouqi; no casualty figures given and no immediate Israeli comment",
+        "when_utc": "2026-11-06",
+        "source": "https://english.almanar.com.lb/article/147502/ https://www.aa.com.tr/en/middle-east/israeli-forces-fire-near-lebanese-olive-harvesters-detain-resident-amid-southern-lebanon-incursions/4114594",
+        "status": "claim",
+        "target_type": "city",
+        "coord_precision": "exact",
+        "added_utc": "2026-11-07T03:20:36Z"
+      }
+    },
+    {
+      "type": "Feature",
       "geometry": {
         "type": "Point",
         "coordinates": [
