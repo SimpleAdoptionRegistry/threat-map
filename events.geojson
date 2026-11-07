@@ -5,6 +5,116 @@
       "type": "Feature",
       "geometry": null,
       "properties": {
+        "id": "tm-dc1635b55d",
+        "category": "strike",
+        "place": "Makariv, Kyiv Oblast, Ukraine",
+        "what": "Makariv community head Vadym Tokar says Russian forces struck an energy-infrastructure facility in the Makarivska hromada overnight 6-7 Nov; he did not give damage or casualty details and urged residents to stay in shelters",
+        "when_utc": "2026-11-06T23:39Z",
+        "source": "https://focus.ua/uk/voennye-novosti/773906-ataka-na-kijivshchinu-ta-kijiv-7-listopada-ye-postrazhdali-zruynovano-budinok https://shelter.in.ua/viyna/na-kyivshchyni-rosiiany-zavdaly-masovanoho-raketnoho-udaru-po-enerhetytsi",
+        "status": "confirmed",
+        "target_type": "infrastructure",
+        "coord_precision": "not geocoded: community",
+        "added_utc": "2026-11-07T04:15:39Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          46.034683,
+          51.530018
+        ]
+      },
+      "properties": {
+        "id": "tm-9578dd1afc",
+        "category": "strike",
+        "place": "Saratov, Russia (oil refinery)",
+        "what": "Ukrainian monitoring channel Exilenova Plus says a Ukrainian drone attack set the Saratov Oil Refinery ablaze overnight 6-7 Nov; details could not be immediately verified by the Kyiv Independent and no Russian official confirmation found",
+        "when_utc": "2026-11-07",
+        "source": "https://kyivindependent.com/ukraine-strikes-saratov-oil-refinery-in-mass-attack-on-several-regions-reports-say/",
+        "status": "claim",
+        "target_type": "infrastructure",
+        "coord_precision": "exact",
+        "added_utc": "2026-11-07T04:15:39Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          36.099499,
+          52.968017
+        ]
+      },
+      "properties": {
+        "id": "tm-8ddf685f68",
+        "category": "strike",
+        "place": "Oryol, Russia (Proton plant area)",
+        "what": "Oryol Governor Andrei Klychkov says a missile attack overnight 6-7 Nov partially damaged production premises of an enterprise in Sovetsky district; OSINT outlets ASTRA and Exilenova Plus identify it as the Proton optoelectronics plant with a large fire",
+        "when_utc": "2026-11-07",
+        "source": "https://www.dw.com/ru/rossijskij-orel-podvergsa-raketnoj-atake-veroatno-gorit-zavod-optoelektroniki-proton/a-79882875 https://kyivindependent.com/ukraine-strikes-saratov-oil-refinery-in-mass-attack-on-several-regions-reports-say/",
+        "status": "claim",
+        "target_type": "infrastructure",
+        "coord_precision": "approximate: Sovetsky district enterprise; Proton ID from OSINT",
+        "added_utc": "2026-11-07T04:15:39Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "tm-719411885e",
+        "category": "strike",
+        "place": "Al-Hadara, al-Waziyah, Taiz, Yemen (market)",
+        "what": "Houthi health authorities say an attack on al-Hadara market killed at least 30 and injured eight, blaming Saudi aircraft; Yemeni government forces say Houthi ballistic missiles hit the market; no Saudi-led coalition comment and not independently verified",
+        "when_utc": "2026-11-06",
+        "source": "https://www.aljazeera.com/news/2026/11/6/yemeni-govt-forces-houthis-trade-blame-for-deadly-strikes-on-taiz-market https://apnews.com/article/yemen-airstrikes-market-houthis-bcc2409ada0398125173d84261bd1fff",
+        "status": "claim",
+        "target_type": "city",
+        "coord_precision": "not geocoded: place not found",
+        "added_utc": "2026-11-07T04:15:39Z",
+        "major": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "tm-a51d8315aa",
+        "category": "shipping",
+        "place": "Madinat ash Shamal, Qatar (at sea, ~50 nm N, Arabian Gulf)",
+        "what": "UKMTO warning 196-26 says a tanker was struck by two unidentified projectiles about 50 nm north of Madinat ash Shamal; reports identify Marshall Islands-flagged Velos Sapphire, one crew killed, fire out, no pollution, vessel taken to Bahrain",
+        "when_utc": "2026-11-04T23:20Z",
+        "source": "https://www.ukmto.org/-/media/ukmto/products/20261105-ukmto_warning-196-26.pdf https://alphanavigation.com/news/tanker-comes-under-attack-arabian-gulf-one-crew-member-killed",
+        "status": "confirmed",
+        "target_type": "ship",
+        "coord_precision": "not geocoded: at sea",
+        "added_utc": "2026-11-07T04:15:39Z",
+        "major": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "tm-bb499ee54d",
+        "category": "military_movement",
+        "place": "Taiwan Strait",
+        "what": "Taiwan's defense ministry tracked 11 Chinese military aircraft sorties, 10 navy ships and 3 official ships around Taiwan, with 9 of 11 sorties crossing the median line into northern and southwestern ADIZ; no fire reported (22:00 UTC 5 Nov to 22:00 UTC 6 Nov)",
+        "when_utc": "2026-11-05T22:00Z",
+        "source": "https://www.mnd.gov.tw/en/News/PLAAct/88166 https://www.cna.com.tw/news/aipl/202611070034.aspx",
+        "status": "confirmed",
+        "target_type": null,
+        "coord_precision": "not geocoded: strait",
+        "added_utc": "2026-11-07T04:15:39Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
         "id": "tm-93a38fb6cc",
         "category": "strike",
         "place": "Qeshm Island, Hormozgan, Iran (Suza area)",
