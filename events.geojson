@@ -5,6 +5,45 @@
       "type": "Feature",
       "geometry": null,
       "properties": {
+        "id": "tm-774287fd11",
+        "category": "shipping",
+        "place": "Khasab, Musandam, Oman (at sea, 16 nm E, Strait of Hormuz)",
+        "what": "UKMTO warning 197-26 (time-late) says a tanker outbound through the Strait of Hormuz reported an explosion at its port-side waterline about 16 nm east of Khasab; crew safe and accounted for, vessel under own power continuing voyage; cause under investigation",
+        "when_utc": "2026-11-05T22:00Z",
+        "source": "https://www.ukmto.org/-/media/ukmto/products/20261106-ukmto_warning-197-26.pdf https://www.arabnews.com/middle-east/tanker-reports-explosion-near-omans-khasab-while-transiting-strait-of-hormuz-ukmto-says-3010151 https://english.news.cn/20261106/a00e45426b4a4483a946629d0b51f7e6/c.html",
+        "status": "confirmed",
+        "target_type": "ship",
+        "coord_precision": "not geocoded: at sea",
+        "added_utc": "2026-11-07T05:25:25Z",
+        "major": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          30.742074,
+          50.153717
+        ]
+      },
+      "properties": {
+        "id": "tm-cdab48694b",
+        "category": "strike",
+        "place": "Ukrainka, Kyiv Oblast, Ukraine (Trypilska TES)",
+        "what": "Monitoring outlets cite presumed Russian ballistic strikes overnight 6-7 Nov on Trypilska thermal power plant; Lenta and MK, citing Novosti.LIVE, report a fire there after at least six missiles; no official Ukrainian confirmation of a hit found",
+        "when_utc": "2026-11-07",
+        "source": "https://focus.ua/uk/voennye-novosti/773906-ataka-na-kijivshchinu-ta-kijiv-7-listopada-ye-postrazhdali-zruynovano-budinok https://lenta.ru/news/2026/11/07/v-kieve-proizoshel-pozhar-na-meste-udara-po-tes/ https://tafs.uz/en/2026/11/07/more-than-20-explosions-rang-out-overnight-in-kyiv-in-a-strike-on-the-energy-sector",
+        "status": "claim",
+        "target_type": "infrastructure",
+        "coord_precision": "approximate: plant area near Ukrainka/Trypillia; exact impact points not given",
+        "added_utc": "2026-11-07T05:25:25Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
         "id": "tm-dc1635b55d",
         "category": "strike",
         "place": "Makariv, Kyiv Oblast, Ukraine",
@@ -135,7 +174,7 @@
         "id": "tm-e45f437885",
         "category": "strike",
         "place": "Kyiv, Ukraine (Solomianskyi district)",
-        "what": "Ukrainian officials say several waves of Russian ballistic missiles hit Kyiv overnight 6-7 Nov; Klitschko and the city military administration report two injured, damage to a five-storey residential building and a kindergarten, and a fire at a non-residential building",
+        "what": "Ukrainian officials say several waves of Russian ballistic missiles hit Kyiv overnight 6-7 Nov; DSNS says three injured in the city including a child; damage reported to a five-storey residential building and kindergarten and a fire at a non-residential building in Solomianskyi",
         "when_utc": "2026-11-06T21:00Z",
         "source": "https://kyivindependent.com/russian-ballistic-missiles-slam-kyiv-after-zelensky-warns-of-mass-attack/ https://www.yahoo.com/news/world/articles/russian-forces-launch-missile-attack-012321092.html",
         "status": "confirmed",
@@ -150,10 +189,10 @@
       "properties": {
         "id": "tm-997152265e",
         "category": "strike",
-        "place": "Brovary district, Kyiv Oblast, Ukraine",
-        "what": "Kyiv Oblast Governor Tymur Tkachenko says a Russian jet-powered drone attack in Brovary district set a home on fire; one man was pulled from rubble with burns and shrapnel wounds and hospitalized",
+        "place": "Bohdanivka, Brovary district, Kyiv Oblast, Ukraine",
+        "what": "Kyiv Oblast DSNS and Governor Tkachenko say a Russian strike drone hit a private house in Bohdanivka on the evening of 6 Nov, trapping a couple under rubble; the woman got out with acute stress reaction, and rescuers freed the hospitalized man with burns and shrapnel wounds",
         "when_utc": "2026-11-06",
-        "source": "https://kyivindependent.com/russian-ballistic-missiles-slam-kyiv-after-zelensky-warns-of-mass-attack/",
+        "source": "https://kyivindependent.com/russian-ballistic-missiles-slam-kyiv-after-zelensky-warns-of-mass-attack/ https://www.pravda.com.ua/news/2026/11/07/8061665/ https://focus.ua/uk/voennye-novosti/773906-ataka-na-kijivshchinu-ta-kijiv-7-listopada-ye-postrazhdali-zruynovano-budinok",
         "status": "confirmed",
         "target_type": "city",
         "coord_precision": "not geocoded: district",
@@ -268,9 +307,9 @@
         "id": "tm-c438ee04cc",
         "category": "strike",
         "place": "Komyshuvakha, Zaporizhzhia Oblast, Ukraine (aid distribution site)",
-        "what": "Ukrainian officials say Russian guided aerial bombs hit a school used as a humanitarian aid centre and shelter, killing at least 31 including police and rescuers; more than 40 missing",
+        "what": "Ukrainian officials say Russian guided aerial bombs hit a school used as a humanitarian aid centre and shelter on 2 Nov; Zaporizhzhia regional head Mykhailo Semikin says the death toll has risen to 53 as the search entered its fifth day",
         "when_utc": "2026-11-02",
-        "source": "https://apnews.com/article/russia-ukraine-humanitarian-attack-drones-power-264da8725dc2bb1f0039a698a59af9fc https://www.theguardian.com/world/2026/nov/03/russia-bombs-ukrainian-aid-centre-komyshuvakha https://meduza.io/en/feature/2026/11/03/russia-bombs-humanitarian-aid-distribution-site-in-southern-ukraine-killing-31-more-than-40-people-remain-missing",
+        "source": "https://apnews.com/article/russia-ukraine-humanitarian-attack-drones-power-264da8725dc2bb1f0039a698a59af9fc https://www.theguardian.com/world/2026/nov/03/russia-bombs-ukrainian-aid-centre-komyshuvakha https://meduza.io/en/feature/2026/11/03/russia-bombs-humanitarian-aid-distribution-site-in-southern-ukraine-killing-31-more-than-40-people-remain-missing https://kyivindependent.com/death-toll-from-russian-strike-on-komyshuvakha-rises-to-53-as-search-operation-enters-5th-day/ https://en.interfax.com.ua/news/general/1232268.html",
         "status": "confirmed",
         "target_type": "city",
         "coord_precision": "not geocoded: village not found",
