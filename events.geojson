@@ -6,6 +6,120 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          35.426739,
+          33.159202
+        ]
+      },
+      "properties": {
+        "id": "tm-34e447abd5",
+        "category": "strike",
+        "place": "Beit Yahoun, Bint Jbeil, Lebanon",
+        "what": "Lebanon's NNA, via LBC and Saba, says four Israeli artillery shells struck Beit Yahoun on 7 Nov; Al-Manar separately reported an Israeli sweeping operation in the town; no casualties given and no Israeli comment found",
+        "when_utc": "2026-11-07",
+        "source": "https://www.lbcgroup.tv/news/latest-news/966772/%D8%A7%D9%84%D9%88%D9%83%D8%A7%D9%84%D8%A9-%D8%A7%D9%84%D9%88%D8%B7%D9%86%D9%8A%D8%A9-%D9%84%D9%84%D8%A5%D8%B9%D9%84%D8%A7%D9%85-%D8%B3%D9%82%D9%88%D8%B7-4-%D9%82%D8%B0%D8%A7%D8%A6%D9%81-%D9%85%D8%AF%D9%81%D8%B9%D9%8A%D8%A9-%D8%B9%D9%84%D9%89-%D8%A8%D9%84%D8%AF%D8%A9-%D8%A8%D9%8A%D8%AA-%D9%8A%D8%A7%D8%AD%D9%88%D9%86-%D9%85%D8%B5%D8%AF%D8%B1%D9%87%D8%A7/ar https://www.saba.ye/en/news3829183.htm https://english.almanar.com.lb/article/147762/",
+        "status": "claim",
+        "target_type": "city",
+        "coord_precision": "exact",
+        "added_utc": "2026-11-07T18:20:09Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          46.71601,
+          24.638916
+        ]
+      },
+      "properties": {
+        "id": "tm-fd5b1dca20",
+        "category": "strike",
+        "place": "Riyadh, Saudi Arabia (King Khalid International Airport / Aramco)",
+        "what": "Houthi military spokesman Yahya Saree claims ballistic and cruise missiles and drones struck King Khalid International Airport and Aramco oil tanks and a distillation tower in Riyadh on 7 Nov; Saudi Arabia had not confirmed hits or damage",
+        "when_utc": "2026-11-07",
+        "source": "https://www.aa.com.tr/en/world/saudi-arabia-briefly-issues-threat-alerts-for-2-southwestern-cities/4115114 https://www.hindustantimes.com/world-news/yemen-houthis-claim-attacks-on-riyadh-airport-aramco-facilities-saudi-national-guard-camp-report-101794066721361.html https://www.saba.ye/en/news3829107.htm https://www.wionews.com/world/yemen-strikes-kill-at-least-27-near-sanaa-as-houthis-claim-missile-and-drone-attacks-on-saudi-oil-sites-riyadh-airport-1794069483286",
+        "status": "claim",
+        "target_type": "airfield",
+        "coord_precision": "approximate: airport and Aramco sites in Riyadh; exact impact points not confirmed",
+        "added_utc": "2026-11-07T18:20:09Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "tm-e41ab71a4d",
+        "category": "strike",
+        "place": "Khurais, Eastern Province, Saudi Arabia (Aramco)",
+        "what": "Houthi spokesman Yahya Saree claims a missile and drone operation hit an Aramco facility at Khurais on 7 Nov and says it achieved its objective; no Saudi confirmation of a hit or damage found",
+        "when_utc": "2026-11-07",
+        "source": "https://www.aa.com.tr/en/world/saudi-arabia-briefly-issues-threat-alerts-for-2-southwestern-cities/4115114 https://www.hindustantimes.com/world-news/yemen-houthis-claim-attacks-on-riyadh-airport-aramco-facilities-saudi-national-guard-camp-report-101794066721361.html https://www.saba.ye/en/news3829107.htm",
+        "status": "claim",
+        "target_type": "infrastructure",
+        "coord_precision": "approximate: Khurais Aramco facility; exact unit not named",
+        "added_utc": "2026-11-07T18:20:09Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "tm-70ed04a11a",
+        "category": "strike",
+        "place": "Al-Dawadmi, Riyadh Province, Saudi Arabia (Pumping Station No. 8)",
+        "what": "Houthi spokesman Yahya Saree claims missiles and drones struck Pumping Station No. 8 in the Dawadmi area on 7 Nov and says the strike succeeded; no Saudi confirmation of a hit or damage found",
+        "when_utc": "2026-11-07",
+        "source": "https://www.aa.com.tr/en/world/saudi-arabia-briefly-issues-threat-alerts-for-2-southwestern-cities/4115114 https://www.hindustantimes.com/world-news/yemen-houthis-claim-attacks-on-riyadh-airport-aramco-facilities-saudi-national-guard-camp-report-101794066721361.html https://www.saba.ye/en/news3829107.htm",
+        "status": "claim",
+        "target_type": "infrastructure",
+        "coord_precision": "not geocoded: place not found",
+        "added_utc": "2026-11-07T18:20:09Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.224682,
+          17.543981
+        ]
+      },
+      "properties": {
+        "id": "tm-7912eed974",
+        "category": "strike",
+        "place": "Najran, Saudi Arabia (National Guard camp)",
+        "what": "Houthi spokesman Yahya Saree claims a strike on a Saudi National Guard camp in Najran on 7 Nov with dead and wounded among Saudi forces; Saudi Civil Defense briefly issued then lifted a potential-danger alert for Najran and Jizan, without confirming a hit",
+        "when_utc": "2026-11-07",
+        "source": "https://www.aa.com.tr/en/world/saudi-arabia-briefly-issues-threat-alerts-for-2-southwestern-cities/4115114 https://www.dawn.com/news/2042833 https://www.hindustantimes.com/world-news/yemen-houthis-claim-attacks-on-riyadh-airport-aramco-facilities-saudi-national-guard-camp-report-101794066721361.html https://www.saba.ye/en/news3829107.htm",
+        "status": "claim",
+        "target_type": "base",
+        "coord_precision": "approximate: National Guard camp in Najran; exact site not named",
+        "added_utc": "2026-11-07T18:20:09Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "tm-3396ceae44",
+        "category": "strike",
+        "place": "Al-Jawf and Marib, Yemen (east of Al-Jawf; Raghwan and Madghal)",
+        "what": "Houthi Armed Forces say missile and drone strikes hit Saudi troop concentrations east of Al-Jawf and east of Raghwan and Madghal in Marib on 7 Nov, claiming many dead and wounded; no Saudi-led coalition comment found",
+        "when_utc": "2026-11-07",
+        "source": "https://www.aa.com.tr/en/world/saudi-arabia-briefly-issues-threat-alerts-for-2-southwestern-cities/4115114 https://www.saba.ye/en/news3829107.htm https://www.wionews.com/world/yemen-strikes-kill-at-least-27-near-sanaa-as-houthis-claim-missile-and-drone-attacks-on-saudi-oil-sites-riyadh-airport-1794069483286",
+        "status": "claim",
+        "target_type": "base",
+        "coord_precision": "not geocoded: multi-district troop concentrations",
+        "added_utc": "2026-11-07T18:20:09Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           35.211088,
           33.173653
         ]
