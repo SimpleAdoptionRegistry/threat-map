@@ -3,6 +3,269 @@
   "features": [
     {
       "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "tm-2453330b84",
+        "category": "shipping",
+        "place": "Strait of Hormuz (east of the strait)",
+        "what": "Iran's navy says an oil tanker caught fire early on 7 Nov after hitting a naval mine east of Hormuz in a zone Tehran calls restricted, with navigation systems off; no UKMTO confirmation or vessel name found",
+        "when_utc": "2026-11-07",
+        "source": "https://www.presstv.co.uk/Detail/2026/11/07/780165/tanker-catches-fire-after-hitting-sea-mine-east-of-strait-of-hormuz-iran-navy https://english.alarabiya.net/News/middle-east/2026/11/07/iran-navy-says-tanker-hits-mine-catches-fire-in-hormuz https://www.khaleejtimes.com/world/mena/us-israel-iran-saudi-arabia-yemen-war-live-updates-november-7-2026",
+        "status": "claim",
+        "target_type": "ship",
+        "coord_precision": "not geocoded: strait",
+        "added_utc": "2026-11-07T12:18:18Z",
+        "major": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "tm-39695df2b5",
+        "category": "shipping",
+        "place": "Strait of Hormuz",
+        "what": "IRGC Navy says two oil tankers seeking an 'unauthorized' Hormuz transit with nav/ID systems off hit naval mines and caught fire on 6 Nov, one in the eastern approaches and one elsewhere; IRGC blames US support; no matching UKMTO pair found",
+        "when_utc": "2026-11-06",
+        "source": "https://english.news.cn/20261106/2949f691ff574621a9d4135b8dd3b605/c.html https://www.iranintl.com/en/202611067840 https://www.arabnews.com/middle-east/iran-guards-say-two-tankers-caught-fire-in-hormuz-3010129",
+        "status": "claim",
+        "target_type": "ship",
+        "coord_precision": "not geocoded: strait",
+        "added_utc": "2026-11-07T12:18:18Z",
+        "major": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.348337,
+          15.489776
+        ]
+      },
+      "properties": {
+        "id": "tm-bbab87165b",
+        "category": "strike",
+        "place": "Ash Sharyah, Bani Hushaysh, Sanaa Governorate, Yemen",
+        "what": "Houthi media say Saudi airstrikes hit homes in Ash Sharyah east of Sanaa on 7 Nov; Saba/AFP cite 11 dead including women and children, later Houthi-linked reports say at least 22 killed and about 30 wounded; no Saudi-led coalition comment found",
+        "when_utc": "2026-11-07",
+        "source": "https://english.news.cn/20261107/2ce700a7fef5445dbd5f3dcfc8b6790e/c.html https://www.timesofisrael.com/liveblog_entry/saudi-strikes-in-sanaa-kill-11-including-women-and-children-houthi-media-says/ https://www.presstv.co.uk/Detail/2026/11/07/780166/nearly-dozen-civilians-killed-near-yemeni-capital-amid-ongoing-saudi-attacks",
+        "status": "claim",
+        "target_type": "city",
+        "coord_precision": "approximate: Ash Sharyah / al-Shariyah village in Bani Hushaysh district east of Sanaa; exact houses not named",
+        "added_utc": "2026-11-07T12:18:18Z",
+        "major": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "tm-24ae8264b6",
+        "category": "strike",
+        "place": "Kyiv Oblast, Ukraine (substation linking Rivne and Khmelnytskyi NPPs)",
+        "what": "President Zelensky says Russia struck a Kyiv Oblast substation linking Rivne and Khmelnytskyi nuclear plants to Kyiv and central regions overnight 6-7 Nov; Energy Ministry says NPP-to-capital transmission networks were damaged, with outages in five regions",
+        "when_utc": "2026-11-07",
+        "source": "https://en.interfax.com.ua/news/general/1232773.html https://www.pravda.com.ua/eng/news/2026/11/07/8061693/ https://en.lb.ua/news/2026/11/07/48408_energy_ministry_russian_attack.html https://kyivindependent.com/russian-attacks-kill-2-injure-37-across-ukraine-over-past-day-hit-substations-connecting-nuclear-power-plants-to-kyiv/",
+        "status": "confirmed",
+        "target_type": "infrastructure",
+        "coord_precision": "not geocoded: oblast",
+        "added_utc": "2026-11-07T12:18:10Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "tm-b7359bbe6f",
+        "category": "strike",
+        "place": "Bani Hayyan, Marjayoun, Lebanon (also Wadi al-Hujair)",
+        "what": "Lebanon's NNA says Israeli forces carried out a demolition operation in Bani Hayyan on 7 Nov and shelled the outskirts of Wadi al-Hujair; overnight artillery also hit Baraachit and Wadi Zibqin outskirts; no casualty figures or Israeli comment given",
+        "when_utc": "2026-11-07",
+        "source": "https://www.aa.com.tr/en/middle-east/israeli-army-continues-strikes-in-southern-lebanon-despite-framework-deal/4115101",
+        "status": "claim",
+        "target_type": "city",
+        "coord_precision": "not geocoded: place not found",
+        "added_utc": "2026-11-07T12:18:10Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "tm-6cf01f64d7",
+        "category": "closure",
+        "place": "Iraq (air corridors: Baghdad, Erbil, Sulaymaniyah, Kirkuk)",
+        "what": "An informed source told Shafaq News a NOTAM will reroute transit and arrival flights on corridors serving Turkiye, Erbil, Sulaymaniyah and Kirkuk daily 08:00-14:00 local from 7 to 11 Nov for unspecified military operations; Baghdad departures also under radar guidance",
+        "when_utc": "2026-11-07",
+        "source": "https://shafaq.com/en/society/Iraq-to-reroute-flights-for-five-days",
+        "status": "confirmed",
+        "target_type": "airfield",
+        "coord_precision": "not geocoded: national air corridors",
+        "added_utc": "2026-11-07T12:18:10Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.3653,
+          31.428038
+        ]
+      },
+      "properties": {
+        "id": "tm-1305acad30",
+        "category": "strike",
+        "place": "Az-Zawayda, Gaza Strip (central Gaza)",
+        "what": "Gaza civil defence spokesman Mahmoud Bassal told AFP two people were killed in separate Israeli strikes near Az-Zawayda on 5 Nov and one killed in an Israeli drone strike west of Gaza City; he said gunfire killed two more near Bureij and Khan Yunis",
+        "when_utc": "2026-11-05",
+        "source": "https://www.thedailystar.net/news/world/middle-east/news/israeli-fire-kills-five-gaza-4317471",
+        "status": "claim",
+        "target_type": "city",
+        "coord_precision": "approximate: near Az-Zawayda town; exact impact sites not given",
+        "added_utc": "2026-11-07T12:18:00Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "tm-4ef63e124e",
+        "category": "strike",
+        "place": "Lu Thaw, Hpapun District, Kayin State, Myanmar (Day Bu Noh village Bible school)",
+        "what": "Christian Solidarity Worldwide says Myanmar military jets and armed drones struck a Bible school in Day Bu Noh village in KNU Brigade 5 territory on 3 Nov, killing three students and injuring six; no military comment found",
+        "when_utc": "2026-11-03T08:30Z",
+        "source": "https://www.csw.org.uk/press/three-students-killed-in-military-airstrike-on-bible-school-in-karen-state/",
+        "status": "claim",
+        "target_type": "city",
+        "coord_precision": "not geocoded: place not found",
+        "added_utc": "2026-11-07T12:18:00Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.87037,
+          48.531676
+        ]
+      },
+      "properties": {
+        "id": "tm-fb135e7480",
+        "category": "strike",
+        "place": "Pavlohrad, Dnipropetrovsk Oblast, Ukraine",
+        "what": "Dnipropetrovsk governor Oleksandr Hanzha says Russian drones struck Pavlohrad overnight 6-7 Nov, damaging a five-storey apartment building, an enterprise, vehicles and outbuildings with several fires; three injured including an 11-year-old girl",
+        "when_utc": "2026-11-07",
+        "source": "https://mezha.net/eng/news/mezha-384057d7ef396a71445d814b_three_people_injured/ https://24tv.ua/ataka-droniv-pavlograd-7-listopada-troye-poranenih-poshkodzheno_n3175744",
+        "status": "confirmed",
+        "target_type": "city",
+        "coord_precision": "approximate: city-level; exact impact sites not named",
+        "added_utc": "2026-11-07T12:17:57Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          29.256764,
+          48.68105
+        ]
+      },
+      "properties": {
+        "id": "tm-59b714fdb1",
+        "category": "strike",
+        "place": "Ladyzhyn, Vinnytsia Oblast, Ukraine",
+        "what": "Vinnytsia regional head Nataliia Zabolotna says Russia struck energy facilities overnight 6-7 Nov; one person hospitalized in serious condition; fire-station building and market area damaged, cars and a kiosk burned, with regional power disruptions",
+        "when_utc": "2026-11-07",
+        "source": "https://en.lb.ua/news/2026/11/07/48386_russian_shelling_vinnytsia.html https://mezha.net/eng/news/mezha-09f7ada4fffa945c5510d7f8/",
+        "status": "confirmed",
+        "target_type": "infrastructure",
+        "coord_precision": "approximate: Ladyzhyn community energy and civilian sites; exact facilities not named",
+        "added_utc": "2026-11-07T12:17:57Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          28.669628,
+          50.260106
+        ]
+      },
+      "properties": {
+        "id": "tm-31fe3ebc58",
+        "category": "strike",
+        "place": "Zhytomyr, Ukraine (also Zviahel)",
+        "what": "Zhytomyr regional head Vitalii Bunechko says Russia struck energy and fuel infrastructure in the Zhytomyr and Zviahel communities during a combined aerial attack from the evening of 6 Nov; Zhytomyroblenergo reports a large-scale power outage, no casualties given",
+        "when_utc": "2026-11-06",
+        "source": "https://en.lb.ua/news/2026/11/07/48392_large-scale_power_outage.html https://www.ukrinform.net/rubric-ato/4182355-largescale-power-outage-hits-zhytomyr-region-after-russian-strike-on-energy-facility.html",
+        "status": "confirmed",
+        "target_type": "infrastructure",
+        "coord_precision": "approximate: Zhytomyr and Zviahel communities; exact facilities not named",
+        "added_utc": "2026-11-07T12:17:57Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.799,
+          50.563786
+        ]
+      },
+      "properties": {
+        "id": "tm-0e59b651dc",
+        "category": "strike",
+        "place": "Lypova Dolyna, Sumy Oblast, Ukraine",
+        "what": "Sumy Oblast authorities and police say a Russian drone attack in the Lipovodolynska community killed a 52-year-old man and wounded a 62-year-old man in the 24 hours to the morning of 7 Nov; the region reported 60+ strikes on 22 settlements",
+        "when_utc": "2026-11-06",
+        "source": "https://suspilne.media/sumy/1447099-cerez-udar-rosijskogo-drona-u-lipovodolinskij-gromadi-zaginuv-colovik/ https://lb.ua/society/2026/11/07/779252_sumschini_vnaslidok_rosiyskih.html",
+        "status": "confirmed",
+        "target_type": "city",
+        "coord_precision": "approximate: Lipovodolynska community; exact impact site not named",
+        "added_utc": "2026-11-07T12:17:57Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "tm-4555682ca7",
+        "category": "strike",
+        "place": "Ukraine (nationwide)",
+        "what": "Ukraine's Air Force says Russia launched Iskander-M, Zircon, KN-23 and S-400 missiles and 172 drones overnight 6-7 Nov, mainly at Kyiv Oblast; it says 4 missiles and 149 drones were downed or jammed, with hits at 24 locations and debris at 10",
+        "when_utc": "2026-11-06",
+        "source": "https://www.pravda.com.ua/eng/news/2026/11/07/8061685/ https://english.nv.ua/russian-war/russia-attacks-ukraine-with-missiles-and-172-drones-air-defenses-neutralize-149-50657139.html",
+        "status": "confirmed",
+        "target_type": "infrastructure",
+        "coord_precision": "not geocoded: nationwide",
+        "added_utc": "2026-11-07T12:17:53Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "tm-5167c143c9",
+        "category": "strike",
+        "place": "Russia (nationwide)",
+        "what": "Russia's Defence Ministry says air defences intercepted 411 Ukrainian fixed-wing drones overnight 6-7 Nov over Bryansk, Belgorod, Voronezh, Kursk, Lipetsk, Oryol, Rostov, Saratov, Samara and Tula regions, Crimea and the Azov and Black Seas",
+        "when_utc": "2026-11-06",
+        "source": "https://tass.com/defense/2214181 https://www.interfax.ru/russia/1127536",
+        "status": "claim",
+        "target_type": null,
+        "coord_precision": "not geocoded: nationwide",
+        "added_utc": "2026-11-07T12:17:53Z"
+      }
+    },
+    {
+      "type": "Feature",
       "geometry": {
         "type": "Point",
         "coordinates": [
@@ -261,9 +524,9 @@
         "id": "tm-9578dd1afc",
         "category": "strike",
         "place": "Saratov, Russia (oil refinery)",
-        "what": "Ukrainian monitoring channel Exilenova Plus says a Ukrainian drone attack set the Saratov Oil Refinery ablaze overnight 6-7 Nov; details could not be immediately verified by the Kyiv Independent and no Russian official confirmation found",
+        "what": "Ukrainian monitoring channel Exilenova Plus says a Ukrainian drone attack set the Saratov Oil Refinery ablaze overnight 6-7 Nov; Saratov Governor Roman Busargin says civilian infrastructure was damaged and there are preliminary reports of injuries, without naming the refinery",
         "when_utc": "2026-11-07",
-        "source": "https://kyivindependent.com/ukraine-strikes-saratov-oil-refinery-in-mass-attack-on-several-regions-reports-say/",
+        "source": "https://kyivindependent.com/ukraine-strikes-saratov-oil-refinery-in-mass-attack-on-several-regions-reports-say/ https://www.vesti.ru/ns/pvo-rossii-nochyu-unichtozhila-411-ukrainskikh-bespilotnikov",
         "status": "claim",
         "target_type": "infrastructure",
         "coord_precision": "exact",
@@ -283,10 +546,10 @@
         "id": "tm-8ddf685f68",
         "category": "strike",
         "place": "Oryol, Russia (Proton plant area)",
-        "what": "Oryol Governor Andrei Klychkov says a missile attack overnight 6-7 Nov partially damaged production premises of an enterprise in Sovetsky district; OSINT outlets ASTRA and Exilenova Plus identify it as the Proton optoelectronics plant with a large fire",
+        "what": "Ukraine's General Staff says Neptune missiles struck JSC Proton-Elektrotex in Oryol overnight 6-7 Nov, with a hit, fire and explosions recorded; Governor Klychkov earlier said a missile attack partially damaged an enterprise in Sovetsky district",
         "when_utc": "2026-11-07",
-        "source": "https://www.dw.com/ru/rossijskij-orel-podvergsa-raketnoj-atake-veroatno-gorit-zavod-optoelektroniki-proton/a-79882875 https://kyivindependent.com/ukraine-strikes-saratov-oil-refinery-in-mass-attack-on-several-regions-reports-say/",
-        "status": "claim",
+        "source": "https://www.dw.com/ru/rossijskij-orel-podvergsa-raketnoj-atake-veroatno-gorit-zavod-optoelektroniki-proton/a-79882875 https://kyivindependent.com/ukraine-strikes-saratov-oil-refinery-in-mass-attack-on-several-regions-reports-say/ https://unn.ua/en/news/the-general-staff-confirmed-that-neptun-missiles-struck-the-russian-missile-components-manufacturer-proton-in-oryol https://babel.ua/news/131581-po-zavodu-elektroniki-dlya-raket-u-rosiyskomu-orli-vdarili-ukrajinski-neptuni-pozhezha-trivaye",
+        "status": "confirmed",
         "target_type": "infrastructure",
         "coord_precision": "approximate: Sovetsky district enterprise; Proton ID from OSINT",
         "added_utc": "2026-11-07T04:15:39Z"
@@ -382,9 +645,9 @@
         "id": "tm-997152265e",
         "category": "strike",
         "place": "Bohdanivka, Brovary district, Kyiv Oblast, Ukraine",
-        "what": "Kyiv Oblast DSNS and Governor Tkachenko say a Russian strike drone hit a private house in Bohdanivka on the evening of 6 Nov, trapping a couple under rubble; the woman got out with acute stress reaction, and rescuers freed the hospitalized man with burns and shrapnel wounds",
+        "what": "Kyiv Oblast DSNS and Governor Tkachenko say a Russian strike drone hit a private house in Bohdanivka on the evening of 6 Nov, trapping a couple under rubble; the woman got out injured, and the hospitalized 75-year-old man later died of his wounds",
         "when_utc": "2026-11-06",
-        "source": "https://kyivindependent.com/russian-ballistic-missiles-slam-kyiv-after-zelensky-warns-of-mass-attack/ https://www.pravda.com.ua/news/2026/11/07/8061665/ https://focus.ua/uk/voennye-novosti/773906-ataka-na-kijivshchinu-ta-kijiv-7-listopada-ye-postrazhdali-zruynovano-budinok",
+        "source": "https://kyivindependent.com/russian-ballistic-missiles-slam-kyiv-after-zelensky-warns-of-mass-attack/ https://www.pravda.com.ua/news/2026/11/07/8061665/ https://focus.ua/uk/voennye-novosti/773906-ataka-na-kijivshchinu-ta-kijiv-7-listopada-ye-postrazhdali-zruynovano-budinok https://www.kyivpost.com/post/89410 https://kv.npu.gov.ua/news/odna-liudyna-zahynula-dvoie-travmovano-politseiski-kyivshchyny-dokumentuiut-naslidky-masovanoi-ataky-rf",
         "status": "confirmed",
         "target_type": "city",
         "coord_precision": "not geocoded: district",
@@ -499,9 +762,9 @@
         "id": "tm-c438ee04cc",
         "category": "strike",
         "place": "Komyshuvakha, Zaporizhzhia Oblast, Ukraine (aid distribution site)",
-        "what": "Ukrainian officials say Russian guided aerial bombs hit a school used as a humanitarian aid centre and shelter on 2 Nov; Zaporizhzhia regional head Mykhailo Semikin says the death toll has risen to 53 as the search entered its fifth day",
+        "what": "Ukrainian officials say Russian guided aerial bombs hit a school used as a humanitarian aid centre and shelter on 2 Nov; Ukraine's State Emergency Service says the death toll has risen to 55 as rescuers found nine more bodies under rubble over the past 24 hours",
         "when_utc": "2026-11-02",
-        "source": "https://apnews.com/article/russia-ukraine-humanitarian-attack-drones-power-264da8725dc2bb1f0039a698a59af9fc https://www.theguardian.com/world/2026/nov/03/russia-bombs-ukrainian-aid-centre-komyshuvakha https://meduza.io/en/feature/2026/11/03/russia-bombs-humanitarian-aid-distribution-site-in-southern-ukraine-killing-31-more-than-40-people-remain-missing https://kyivindependent.com/death-toll-from-russian-strike-on-komyshuvakha-rises-to-53-as-search-operation-enters-5th-day/ https://en.interfax.com.ua/news/general/1232268.html",
+        "source": "https://apnews.com/article/russia-ukraine-humanitarian-attack-drones-power-264da8725dc2bb1f0039a698a59af9fc https://www.theguardian.com/world/2026/nov/03/russia-bombs-ukrainian-aid-centre-komyshuvakha https://meduza.io/en/feature/2026/11/03/russia-bombs-humanitarian-aid-distribution-site-in-southern-ukraine-killing-31-more-than-40-people-remain-missing https://kyivindependent.com/death-toll-from-russian-strike-on-komyshuvakha-rises-to-53-as-search-operation-enters-5th-day/ https://en.interfax.com.ua/news/general/1232268.html https://www.pravda.com.ua/eng/news/2026/11/07/8061683/ https://www.ukrinform.ua/rubric-regions/4182353-kilkist-zertv-rosijskogo-aviaudaru-po-komisuvasi-zrosla-do-55-posukovi-roboti-trivaut.html",
         "status": "confirmed",
         "target_type": "city",
         "coord_precision": "not geocoded: village not found",
