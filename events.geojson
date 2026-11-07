@@ -3,6 +3,124 @@
   "features": [
     {
       "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.211088,
+          33.173653
+        ]
+      },
+      "properties": {
+        "id": "tm-02d695d389",
+        "category": "strike",
+        "place": "Al-Mansouri, Tyre, Lebanon",
+        "what": "Lebanon's NNA, via Roya News, says Israeli warplanes carried out two successive airstrikes on residential areas of Al-Mansouri on 7 Nov, killing at least 1 and injuring 4 (preliminary); no Israeli military comment found",
+        "when_utc": "2026-11-07",
+        "source": "https://en.royanews.tv/news/71613/1-killed%2C-4-injured-in-'Israeli'-airstrikes-south-Lebanon",
+        "status": "claim",
+        "target_type": "city",
+        "coord_precision": "exact",
+        "added_utc": "2026-11-07T16:20:03Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "tm-28ae423936",
+        "category": "strike",
+        "place": "Zawtar al-Sharqiya, Nabatieh, Lebanon",
+        "what": "Lebanon24, cited by Dawn and Al Jazeera, says Israeli forces shelled Zawtar al-Sharqiya (Zoutar al-Sharqiya) in southern Lebanon on 7 Nov; no casualties reported and no Israeli comment found",
+        "when_utc": "2026-11-07",
+        "source": "https://www.dawn.com/news/2042834/local-media-reports-israeli-shelling-in-southern-lebanons-zoutar-al-sharqiya",
+        "status": "claim",
+        "target_type": "city",
+        "coord_precision": "not geocoded: place not found",
+        "added_utc": "2026-11-07T16:20:03Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "tm-8643824b76",
+        "category": "strike",
+        "place": "Kotaf and Al-Buqaa, Saada, Yemen (telecommunications network)",
+        "what": "Houthi-run Saba, citing a local source, says Saudi warplanes carried out nine airstrikes on a telecommunications network in Kotaf and Al-Buqaa districts of Saada on 7 Nov; no Saudi-led coalition comment found",
+        "when_utc": "2026-11-07",
+        "source": "https://www.saba.ye/en/news3828995.htm",
+        "status": "claim",
+        "target_type": "infrastructure",
+        "coord_precision": "not geocoded: district",
+        "added_utc": "2026-11-07T16:20:03Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "tm-5e77795770",
+        "category": "strike",
+        "place": "Al-Misrakh, Taiz, Yemen",
+        "what": "Yemeni government forces and Ajel say the army carried out three airstrikes on Houthi positions in Al-Misrakh district south of Taiz on 7 Nov; no Houthi comment on these strikes found",
+        "when_utc": "2026-11-07",
+        "source": "https://english.ajel.sa/world/h3m5oxgbt https://www.middleeasteye.net/live-blog/live-blog-update/yemeni-government-forces-claim-attack-houthi-positions-al-misrakh-while",
+        "status": "claim",
+        "target_type": "base",
+        "coord_precision": "not geocoded: district",
+        "added_utc": "2026-11-07T16:20:03Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "tm-8d7c04ac38",
+        "category": "strike",
+        "place": "Al-Matali, Al-Misrakh, Taiz, Yemen",
+        "what": "Houthi-run Saba, citing a local security official, says a Saudi airstrike on Al-Matali village in Al-Misrakh district of Taiz on 7 Nov injured five civilians, some seriously; no Saudi-led coalition comment found",
+        "when_utc": "2026-11-07",
+        "source": "https://www.saba.ye/en/news3829062.htm",
+        "status": "claim",
+        "target_type": "city",
+        "coord_precision": "not geocoded: place not found",
+        "added_utc": "2026-11-07T16:20:03Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "tm-55fce8e38e",
+        "category": "strike",
+        "place": "Bryansk Oblast, Russia",
+        "what": "Ukraine's General Staff says its forces struck two Iskander launchers and a Pantsir-S1 air-defence system in Bryansk Oblast on 6–7 Nov, with Iskander damage still being assessed; also claims depot hits in Luhansk and a UAV-operator site near Novobohdanivka",
+        "when_utc": "2026-11-07",
+        "source": "https://en.interfax.com.ua/news/general/1232843.html https://www.ukrinform.net/rubric-ato/4182395-defense-forces-strike-two-iskander-launchers-pantsirs1-system-in-russias-bryansk-region.html https://kyivindependent.com/ukraine-strikes-russian-missile-launchers-air-defense-systems-in-bryansk-oblast-general-staff-says/",
+        "status": "claim",
+        "target_type": "base",
+        "coord_precision": "not geocoded: oblast",
+        "added_utc": "2026-11-07T16:20:03Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "tm-e84b78d362",
+        "category": "military_movement",
+        "place": "Saudi Arabia–Yemen border",
+        "what": "Yemeni officials told AFP Syria will deploy thousands of troops to Saudi Arabia and Yemen against the Houthis, with some already on both sides of the border and an initial contingent of about 3,000 cited; Damascus and Riyadh had not publicly confirmed",
+        "when_utc": "2026-11-07",
+        "source": "https://today.lorientlejour.com/article/1553671/thousands-of-syrian-troops-to-deploy-to-yemen-saudi-arabia-sources-to-afp.html https://www.dawn.com/news/2042840/thousands-of-syrian-troops-to-deploy-to-yemen-saudi-arabia-sources",
+        "status": "claim",
+        "target_type": null,
+        "coord_precision": "not geocoded: border",
+        "added_utc": "2026-11-07T16:20:03Z"
+      }
+    },
+    {
+      "type": "Feature",
       "geometry": null,
       "properties": {
         "id": "tm-eb6b72a332",
@@ -102,9 +220,9 @@
         "id": "tm-bbab87165b",
         "category": "strike",
         "place": "Ash Sharyah, Bani Hushaysh, Sanaa Governorate, Yemen",
-        "what": "Houthi Health Ministry says Saudi airstrikes on al-Shariyah/Ash Sharyah homes on 7 Nov killed 22 mostly women and children and wounded 30; Civil Defense says later strikes hit rescue teams during recovery with more casualties; no coalition comment found",
+        "what": "Houthi Health Ministry says Saudi airstrikes on al-Shariyah/Ash Sharyah homes on 7 Nov killed 27 mostly women and children and wounded 36 (earlier 22–25/30; total 63); Civil Defense says later strikes hit rescue teams; AP unverified; no Saudi comment",
         "when_utc": "2026-11-07",
-        "source": "https://english.news.cn/20261107/2ce700a7fef5445dbd5f3dcfc8b6790e/c.html https://www.timesofisrael.com/liveblog_entry/saudi-strikes-in-sanaa-kill-11-including-women-and-children-houthi-media-says/ https://www.presstv.co.uk/Detail/2026/11/07/780166/nearly-dozen-civilians-killed-near-yemeni-capital-amid-ongoing-saudi-attacks https://apnews.com/article/yemen-houthi-saudi-attacks-1b5aef5b86be2e96e1cd8a18165afaf6 https://www.saba.ye/en/news3828944.htm https://www.saba.ye/en/news3828952.htm",
+        "source": "https://english.news.cn/20261107/2ce700a7fef5445dbd5f3dcfc8b6790e/c.html https://www.timesofisrael.com/liveblog_entry/saudi-strikes-in-sanaa-kill-11-including-women-and-children-houthi-media-says/ https://www.presstv.co.uk/Detail/2026/11/07/780166/nearly-dozen-civilians-killed-near-yemeni-capital-amid-ongoing-saudi-attacks https://apnews.com/article/yemen-houthi-saudi-attacks-1b5aef5b86be2e96e1cd8a18165afaf6 https://www.saba.ye/en/news3828944.htm https://www.saba.ye/en/news3828952.htm https://www.saba.ye/en/news3829109.htm",
         "status": "claim",
         "target_type": "city",
         "coord_precision": "approximate: Ash Sharyah / al-Shariyah village in Bani Hushaysh district east of Sanaa; exact houses not named",
