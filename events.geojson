@@ -3,6 +3,132 @@
   "features": [
     {
       "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          30.535145,
+          50.490443
+        ]
+      },
+      "properties": {
+        "id": "tm-5994eccdb9",
+        "category": "strike",
+        "place": "Kyiv, Ukraine (Northern Bridge)",
+        "what": "Kyiv Mayor Klitschko says several Russian missiles hit the Northern Bridge overnight 6-7 Nov, damaging the roadway, trolleybus contact line and power lines; five nearby parked trucks were damaged and traffic is closed both ways",
+        "when_utc": "2026-11-07",
+        "source": "https://www.pravda.com.ua/news/2026/11/07/8061681/ https://www.ukrinform.ua/rubric-regions/4182340-u-pivnicnij-mist-u-kievi-vlucili-dekilka-raket-poskodzeni-dorozne-polotno-trolejbusna-linia-i-lep.html",
+        "status": "confirmed",
+        "target_type": "infrastructure",
+        "coord_precision": "exact (geocoded as Pivnichnyi Bridge)",
+        "added_utc": "2026-11-07T07:17:13Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.294332,
+          51.494099
+        ]
+      },
+      "properties": {
+        "id": "tm-c177c4e4ab",
+        "category": "closure",
+        "place": "Chernihiv, Ukraine",
+        "what": "Chernihiv City Council says the city is fully without power after overnight Russian energy strikes; Chernihivoblenergo says about 150,000 customers in Chernihiv, Slavutych and nearby districts were cut, with partial restoration underway and electric transit suspended",
+        "when_utc": "2026-11-07",
+        "source": "https://en.lb.ua/news/2026/11/07/48380_chernihiv_left_completely.html https://trueua.info/news/u-chernigovi-ta-chastini-oblasti-blekaut-rashisti-atakuvali-energoobekti-v-regioni",
+        "status": "confirmed",
+        "target_type": "infrastructure",
+        "coord_precision": "approximate: city-wide and multi-district outage; exact hit sites not named",
+        "added_utc": "2026-11-07T07:17:13Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "tm-5d5b5ca9a1",
+        "category": "strike",
+        "place": "Kharkiv, Ukraine (Kyivskyi district)",
+        "what": "Kharkiv Mayor Terekhov says a Russian drone hit the roof of a nine-storey residential building in Kyivskyi district overnight 6-7 Nov; regional head Syniehubov says a 55-year-old woman was injured and an apartment building, eight cars and a research facility were damaged",
+        "when_utc": "2026-11-07",
+        "source": "https://news.novyny.live/u-kiievi-ta-kharkovi-cherez-udari-rf-poshkodzheni-budinki-353088.html https://kharkivoda.gov.ua/news/137849",
+        "status": "confirmed",
+        "target_type": "city",
+        "coord_precision": "not geocoded: district",
+        "added_utc": "2026-11-07T07:17:13Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.802772,
+          50.911977
+        ]
+      },
+      "properties": {
+        "id": "tm-1aaaf5eefa",
+        "category": "strike",
+        "place": "Sumy, Ukraine",
+        "what": "Ukraine's State Emergency Service says Russian guided aerial bombs struck Sumy on 6 Nov, damaging residential buildings, infrastructure and vehicles; the injury toll rose to seven after an initial report of three",
+        "when_utc": "2026-11-06",
+        "source": "https://www.ukrinform.net/rubric-ato/4182280-injury-toll-after-russian-attack-on-sumy-rises-to-seven.html https://www.ukrinform.net/rubric-ato/4182237-russian-forces-strike-sumy-with-glide-bombs-three-injured.html",
+        "status": "confirmed",
+        "target_type": "city",
+        "coord_precision": "approximate: impact sites in Sumy city not named",
+        "added_utc": "2026-11-07T07:17:13Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          46.71601,
+          24.638916
+        ]
+      },
+      "properties": {
+        "id": "tm-159ac7fe9d",
+        "category": "strike",
+        "place": "Riyadh, Saudi Arabia",
+        "what": "Saudi-led coalition spokesman Turki al-Maliki says air defenses intercepted and destroyed a Houthi cruise missile launched toward the Riyadh region on 7 Nov; no casualty or damage details given and no immediate Houthi comment found",
+        "when_utc": "2026-11-07",
+        "source": "https://www.aa.com.tr/en/middle-east/saudi-led-coalition-says-it-intercepted-houthi-cruise-missile-over-riyadh/4114872",
+        "status": "claim",
+        "target_type": "city",
+        "coord_precision": "exact",
+        "added_utc": "2026-11-07T07:17:13Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.464296,
+          33.270856
+        ]
+      },
+      "properties": {
+        "id": "tm-f9386cb2c1",
+        "category": "strike",
+        "place": "Qantara, Marjayoun, Lebanon (also Mayfadoun, Mansouri, Barashit)",
+        "what": "QNA, citing field sources, says Israeli artillery shelled Qantara, Wadi al-Salouqi, Mayfadoun outskirts, Mansouri, Barashit, Kfar Tibnit and other southern Lebanon towns on the morning of 7 Nov, with blasts also reported; no casualty figures or Israeli comment given",
+        "when_utc": "2026-11-07",
+        "source": "https://www.raya.com/2026/11/07/%D8%A7%D9%84%D9%83%D9%8A%D8%A7%D9%86-%D8%A7%D9%84%D8%A5%D8%B3%D8%B1%D8%A7%D8%A6%D9%8A%D9%84%D9%8A-%D9%8A%D9%83%D8%AB%D9%81-%D8%A7%D8%B9%D8%AA%D8%AF%D8%A7%D8%A1%D8%A7%D8%AA%D9%87-%D8%B9%D9%84%D9%89-%D8%A8%D9%84%D8%AF%D8%A7%D8%AA-%D9%88%D9%82%D8%B1%D9%89-%D8%AC%D9%86%D9%88%D8%A8-%D9%84%D8%A8%D9%86%D8%A7%D9%86",
+        "status": "claim",
+        "target_type": "city",
+        "coord_precision": "exact",
+        "added_utc": "2026-11-07T07:17:13Z"
+      }
+    },
+    {
+      "type": "Feature",
       "geometry": null,
       "properties": {
         "id": "tm-e373d72a87",
@@ -240,9 +366,9 @@
         "id": "tm-e45f437885",
         "category": "strike",
         "place": "Kyiv, Ukraine (Solomianskyi district)",
-        "what": "Ukrainian officials say several waves of Russian ballistic missiles hit Kyiv overnight 6-7 Nov; DSNS says three injured in the city including a child; damage reported to a five-storey residential building and kindergarten and a fire at a non-residential building in Solomianskyi",
+        "what": "Ukrainian officials say Russian ballistic missiles hit Kyiv overnight 6-7 Nov; Mayor Klitschko says five were injured including a 14-year-old, two hospitalized; damage to a five-storey residential building and kindergarten and a fire at a non-residential building in Solomianskyi",
         "when_utc": "2026-11-06T21:00Z",
-        "source": "https://kyivindependent.com/russian-ballistic-missiles-slam-kyiv-after-zelensky-warns-of-mass-attack/ https://www.yahoo.com/news/world/articles/russian-forces-launch-missile-attack-012321092.html",
+        "source": "https://kyivindependent.com/russian-ballistic-missiles-slam-kyiv-after-zelensky-warns-of-mass-attack/ https://www.yahoo.com/news/world/articles/russian-forces-launch-missile-attack-012321092.html https://www.pravda.com.ua/news/2026/11/07/8061681/ https://www.ukrinform.ua/rubric-regions/4182340-u-pivnicnij-mist-u-kievi-vlucili-dekilka-raket-poskodzeni-dorozne-polotno-trolejbusna-linia-i-lep.html",
         "status": "confirmed",
         "target_type": "city",
         "coord_precision": "not geocoded: district",
