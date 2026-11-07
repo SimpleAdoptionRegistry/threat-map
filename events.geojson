@@ -5,6 +5,72 @@
       "type": "Feature",
       "geometry": null,
       "properties": {
+        "id": "tm-e373d72a87",
+        "category": "shipping",
+        "place": "Strait of Hormuz",
+        "what": "UKMTO warning 194-26 (weekly overview) says third-party reports describe a dhow struck by an unknown projectile near 26°06'N 056°52'E; one crew member died and 13 others were rescued by local authorities",
+        "when_utc": "2026-11-02",
+        "source": "https://www.ukmto.org/-/media/ukmto/products/20261106-ukmto_vra_overview_u.pdf?rev=26469c3751c649ea9c7214a0bd063c0c https://www.middleeasteye.net/live-blog/live-blog-update/ukmto-says-11-ships-attacked-week-4-nov-hormuz-arabian-gulf",
+        "status": "confirmed",
+        "target_type": "ship",
+        "coord_precision": "not geocoded: strait",
+        "added_utc": "2026-11-07T06:21:27Z",
+        "major": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "tm-2a45c28671",
+        "category": "shipping",
+        "place": "Strait of Hormuz",
+        "what": "UKMTO warning 195-26 (weekly overview) says a Barbados-flagged tanker was struck on its port side by two unknown projectiles near 26°09'N 056°34'E, causing an engine-room fire; crew brought it under control, are safe and reached the next port",
+        "when_utc": "2026-11-03",
+        "source": "https://www.ukmto.org/-/media/ukmto/products/20261106-ukmto_vra_overview_u.pdf?rev=26469c3751c649ea9c7214a0bd063c0c",
+        "status": "confirmed",
+        "target_type": "ship",
+        "coord_precision": "not geocoded: strait",
+        "added_utc": "2026-11-07T06:21:27Z",
+        "major": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "tm-514346f7d2",
+        "category": "shipping",
+        "place": "Al Khafji, Saudi Arabia (at sea, about 75 nm E, Arabian Gulf)",
+        "what": "UKMTO warning 192-26 (weekly overview) says Liberia-flagged tanker Largo Atom was struck on its port side by two unknown projectiles at 28°25'N 049°56'E and lost power and steering; crew recovered engines and proceeded to port",
+        "when_utc": "2026-11-01",
+        "source": "https://www.ukmto.org/-/media/ukmto/products/20261106-ukmto_vra_overview_u.pdf?rev=26469c3751c649ea9c7214a0bd063c0c",
+        "status": "confirmed",
+        "target_type": "ship",
+        "coord_precision": "not geocoded: at sea",
+        "added_utc": "2026-11-07T06:21:27Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "tm-e814be5598",
+        "category": "shipping",
+        "place": "Somalia (at sea, Somali Basin)",
+        "what": "UKMTO warning 190-26 says armed persons boarded and hijacked Iranian-flagged fishing vessel Azini at 09°54'N 053°04'E on 30 Oct; UKMTO says Indian naval forces rescued the crew and vessel on 2 Nov with no casualties reported",
+        "when_utc": "2026-10-30",
+        "source": "https://www.ukmto.org/-/media/ukmto/products/20261106-ukmto_vra_overview_u.pdf?rev=26469c3751c649ea9c7214a0bd063c0c",
+        "status": "confirmed",
+        "target_type": "ship",
+        "coord_precision": "not geocoded: at sea",
+        "added_utc": "2026-11-07T06:21:27Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
         "id": "tm-774287fd11",
         "category": "shipping",
         "place": "Khasab, Musandam, Oman (at sea, 16 nm E, Strait of Hormuz)",
@@ -157,9 +223,9 @@
         "id": "tm-93a38fb6cc",
         "category": "strike",
         "place": "Qeshm Island, Hormozgan, Iran (Suza area)",
-        "what": "US President Trump says US forces carried out limited 'minor' strikes that destroyed an Iranian anti-aircraft device; IRNA and Tasnim report two projectiles hit Suza on Qeshm after aircraft were heard; IRGC-linked media claim a US MQ-1 was downed over Qeshm earlier",
+        "what": "US President Trump says US forces carried out limited 'minor' strikes that destroyed an Iranian anti-aircraft device; IRNA and Tasnim report two projectiles hit Suza on Qeshm after aircraft were heard; Iran's army claims its air defences downed two US MQ-9 drones over Qeshm",
         "when_utc": "2026-11-07",
-        "source": "https://www.theguardian.com/world/2026/nov/07/us-carries-out-another-round-of-minor-strikes-on-iran-trump-says https://www.arabnews.com/middle-east/two-missiles-strike-irans-qeshm-island-tasnim-news-agency-reports-3010264 https://www.jpost.com/middle-east/iran-news/article-914097",
+        "source": "https://www.theguardian.com/world/2026/nov/07/us-carries-out-another-round-of-minor-strikes-on-iran-trump-says https://www.arabnews.com/middle-east/two-missiles-strike-irans-qeshm-island-tasnim-news-agency-reports-3010264 https://www.jpost.com/middle-east/iran-news/article-914097 https://english.news.cn/20261107/6f94e5f63b8048d4b10362647f78b2a8/c.html https://www.aljazeera.com/news/2026/11/7/trump-confirms-new-us-strikes-on-irans-qeshm-island",
         "status": "confirmed",
         "target_type": "base",
         "coord_precision": "not geocoded: administrative area only",
