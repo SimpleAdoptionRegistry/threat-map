@@ -5,6 +5,60 @@
       "type": "Feature",
       "geometry": null,
       "properties": {
+        "id": "tm-eb6b72a332",
+        "category": "strike",
+        "place": "Al-Maqatirah District, Lahj, Yemen (Zariqat Al-Sham and Zariqat Al-Yemen)",
+        "what": "Houthi-run Saba, citing a local source, says Saudi aircraft carried out eight airstrikes on Zariqat Al-Sham and Zariqat Al-Yemen in Al-Maqatirah on 7 Nov, killing a woman and destroying a solar power system for a water project; no Saudi-led coalition comment found",
+        "when_utc": "2026-11-07",
+        "source": "https://www.saba.ye/en/news3828957.htm",
+        "status": "claim",
+        "target_type": "city",
+        "coord_precision": "not geocoded: district",
+        "added_utc": "2026-11-07T13:20:29Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.464296,
+          33.270856
+        ]
+      },
+      "properties": {
+        "id": "tm-a73864a72e",
+        "category": "strike",
+        "place": "Qantara, Marjayoun, Lebanon",
+        "what": "L'Orient Today and Al-Manar say Israeli forces carried out a large demolition explosion in Qantara on 7 Nov; no casualty figures given and no Israeli comment found",
+        "when_utc": "2026-11-07",
+        "source": "https://today.lorientlejour.com/article/1553656/israeli-army-carries-out-major-explosion-in-qantara-amid-escalation-in-south-lebanon.html https://english.almanar.com.lb/article/147747/",
+        "status": "claim",
+        "target_type": "city",
+        "coord_precision": "exact",
+        "added_utc": "2026-11-07T13:20:29Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "tm-1df2c453c9",
+        "category": "strike",
+        "place": "Aita al-Jabal, Bint Jbeil, Lebanon",
+        "what": "L'Orient Today and Al-Manar say an Israeli shell directly struck a house on the outskirts of Aita al-Jabal on 7 Nov, with Al-Manar saying the house was uninhabited and caught fire as Israeli forces conducted sweeps; no casualties given and no Israeli comment found",
+        "when_utc": "2026-11-07",
+        "source": "https://today.lorientlejour.com/article/1553656/israeli-army-carries-out-major-explosion-in-qantara-amid-escalation-in-south-lebanon.html https://english.almanar.com.lb/article/147747/",
+        "status": "claim",
+        "target_type": "city",
+        "coord_precision": "approximate: outskirts house; exact building not named",
+        "added_utc": "2026-11-07T13:20:29Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
         "id": "tm-2453330b84",
         "category": "shipping",
         "place": "Strait of Hormuz (east of the strait)",
@@ -48,9 +102,9 @@
         "id": "tm-bbab87165b",
         "category": "strike",
         "place": "Ash Sharyah, Bani Hushaysh, Sanaa Governorate, Yemen",
-        "what": "Houthi media say Saudi airstrikes hit homes in Ash Sharyah east of Sanaa on 7 Nov; Saba/AFP cite 11 dead including women and children, later Houthi-linked reports say at least 22 killed and about 30 wounded; no Saudi-led coalition comment found",
+        "what": "Houthi Health Ministry says Saudi airstrikes on al-Shariyah/Ash Sharyah homes on 7 Nov killed 22 mostly women and children and wounded 30; Civil Defense says later strikes hit rescue teams during recovery with more casualties; no coalition comment found",
         "when_utc": "2026-11-07",
-        "source": "https://english.news.cn/20261107/2ce700a7fef5445dbd5f3dcfc8b6790e/c.html https://www.timesofisrael.com/liveblog_entry/saudi-strikes-in-sanaa-kill-11-including-women-and-children-houthi-media-says/ https://www.presstv.co.uk/Detail/2026/11/07/780166/nearly-dozen-civilians-killed-near-yemeni-capital-amid-ongoing-saudi-attacks",
+        "source": "https://english.news.cn/20261107/2ce700a7fef5445dbd5f3dcfc8b6790e/c.html https://www.timesofisrael.com/liveblog_entry/saudi-strikes-in-sanaa-kill-11-including-women-and-children-houthi-media-says/ https://www.presstv.co.uk/Detail/2026/11/07/780166/nearly-dozen-civilians-killed-near-yemeni-capital-amid-ongoing-saudi-attacks https://apnews.com/article/yemen-houthi-saudi-attacks-1b5aef5b86be2e96e1cd8a18165afaf6 https://www.saba.ye/en/news3828944.htm https://www.saba.ye/en/news3828952.htm",
         "status": "claim",
         "target_type": "city",
         "coord_precision": "approximate: Ash Sharyah / al-Shariyah village in Bani Hushaysh district east of Sanaa; exact houses not named",
